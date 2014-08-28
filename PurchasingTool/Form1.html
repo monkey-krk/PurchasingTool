@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PriceAnalytics</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/External/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet" />
+
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <header class="MainHeader"></header>
+
+
+    <div class="MainContent">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                    <form class="form-horizontal Form1" role="form" action="/" method="post">
+
+                        <div class="form-group">
+                            <h1 class="col-sm-offset-3 col-sm-9">Example Form</h1>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="alert alert-success" role="alert">
+                                    <i class="flaticon solid checkmark-2 mr10"></i>Success. Please fill out this additional quotes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group fwc">
+                            <label for="input1" class="col-sm-3 control-label required">SALUTATION</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="input1">
+                                    <option selected>MR.</option>
+                                    <option>MS.</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group fwc">
+                            <label for="input2" class="col-sm-3 control-label">FIRST NAME</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="input2" name="input2" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> suscribed
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group fwc">
+                            <label for="input3" class="col-sm-3 control-label required">PHONE</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="input3" name="input3" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div class="form-group fwc">
+                            <label for="input4" class="col-sm-3 control-label required">EMAIL</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="input4" name="input4" placeholder="" required="">
+                                <div class="form-input-info">We won’t spam you.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9 ptb20">
+                                Do you want to <a href="#" data-toggle="modal" data-target="#ChangePasswordModal">change your password</a> ?
+                            </div>
+                            <!-- Change Password Modal -->
+                            <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Change Password</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-horizontal">
+                                                <div class="form-group fwc">
+                                                    <label for="password" class="col-sm-4 control-label">PASSWORD</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="password" class="form-control success" id="password" name="password" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group fwc">
+                                                    <label for="confirmPassword" class="col-sm-4 control-label">RETYPE PASSWORD</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="password" class="form-control success" id="confirmPassword" name="confirmPassword" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Change Password</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <h3 class="col-sm-3 text-right">Manufacturers</h3>
+                        </div>
+                        <hr class="mt10 mb20" />
+                        <div class="form-group fwc">
+                            <label for="input5" class="col-sm-3 control-label required">ADDRESS</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" id="input5" name="input5" rows="4"></textarea>
+                                <div class="form-input-info">This will show up on your invoices, including your company name & address.</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9 ptb20">
+                                <button type="submit" class="btn btn-success"><i class="flaticon solid checkmark-1 mr10"></i>Confirm Changes</button>
+                                <button type="reset" class="btn btn-link">Cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <h3 class="col-sm-3 text-right">Permissions</h3>
+                        </div>
+                        <hr class="mt10 mb20" />
+                        <div class="form-group pb10">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-6">Email</div>
+                                <div class="col-sm-3">Role</div>
+                                <div class="col-sm-3">Actions</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-6"><a href="mailto:jan@preisanalytics.com">jan@preisanalytics.com</a></div>
+                                <div class="col-sm-3">Owner</div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-6 pt10"><a href="mailto:robert@preisanalytics.com">robert@preisanalytics.com</a></div>
+                                <div class="col-sm-3">
+                                    <select class="form-control" id="input1">
+                                        <option selected>Admin</option>
+                                        <option>User</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 pt10"><a href="#">Remove</a></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="col-sm-6"><input type="text" class="form-control" id="UserEmail" name="UserEmail" placeholder=""></div>
+                                <div class="col-sm-3">
+                                    <select class="form-control" id="input1">
+                                        <option selected>Admin</option>
+                                        <option>User</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 pt10"><a href="#">+ Add</a></div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="MainFooter"></footer>
+
+
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.Form1')
+                .on('init.field.bv', function (e, data) {
+                    var field = data.field,        // Get the field name
+                        $field = data.element,      // Get the field element
+                        bv = data.bv;           // BootstrapValidator instance
+
+                    // Create a span element to show valid message
+                    // and place it right before the field
+                    var $span = $('<small/>')
+                                    .addClass('help-block validMessage')
+                                    .attr('data-field', field)
+                                    .insertAfter($field)
+                                    .hide();
+
+                    // Retrieve the valid message via getOptions()
+                    var message = bv.getOptions(field).validMessage;
+
+                    if (message) {
+                        $span.html(message);
+                    }
+                })
+                .bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'flaticon solid checkmark-2',
+                        invalid: 'flaticon solid exclamation-point-1',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        input3: {
+                            validMessage: 'The phone no is good !',
+                            validators: {
+                                notEmpty: {
+                                    message: 'Please add your Phone Number !'
+                                }
+                            }
+                        },
+                        input4: {
+                            validMessage: 'Address confirmed !',
+                            validators: {
+                                notEmpty: {
+                                    message: 'The email cannot be empty'
+                                },
+                                emailAddress: {
+                                    message: 'The input is not a valid email'
+                                }
+                            }
+                        },
+                        confirmPassword: {
+                            validators: {
+                                identical: {
+                                    field: 'password',
+                                    message: ' '
+                                }
+                            }
+                        }
+
+                    }
+                })
+            .on('success.field.bv', function (e, data) {
+                var field = data.field,        // Get the field name
+                    $field = data.element;      // Get the field element
+                // Retrieve the valid message element
+                $field
+                    .next('.validMessage[data-field="' + field + '"]')
+                    .show();  // Show it
+            })
+            .on('error.field.bv', function (e, data) {
+                var field = data.field,        // Get the field name
+                    $field = data.element;      // Get the field element
+                // Hide the valid message element
+                $field
+                    .next('.validMessage[data-field="' + field + '"]')
+                    .hide();
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

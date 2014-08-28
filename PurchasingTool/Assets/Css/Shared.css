@@ -1,0 +1,173 @@
+/*#region Fonts */
+@font-face {
+  font-family: 'Gotham Rounded';
+  font-style: normal;
+  font-weight: lighter;
+  src: url("/Assets/Font/gotham-rounded-light.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Gotham Rounded';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/Assets/Font/gotham-rounded-book.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Gotham Rounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/Assets/Font/gotham-rounded-medium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Gotham Rounded';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/Assets/Font/gotham-rounded-bold.otf") format("opentype");
+}
+/*#endregion */
+/*#region Responsive Templates */
+/*#endregion */
+/*#region Layout */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #343741;
+  font-size: 14px;
+  line-height: 1;
+  font-family: 'Gotham Rounded', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: #e8f0f2;
+}
+a {
+  text-decoration: none;
+  color: #26a0c8;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+  color: #03b5ef;
+}
+/*#endregion */
+/*#region Shared */
+/*#region Colors */
+.white {
+  color: #ffffff !important;
+}
+a[class~="white"]:hover {
+  color: #ffffff !important;
+}
+.white-bg {
+  background-color: #ffffff !important;
+}
+.gray-light {
+  color: #96a7ac !important;
+}
+a[class~="gray-light"]:hover {
+  color: #677b80 !important;
+}
+.gray-light-bg {
+  background-color: #96a7ac !important;
+}
+.gray {
+  color: #747880 !important;
+}
+a[class~="gray"]:hover {
+  color: #62666b !important;
+}
+.gray-bg {
+  background-color: #747880 !important;
+}
+.blue {
+  color: #26a0c8 !important;
+}
+a[class~="blue"]:hover {
+  color: #1e7c9c !important;
+}
+.blue-bg {
+  background-color: #26a0c8 !important;
+}
+.red {
+  color: #f56e74 !important;
+}
+a[class~="red"]:hover {
+  color: #cc454b !important;
+}
+.red-bg {
+  background-color: #f56e74 !important;
+}
+.green {
+  color: #3dc054 !important;
+}
+a[class~="green"]:hover {
+  color: #1c9b32 !important;
+}
+.green-bg {
+  background-color: #3dc054 !important;
+}
+/*#endregion */
+/*#region Styles */
+.mr10 {
+  margin-right: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ptb20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.form-input-info {
+  color: #96a7ac;
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 7px;
+}
+/*#endregion */
+/*#endregion */
+/*#region MainHeader */
+.MainHeader {
+  height: 70px;
+  background-color: #282b34;
+}
+/*#endregion */
+/*#region MainContent */
+/*#endregion */
+/*#region MainFooter */
+.MainFooter {
+  height: 70px;
+}
+/*#endregion */

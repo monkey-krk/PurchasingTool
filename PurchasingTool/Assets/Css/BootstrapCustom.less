@@ -1,0 +1,171 @@
+﻿// Core Bootstrap file
+@import "../External/bootstrap/less/bootstrap.less";
+
+// Custom Bootstrap modifications
+
+/*#region Variables */
+
+@alert-padding:12px;
+
+@state-success-text:             #ffffff;
+@state-success-bg:               #3dc054;
+@state-success-border:           @state-success-bg;
+
+@state-info-text:                #ffffff;
+@state-info-bg:                  #377ea1;
+@state-info-border:              @state-info-bg;
+
+@state-warning-text:             #ffffff;
+@state-warning-bg:               #f1c40f;
+@state-warning-border:           @state-warning-bg;
+
+@state-danger-text:              #ffffff;
+@state-danger-bg:                #f56e74;
+@state-danger-border:            @state-danger-bg;
+
+@font-size-h1:                   26px;
+@font-size-h2:                   22px;
+@font-size-h3:                   17px;
+@font-size-small:                12px;
+
+@input-border: #fff;
+@hr-border: #d8e2e5;
+
+@btn-font-weight : 600;
+
+@modal-content-bg: #e8f0f2;
+
+/*#endregion */
+
+/*#region Elements */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:600;
+}
+
+/*#endregion */
+
+/*#region Classes */
+
+/*#region Buttons */
+.btn {
+    border-color:transparent;
+    padding:9px 15px;
+    &:hover, &:focus {
+        border-color:transparent;
+    }
+}
+.btn-link {
+    color: #747880;
+    text-decoration: underline;
+    &:hover, &:focus {
+        color: #343741;
+    }
+}
+
+/*#endregion */
+
+/*#region Forms */
+
+.form-horizontal {
+    padding:20px 0;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-control {
+    //width:auto;
+    //min-width:290px;
+    box-shadow:none;
+}
+.control-label {
+    color:#747880;
+    font-weight:600;
+    &:after {
+        display:block;
+        content:"";
+        position:absolute;
+        top:7px;
+        right:5px;
+    }
+    &.required {
+        &:after {
+            content:" *";
+            color:#26a0c8;
+        }
+        
+    }
+}
+@media (max-width: 768px) {
+.control-label {
+    &:after {
+        top:0px;
+    }
+}
+}
+input[type="checkbox"] {
+    margin: 1px 0 0;
+}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline,.has-error .form-control-feedback {
+    color: #f56e74;
+}
+.has-error .form-control {
+    box-shadow:none;
+    border:2px solid #f56e74;
+    &:focus {
+        box-shadow:none;
+        border:2px solid #f56e74;
+    }
+}
+.has-error .form-control-feedback, .has-success .form-control-feedback  {
+    left:315px;
+    top:9px;
+    font-size:16px;
+}
+.has-error .control-label, .has-success .control-label {
+    color:#747880!important;
+}
+.has-success .form-control {
+    box-shadow:none;
+    //border:2px solid #3dc054;
+}
+.has-success .form-control-feedback {
+    color:#3dc054;
+}
+.has-success .help-block {
+    color:#3dc054;
+}
+
+.fwc {
+    input, select, textarea {
+        width:290px;
+    }
+    .help-block {
+        display: block;
+        position:absolute;
+        top:9px;
+        left:360px;
+        margin: 0;
+        font-size:14px;
+        font-weight:600;
+        white-space:nowrap;
+    }
+
+}
+
+
+
+
+/*#endregion */
+
+/*#region Scaffolding */
+
+hr {
+    border-top-width:2px;
+}
+
+
+/*#endregion */
+
+/*#endregion */
+
