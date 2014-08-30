@@ -4,28 +4,34 @@
     font-family: 'Gotham Rounded';
     font-style: normal;
     font-weight: lighter;
-    src: url("/Assets/Font/gotham-rounded-light.otf") format("opentype");
+    src: url('/Assets/Font/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),  url('/Assets/Font/GothamRounded-Light.otf')  format('opentype'),
+	     url('/Assets/Font/GothamRounded-Light.woff') format('woff'), url('/Assets/Font/GothamRounded-Light.ttf')  format('truetype'), url('/Assets/Font/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
 }
 
 @font-face {
     font-family: 'Gotham Rounded';
     font-style: normal;
     font-weight: normal;
-    src: url("/Assets/Font/gotham-rounded-book.otf") format("opentype");
+    src: url('/Assets/Font/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),  url('/Assets/Font/GothamRounded-Book.otf')  format('opentype'),
+	     url('/Assets/Font/GothamRounded-Book.woff') format('woff'), url('/Assets/Font/GothamRounded-Book.ttf')  format('truetype'), url('/Assets/Font/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
 }
 
 @font-face {
     font-family: 'Gotham Rounded';
     font-style: normal;
     font-weight: 600;
-    src: url("/Assets/Font/gotham-rounded-medium.otf") format("opentype");
+    src: url('/Assets/Font/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),  url('/Assets/Font/GothamRounded-Medium.otf')  format('opentype'),
+	     url('/Assets/Font/GothamRounded-Medium.woff') format('woff'), url('/Assets/Font/GothamRounded-Medium.ttf')  format('truetype'), url('/Assets/Font/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+
 }
 
 @font-face {
     font-family: 'Gotham Rounded';
     font-style: normal;
     font-weight: bold;
-    src: url("/Assets/Font/gotham-rounded-bold.otf") format("opentype");
+    src: url('/Assets/Font/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),  url('/Assets/Font/GothamRounded-Bold.otf')  format('opentype'),
+	     url('/Assets/Font/GothamRounded-Bold.woff') format('woff'), url('/Assets/Font/GothamRounded-Bold.ttf')  format('truetype'), url('/Assets/Font/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+
 }
 
 /*#endregion */
@@ -78,17 +84,17 @@ body {
 
 a {
     text-decoration: none;
-    color: #26a0c8;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    color: @blue;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
 
 
     &:hover, &:active {
         outline: 0;
         text-decoration: none;
-        color: #03b5ef;
+        color: lighten(@blue, 10%);
     }
 }
 
@@ -98,117 +104,247 @@ a {
 
 /*#region Colors */
 
+/*#region Variables */
+
+@body-bg:#e8f0f2;
+@white:#fff;
+@gray-lighter:#d8e2e5;
+@gray-light:#96a7ac;
+@gray:#747880;
+@gray-dark:#282b34;
+@blue:#26a0c8;
+@red:#f56e74;
+@green:#3dc054;
+@yellow:#f1c40f;
+@orange:#f39c12;
+
+/*#endregion */
+
+/*#region Classes */
+
 .white {
-    color: #ffffff !important;
+    color: @white !important;
 }
 
 a[class~="white"]:hover {
-    color: #ffffff !important;
+    color: @white !important;
 }
 
 .white-bg {
-    background-color: #ffffff !important;
+    background-color: @white !important;
+}
+
+.gray-lighter {
+    color: @gray-lighter !important;
+}
+
+a[class~="gray-lighter"]:hover {
+    color: darken(@gray-lighter, 20%) !important;
+}
+
+.gray-lighter-bg {
+    background-color: @gray-lighter !important;
 }
 
 .gray-light {
-    color: #96a7ac !important;
+    color: @gray-light !important;
 }
 
 a[class~="gray-light"]:hover {
-    color: #677b80 !important;
+    color: darken(@gray-light, 20%) !important;
 }
 
 .gray-light-bg {
-    background-color: #96a7ac !important;
+    background-color: @gray-light !important;
 }
 
 .gray {
-    color: #747880 !important;
+    color: @gray !important;
 }
 
 a[class~="gray"]:hover {
-    color: #62666b !important;
+    color: darken(@gray, 20%) !important;
 }
 
 .gray-bg {
-    background-color: #747880 !important;
+    background-color: @gray !important;
+}
+
+.gray-dark {
+    color: @gray-dark !important;
+}
+
+a[class~="gray-dark"]:hover {
+    color: darken(@gray-dark, 20%) !important;
+}
+
+.gray-dark-bg {
+    background-color: @gray-dark !important;
 }
 
 .blue {
-    color: #26a0c8 !important;
+    color: @blue !important;
 }
 
 a[class~="blue"]:hover {
-    color: #1e7c9c !important;
+    color: darken(@blue, 20%) !important;
 }
 
 .blue-bg {
-    background-color: #26a0c8 !important;
+    background-color: @blue !important;
 }
 
 .red {
-    color: #f56e74 !important;
+    color: @red !important;
 }
 
 a[class~="red"]:hover {
-    color: #cc454b !important;
+    color: darken(@red, 20%) !important;
 }
 
 .red-bg {
-    background-color: #f56e74 !important;
+    background-color: @red !important;
 }
 
 .green {
-    color: #3dc054 !important;
+    color: @green !important;
 }
 
 a[class~="green"]:hover {
-    color: #1c9b32 !important;
+    color: darken(@green, 20%) !important;
 }
 
 .green-bg {
-    background-color: #3dc054 !important;
+    background-color: @green !important;
 }
+
+.yellow {
+    color: @yellow !important;
+}
+
+a[class~="yellow"]:hover {
+    color: darken(@yellow, 20%) !important;
+}
+
+.yellow-bg {
+    background-color: @yellow !important;
+}
+
+.orange {
+    color: @orange !important;
+}
+
+a[class~="orange"]:hover {
+    color: darken(@orange, 20%) !important;
+}
+
+.orange-bg {
+    background-color: @orange !important;
+}
+
+/*#endregion */
 
 /*#endregion */
 
 /*#region Styles */
 
 .mr10 {
-    margin-right:10px;
+    margin-right:10px!important;
+}
+.mt-5{
+    margin-top:-5px!important;
 }
 .mt10 {
-    margin-top:10px;
+    margin-top:10px!important;
 }
 .mt20 {
-    margin-top:20px;
+    margin-top:20px!important;
+}
+.mt30 {
+    margin-top:30px!important;
+}
+.mb5 {
+    margin-bottom:5px!important;
 }
 .mb10 {
-    margin-bottom:10px;
+    margin-bottom:10px!important;
 }
 .mb20 {
-    margin-bottom:20px;
+    margin-bottom:20px!important;
 }
 
-.ptb20 {
-    padding-top:20px;
-    padding-bottom:20px;
+.pr25 {
+    padding-right:25px!important;
+}
+.pr30 {
+    padding-right:30px!important;
+}
+.pr35 {
+    padding-right:35px!important;
+}
+.pt5 {
+    padding-top:5px!important;
 }
 .pt10 {
-    padding-top:10px;
+    padding-top:10px!important;
+}
+.pt12 {
+    padding-top:12px!important;
 }
 .pb10 {
-    padding-bottom:10px;
+    padding-bottom:10px!important;
 }
 .pb20 {
-    padding-bottom:20px;
+    padding-bottom:20px!important;
+}
+.ptb5 {
+    padding-top:5px!important;
+    padding-bottom:5px!important;
+}
+.ptb10 {
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+}
+.ptb20 {
+    padding-top:20px!important;
+    padding-bottom:20px!important;
+}
+
+.fwm {
+    font-weight:600!important;
+}
+
+.tdu {
+    text-decoration:underline!important;
+    &:hover {
+        text-decoration:underline!important;
+    }
+}
+
+.w40h40 {
+    width:40px;
+    height:40px;
+}
+.ibm {
+    display:inline-block!important;
+    vertical-align:middle!important;
 }
 
 .form-input-info {
-    color: #96a7ac;
+    color: @gray-light;
     font-size:12px;
     font-weight:normal;
     padding-top:7px;
+}
+
+.ibox-little {
+    display:inline-block;
+    background-color:@gray-light;
+    color:@gray-dark;
+    font-weight:bold;
+    padding:5px 7px;
+    border-radius:4px;
+    margin-top:-5px;
 }
 
 /*#endregion */
@@ -219,7 +355,7 @@ a[class~="green"]:hover {
 
 .MainHeader {
     height:70px;
-    background-color:#282b34;
+    background-color:@gray-dark;
 }
 
 /*#endregion */
