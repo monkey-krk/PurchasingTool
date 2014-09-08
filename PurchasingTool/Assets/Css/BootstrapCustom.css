@@ -6227,6 +6227,16 @@ button.close {
   background-color: #2496bb;
   color: #ffffff;
 }
+.btn-green {
+  background-color: #3dc054;
+  color: #ffffff;
+}
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  background-color: #39b44f;
+  color: #ffffff;
+}
 /*#endregion */
 /*#region Forms */
 .form-horizontal {
