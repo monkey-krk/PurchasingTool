@@ -1,0 +1,296 @@
+﻿@import "Variables.less";
+
+.ProductsList {
+    width: 100%;
+    background-color: @white;
+    border-radius: 5px;
+    margin-bottom:30px;
+
+    thead {
+        tr {
+            border-bottom: 2px solid @gray-lighter;
+        }
+
+        th {
+            position: relative;
+            white-space: nowrap;
+            color: @gray;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 600;
+            vertical-align: bottom;
+            padding: 10px 10px 12px 10px;
+
+            input[type="checkbox"] {
+                & + label {
+                    margin: 0;
+                    font-size: 11px;
+                    font-weight: 600;
+                    color: @gray;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+            th:nth-child(1) {
+                padding-right:0;
+            }
+            th:nth-child(6) {
+                text-align: right;
+            }
+
+            th:nth-child(7) {
+                text-align: right;
+            }
+    }
+
+    tbody {
+        font-size: 13px;
+
+        tr {
+            border-bottom: 1px solid @gray-lighter;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        td {
+            position: relative;
+            vertical-align: top;
+            padding: 10px;
+        }
+
+            td:nth-child(1) {
+                vertical-align: middle;
+                padding-right:0;
+            }
+
+            td:nth-child(4) {
+                white-space: nowrap;
+            }
+
+            td:nth-child(5) {
+                white-space: nowrap;
+            }
+
+            td:nth-child(7) {
+                text-align: right;
+            }
+
+            td:nth-child(8) {
+                text-align: right;
+            }
+
+        .New {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 30px 30px 0 0;
+                border-color: @green transparent transparent transparent;
+            }
+
+            &:after {
+                display: block;
+                content: "New";
+                position: absolute;
+                top: 6px;
+                left: 1px;
+                color: @white;
+                font-size: 9px;
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+
+        .ProductName {
+            display: block;
+            color: @blue;
+            font-weight: 600;
+
+            &:hover {
+                color: darken(@blue,8%);
+            }
+        }
+
+        .ProductDescription {
+            width: 100%;
+            display: block;
+            padding: 0;
+            margin: 0;
+            padding-top: 7px;
+            font-weight: normal;
+            color: @gray-light;
+        }
+
+        .Progres {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: @gray-lighter;
+
+
+            .Up, .Down {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                height: 10px;
+                border-radius: 10px;
+            }
+
+            .Up {
+                background-color: @green;
+            }
+
+            .Down {
+                background-color: @red;
+            }
+        }
+
+        .Trend {
+            font-family: 'Flaticons Stroke';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+
+            &:before {
+                display: block;
+                font-size: 14px;
+                content: "";
+                color: @gray-lighter;
+            }
+
+            &.Up {
+                &:before {
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    color: @green;
+                }
+            }
+
+            &.Down {
+                &:before {
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    color: @red;
+                }
+            }
+        }
+
+        .Stars {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            font-family: 'Flaticons Solid';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            font-size: 9px;
+            cursor:default;
+
+            &:before {
+                content: "";
+                color: @gray-lighter;
+            }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                color: @orange;
+            }
+
+            &.x1:after {
+                content: "";
+            }
+
+            &.x2:after {
+                content: "";
+            }
+
+            &.x3:after {
+                content: "";
+            }
+
+            &.x4:after {
+                content: "";
+            }
+
+            &.x5:after {
+                content: "";
+            }
+        }
+
+        .RatingNo {
+            display: block;
+            padding-left: 10px;
+            color: @gray-light;
+            padding-top: 7px;
+        }
+
+        .Price1 {
+            color: #747880;
+            line-height: 1.1;
+        }
+
+        .Price2, .Price3, .MarginPrice {
+            color: #b2b2b2;
+            line-height: 1.1;
+        }
+
+        .MarginValue {
+            line-height: 1.1;
+
+            &.Up {
+                color: @green;
+            }
+
+            &.Down {
+                color: @red;
+            }
+        }
+
+        .FoundOnLists {
+            margin: 0;
+            margin-left:15px;
+            padding: 0;
+            list-style-type: disc;
+            color: #b2b2b2;
+        }
+
+        .Upgrade {
+            display: block;
+            color: @gray-light;
+            font-size: 11px;
+            padding-top: 5px;
+
+            &:hover {
+                color: @gray;
+            }
+        }
+    }
+}

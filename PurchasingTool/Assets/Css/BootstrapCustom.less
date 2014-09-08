@@ -1,20 +1,6 @@
 ﻿@import "../External/bootstrap/less/bootstrap.less";
+@import "Variables.less";
 
-/*#region Colors */
-
-@body-bg: #e8f0f2;
-@white: #fff;
-@gray-lighter: #d8e2e5;
-@gray-light: #96a7ac;
-@gray: #747880;
-@gray-dark: #282b34;
-@blue: #26a0c8;
-@red: #f56e74;
-@green: #3dc054;
-@yellow: #f1c40f;
-@orange: #f39c12;
-
-/*#endregion */
 
 /*#region Variables */
 
@@ -55,26 +41,57 @@
 
 @modal-content-bg: @body-bg;
 
-@nav-link-hover-bg: transparent;
+@navbar-default-bg: @gray-dark;
+@navbar-height: 70px;
+@navbar-margin-bottom: 0px;
+@navbar-border-radius: 0px;
+@navbar-default-brand-color: @white;
+@navbar-default-toggle-border-color: transparent;
+@navbar-default-link-color: #c0cacc;
+@navbar-default-link-hover-color: lighten(@navbar-default-link-color,10%);
+@navbar-default-link-hover-bg: lighten(@gray-dark,4%);
+@navbar-default-link-active-color: @white;
+@navbar-default-link-active-bg: lighten(@gray-dark,4%);
+@navbar-default-link-disabled-color: darken(@navbar-default-link-color,40%);
+@navbar-default-link-disabled-bg: @gray-dark;
 
+@nav-link-hover-bg: transparent;
 @nav-tabs-active-link-hover-color: @blue;
 @nav-tabs-active-link-hover-bg: @white;
 @nav-tabs-active-link-hover-border-color: @gray-lighter;
 @nav-tabs-border-color: @gray-lighter;
 @nav-tabs-link-hover-border-color: transparent;
 
+@badge-font-weight:normal;
+@badge-border-radius:4px;
+
 /*#endregion */
 
 /*#region Classes */
 
 /*#region Buttons */
+
 .btn {
     border-color: transparent;
     padding: 9px 15px;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    outline: none;
 
-    &:hover, &:focus {
+    &, &:hover, &:focus, &:active {
+        box-shadow:none;
         border-color: transparent;
+        outline: none !important;
     }
+       
+}
+
+.btn-small {
+    font-size:13px;
+    height:30px;
+    padding: 5px 12px 0 12px;
 }
 
 .btn-link {
@@ -85,6 +102,35 @@
         color: @gray-dark;
     }
 }
+
+.btn-white {
+    background-color: @white;
+    color: @gray;
+    &:hover, &:focus, &:active {
+        box-shadow: @gray-light 0 0 4px;
+        color: @gray-dark;
+    }
+}
+
+.btn-white-green {
+    background-color: @white;
+    color: @green;
+    &:hover, &:focus, &:active {
+        box-shadow: @gray-light 0 0 4px;
+        color: darken(@green,10%);
+    }
+}
+
+.btn-blue {
+    background-color: @blue;
+    color: @white;
+    &:hover, &:focus, &:active {
+        background-color: darken(@blue,3%);
+        color: @white;
+    }
+}
+
+
 
 /*#endregion */
 
@@ -257,7 +303,7 @@ hr {
             &:hover,
             &:focus {
                 border-bottom: none;
-                outline:none;
+                outline: none;
             }
         }
 }
@@ -316,6 +362,88 @@ hr {
             border: 1px solid @nav-tabs-border-color;
             border-radius: 6px;
         }
+}
+
+/*#endregion */
+
+/*#region Navbar */
+
+.navbar-brand {
+    background-color: @blue;
+
+    & > a {
+        color: @white;
+        font-size: @font-size-base;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: @white;
+        }
+    }
+
+    &:hover, &:focus {
+        background-color: darken(@blue,3%) !important;
+    }
+}
+
+.HeaderLink {
+    & > a {
+        padding: 20px 0 0 0!important;
+        height: 70px !important;
+        width: 75px;
+        text-align: center;
+
+        i {
+            font-size: 24px;
+        }
+
+        span {
+            display: none;
+            padding: 0;
+            line-height: 1;
+            font-size: 10px;
+            padding-top:1px;
+            opacity:0.7;
+            -moz-transition: all 0.15s ease;
+            -o-transition: all 0.15s ease;
+            -webkit-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+        }
+
+        &:hover {
+            span {
+                display: block;
+            }
+        }
+    }
+
+    &.active {
+        & > a {
+            span {
+                display: block;
+                opacity:1;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .HeaderLink > a {
+        width: 65px;
+    }
+}
+@media (max-width: 767px) {
+    .HeaderLink > a {
+        width: auto;
+        span {
+            display:block;
+        }
+    }
+}
+
+.navbar {
+    border:none;
 }
 
 /*#endregion */

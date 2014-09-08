@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
     <link href="/Assets/External/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet" />
 
     <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
@@ -17,7 +18,52 @@
 <body>
 
 
-    <header class="MainHeader"></header>
+    <header class="MainHeader">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand dropdown">
+                        <a href="/" class="dropdown-toggle " data-toggle="dropdown">
+                            <i class="flaticon stroke basket-1 ml10 mr10"></i>
+                            Purchasing
+                            <span class="caret ml20 mr10"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu Item 1</a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="HeaderLink active"><a href="/ProductDiscovery.html"><i class="budiconcustom-stats"></i><span>Products</span></a></li>
+                        <li class="HeaderLink"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
+                        <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
+                        <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
+                        <li class="HeaderLink"><a href="/Search.html"><i class="budiconcustom-search2"></i><span>Search</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
+                        <li class="HeaderLink"><a href="/Settings.html"><i class="budiconcustom-settings"></i><span>Settings</span></a></li>
+                        <li class="HeaderLink">
+                            <a href="/Account.html" class="mt-5" title="Account">
+                                <div class="Image-r-40 ibm" style="background-image: url('/Assets/Img/dummy/img_200_200_2.jpg'); "></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <div class="MainContent">
@@ -184,11 +230,9 @@
     </div>
 
 
-    <footer class="MainFooter"></footer>
-
-
     <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
     <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
     <script src="/Assets/External/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
 
 
