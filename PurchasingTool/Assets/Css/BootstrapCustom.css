@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+﻿/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6236,6 +6236,16 @@ button.close {
 .btn-green:active {
   background-color: #39b44f;
   color: #ffffff;
+}
+.btn-gray {
+  background-color: #d8e2e5;
+  color: #747880;
+}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active {
+  background-color: #ccd9dd;
+  color: #747880;
 }
 /*#endregion */
 /*#region Forms */

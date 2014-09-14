@@ -1,10 +1,12 @@
 ﻿@import "Variables.less";
 
+/*#region ProductsList */
+
 .ProductsList {
     width: 100%;
     background-color: @white;
     border-radius: 5px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 
     thead {
         tr {
@@ -32,16 +34,17 @@
             }
         }
 
-            th:nth-child(1) {
-                padding-right:0;
-            }
-            th:nth-child(6) {
-                text-align: right;
-            }
+        th:nth-child(1) {
+            padding-right: 0;
+        }
 
-            th:nth-child(7) {
-                text-align: right;
-            }
+        th:nth-child(6) {
+            text-align: right;
+        }
+
+        th:nth-child(7) {
+            text-align: right;
+        }
     }
 
     tbody {
@@ -61,26 +64,26 @@
             padding: 10px;
         }
 
-            td:nth-child(1) {
-                vertical-align: middle;
-                padding-right:0;
-            }
+        td:nth-child(1) {
+            vertical-align: middle;
+            padding-right: 0;
+        }
 
-            td:nth-child(4) {
-                white-space: nowrap;
-            }
+        td:nth-child(4) {
+            white-space: nowrap;
+        }
 
-            td:nth-child(5) {
-                white-space: nowrap;
-            }
+        td:nth-child(5) {
+            white-space: nowrap;
+        }
 
-            td:nth-child(7) {
-                text-align: right;
-            }
+        td:nth-child(7) {
+            text-align: right;
+        }
 
-            td:nth-child(8) {
-                text-align: right;
-            }
+        td:nth-child(8) {
+            text-align: right;
+        }
 
         .New {
             position: relative;
@@ -209,7 +212,7 @@
             line-height: 1;
             -webkit-font-smoothing: antialiased;
             font-size: 9px;
-            cursor:default;
+            cursor: default;
 
             &:before {
                 content: "";
@@ -276,7 +279,7 @@
 
         .FoundOnLists {
             margin: 0;
-            margin-left:15px;
+            margin-left: 15px;
             padding: 0;
             list-style-type: disc;
             color: #b2b2b2;
@@ -294,3 +297,327 @@
         }
     }
 }
+
+/*#endregion */
+
+/*#region Filters */
+
+.Filters {
+    position:relative;
+    background-color: #2e313a;
+    &:after {
+        display:block;
+        position:absolute;
+        top:-2px;
+        left:52px;
+        content:"";
+        width: 0;
+        height: 0;
+        border-top: 9px solid #e8f0f2;
+        border-right: 9px solid transparent;
+        border-left: 9px solid transparent;
+    }
+    
+    .FBox {
+        border-bottom: 10px solid #4b4f5d;
+
+        .FBoxMainTable {
+            width: 100%;
+            color: #d4dee0;
+            td {
+                vertical-align: top;
+                padding: 15px;
+
+                td {
+                    vertical-align: middle;
+                    padding: 0px;
+                }
+            }
+        }
+
+        .FName {
+            font-size: 16px;
+            color: #d4dee0;
+            width: 120px;
+        }
+       
+        .input-icon-wrapper {
+            position:relative;
+            i {
+                position:absolute;
+                top:8px;
+                left:8px;
+                font-size:16px;
+                color:@gray-light;
+            }
+            input {
+                padding-left:30px;
+            }
+        }
+
+        input[type="text"] {
+            width:240px;
+            color:@gray-dark;
+        }
+    }
+
+    .Category {
+
+        .CategoryTableWrapper {
+            width:33%;
+            &.CTW2 {padding-left:5px; padding-right:5px;}
+        }
+
+        .CategoryTable {
+            width:100%;
+            background-color: #fff;
+            color: #747880;
+            border-radius: 5px;
+            overflow: hidden;
+
+            thead {
+                tr {
+                    background: #d4dee0;
+                }
+
+                th {
+                    color: #747880;
+                    font-size: 11px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    padding:7px 5px;
+                }
+                th:nth-child(4){
+                    text-align:right;
+                }
+            }
+
+            tbody {
+                tr {
+                    &.active, &:hover {
+                        color: #000;
+                        td {
+                            font-weight:600;
+                        }
+                        td:nth-child(1){
+                            padding:7px 3px 7px 5px;
+                        }
+                        td:nth-child(4){
+                            padding:7px 5px 7px 3px;
+                        }
+                    }
+                    &.active {
+                        background: #88b4b6!important;
+                    }
+                }
+
+                tr:nth-child(even) {
+                    background: #e8f0f2;
+                }
+
+                td {
+                    width:auto;
+                    font-size: 12px;
+                    padding:7px 5px;
+                    cursor:pointer;
+                }
+
+                td:nth-child(1){
+                    white-space:nowrap;
+                }
+
+                td:nth-child(4){
+                    text-align:right;
+                }
+            }
+
+            &.CatL2 {
+                display: none;
+                &.active {
+                    display: table;
+                }
+            }
+
+            &.CatL3 {
+                display: none;
+                &.active {
+                    display: table;
+                }
+            }
+
+            .Progres {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                height: 10px;
+                border-radius: 10px;
+                background-color: @gray-lighter;
+
+
+                .Up, .Down {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    height: 10px;
+                    border-radius: 10px;
+                }
+
+                .Up {
+                    background-color: #3dc055;
+                }
+
+                .Down {
+                    background-color: #e74c3c;
+                }
+            }
+        }
+
+        .CategoryBlankBox {
+            vertical-align:middle;
+            text-align:center;
+            padding:0px 30px 30px 30px;
+            line-height:1.4;
+            background-color:#d4dee0;
+            color:#747880;
+            border-radius:5px;
+            opacity:0.8;
+
+            .Text:before {
+                display:block;
+                content:"";
+                margin:0 auto;
+                margin-bottom:20px;
+                width: 41px;                height: 41px;                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAACVElEQVRYw82Z30sCQRDHT02jCPRB8iGiPyECxcujp9QnoZcIQiF6qV56yeNUKJKiSAjyR6H+t83CHBzbnt7M7pkPHw5kb/br3uzszKzldvsWkyxQBppAGxgAQ2COzwH+3sRxWe5c1BdSOOEDMENBUZmhaBvtGBeZACrAO1FYGMKOg3aNiNwFPEPiZDy0ryWyCIxiEugj7Je4Ik8ZfsdFzFOliqyuSJxMLarIInMFJ+hj90AXGDNXtLhMZIHhg0/AIbAh2UoDR8Ajw0cLYSITjF18qRAnkwQuiHY7wfAUNFYhGmoSD4Im0b4ji0wRA/VLhBWUEeNfiQE/FRRpE//liUJEBtgHDvCZUYyhfi07KLJN3IE7imOzL43rK469bWBKmKvti8wRQ84Xbobg5HshY7cUq/lGXJCshVnNnLH7WsgVpmVRRT4T5ypzdh2FTYXIT6KNlnjJNSjqB91BcK0QmOd8NfHihyGBZwpflWkw7A4sg6lYOkK5MeSkcpbBnHCRwLRO4mxqJYcLBOYxGrAXwJRPhok8Z6Zsf3zSjVHk0IDtjqk4+a3Y2Un8Xdd2i3viqLjFxMPnxpDdMufsXiVCV87/NN6aivR08kkVDcwlfRoGbB7rZOaqSlG1uyearZiUXOM4axaCnLBqsbMmIkOrRW7dPceSIKtIKKbMPKAQVwdjgLFSxMe7Bdm6dgfDp/5PIadO7arVVtxVq3H7kyUDWcwyxjr9yWCntxeTwJ68SXR75s4698zl2wcbOwuc2wc3ztuHsMLKlu5xRoFYF7zHsXXucX4BfvkF2W6MO0oAAAAASUVORK5CYII=);            }
+
+            &.CatL2 {
+                display: none;
+                &.active {
+                    display:table-cell;
+                }
+            }
+
+            &.CatL3 {
+                display: none;
+                &.active {
+                    display:table-cell;
+                }
+            }
+        }
+
+        .CategoryButtonsWrapper {
+            padding-top:0px!important;
+        }
+
+    }
+
+    .Brand {
+        .TopBrands {
+            .Title {
+                font-size: 18px;
+                color: #d4dee0;
+                margin-bottom:25px;
+                padding-top:10px;
+            }
+            ul {
+                margin:0;
+                padding:0;
+                list-style-type:none;
+                li {
+                    display:inline-block;
+                    width:20%;
+                    float:left;
+                    line-height:1.5;
+                     a {
+                         font-size:13px;
+                         color:#d4dee0;
+                         &:hover {
+                             color:#fff;
+                         }
+                         &.active {
+                             font-size: 14px;
+                             color:#fff;
+                             font-weight:600;
+                         }
+                     }
+                }
+            }
+        }
+    }
+
+    .Name {
+        input[type="text"] {
+            width:480px;
+        }
+        .FBoxMainTable {
+            margin:15px 0;
+        }
+    }
+
+    .Demand {
+        .DemandSlider {
+            width:300px;
+            border:none;
+            box-shadow:none;
+            border-radius:5px;
+            height:10px;
+            background:#fff;
+            .noUi-background {
+                background:#fff;
+                border-radius:5px;
+                box-shadow:none;
+            }
+            .noUi-origin {
+                border-radius:5px;
+            }
+            .noUi-connect {
+                background:#3dc054;
+            }
+            .noUi-handle {
+                background:#3dc054;
+                box-shadow:none;
+                border:none;
+                left:-9px;
+                height:20px;
+                width:20px;
+                border-radius:50%;
+                &:before, &:after {display:none;}
+            }
+        }
+        .DemandScale {
+            width:331px;
+            margin:0;
+            padding:0;
+            margin-left:-12px;
+            list-style-type:none;
+            margin-top:9px;
+            height:25px;
+            li {
+                &:before {
+                    display:block;
+                    content:"";
+                    height:2px;
+                    width:1px;
+                    background-color:#7c8289;
+                    margin:0 auto;
+                    margin-bottom:5px;
+                }
+                display:inline-block;
+                width:7.821%;
+                text-align:center;
+                font-size:12px;
+                color:#d4dee0;
+            }
+        }
+
+
+
+    }
+
+
+
+
+}
+
+
+/*#endregion */

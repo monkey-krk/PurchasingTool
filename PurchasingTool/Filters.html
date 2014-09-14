@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PurchasingTool</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/External/noUiSlider/jquery.nouislider.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+
+    <link href="/Assets/Css/ProductDiscovery.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <header class="MainHeader">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="flaticon stroke basket-1 ml10 mr10"></i>
+                            Purchasing
+                            <span class="caret ml20 mr10"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu Item 1</a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="HeaderLink active"><a href="/ProductDiscovery.html"><i class="budiconcustom-stats"></i><span>Products</span></a></li>
+                        <li class="HeaderLink"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
+                        <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
+                        <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
+                        <li class="HeaderLink"><a href="/Search.html"><i class="budiconcustom-search2"></i><span>Search</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
+                        <li class="HeaderLink"><a href="/Settings.html"><i class="budiconcustom-settings"></i><span>Settings</span></a></li>
+                        <li class="HeaderLink">
+                            <a href="/Account.html" class="mt-5" title="Account">
+                                <div class="Image-r-40 ibm" style="background-image: url('/Assets/Img/dummy/img_200_200_2.jpg'); "></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="MainContent">
+        <div class="SelectedFilters pt10 bb2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="dropdown pull-left mr15 mb10 FiltersDropDown">
+                            <a role="button" href="#" class="dropdown-toggle btn btn-white btn-small" data-toggle="dropdown"><span class="SelectedText">Filters</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                                <li class="dropdown-header">Active Filters:</li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterCategory" /><label for="FilterCategory">Category</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterBrand" /><label for="FilterBrand">Brand</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterName" /><label for="FilterName">Name</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterDemand" /><label for="FilterDemand">Demand</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterCompetition" /><label for="FilterCompetition">Competition</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterRating" /><label for="FilterRating">Rating</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterMinimalPrice" /><label for="FilterMinimalPrice">Minimal Price</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterRecomendedRetailPrice" /><label for="FilterRecomendedRetailPrice">Recomended Retail Price</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="FilterFlaged" /><label for="FilterFlaged">Flaged (in assortment, new)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt10 mb5 text-right">
+                                        <a href="#" class="btn btn-blue ptb7">Apply</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="list-inline ibm m0 mb10 pt1 SelectedFiltersList">
+                            <li>
+                                <span class="FilterName gray fw600 fs13">Category:</span>
+                                <div class="dropdown ibm">
+                                    <a role="button" href="#" class="dropdown-toggle btn btn-link btn-small blue pl5 pr5" data-toggle="dropdown"><span class="SelectedText fw600">Auto</span><span class="caret ml5"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Auto</a></li>
+                                        <li><a href="#">Computers</a></li>
+                                        <li><a href="#">Clothing</a></li>
+                                        <li><a href="#">Gardening</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="FilterName gray fw600 fs13">Brand:</span>
+                                <div class="dropdown ibm">
+                                    <a role="button" href="#" class="dropdown-toggle btn btn-link btn-small blue pl5 pr5" data-toggle="dropdown"><span class="SelectedText fw600">select</span><span class="caret ml5"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Audi</a></li>
+                                        <li><a href="#">Porche</a></li>
+                                        <li><a href="#">BMW</a></li>
+                                        <li><a href="#">Mercedes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 text-right">
+                        <a href="#" class="btn btn-white-green btn-small mb10 ExportToExcel"><i class="budiconcustom-download1 mr5"></i> Excel</a>
+                        <div class="dropdown ibm ml5 mb10 AddToList">
+                            <a role="button" href="#" class="dropdown-toggle btn btn-white btn-small" data-toggle="dropdown"><span class="SelectedText">Add To List</span><span class="badge ml10 blue-bg">23</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="ATList1" checked="" /><label for="ATList1">ShoeList</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="ATList2" checked="" /><label for="ATList2">Shoes in Action</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="ATList3" /><label for="ATList3">Sale</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt10 mb5">
+                                        <a href="#" class="blue fs13 fw600">+New List</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown ibm ml5 mb10 RemoveFromList">
+                            <a role="button" href="#" class="dropdown-toggle btn btn-white btn-small" data-toggle="dropdown"><span class="SelectedText">Remove From List</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="RFList1" checked="" /><label for="RFList1">ShoeList</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ml20 mr20 mt5 wsnw pr">
+                                        <input type="checkbox" id="RFList2" checked="" /><label for="RFList2">Shoes in Action</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Filters">
+            <div class="FBox Category">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="CategoryTableWrapper CTW1">
+                            <table class="CategoryTable CatL1">
+                                <thead>
+                                    <tr>
+                                        <th>CATEGORY LEVEL 1</th>
+                                        <th>DEMAND</th>
+                                        <th>COMPE.</th>
+                                        <th>PRODUCTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-categoryid="1">
+                                        <td>Auto</td>
+                                        <td><div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div></td>
+                                        <td><div class="Progres" title="80%"><div class="Down" style="width:80%"></div></div></td>
+                                        <td>10,370</td>
+                                    </tr>
+                                    <tr data-categoryid="2">
+                                        <td>Computers & Technology</td>
+                                        <td><div class="Progres" title="40%"><div class="Up" style="width:40%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>6,587</td>
+                                    </tr>
+                                    <tr data-categoryid="3">
+                                        <td>Clothing & Fashion</td>
+                                        <td><div class="Progres" title="90%"><div class="Up" style="width:90%"></div></div></td>
+                                        <td><div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div></td>
+                                        <td>3,411</td>
+                                    </tr>
+                                    <tr data-categoryid="4">
+                                        <td>Gardening</td>
+                                        <td><div class="Progres" title="98%"><div class="Up" style="width:98%"></div></div></td>
+                                        <td><div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div></td>
+                                        <td>2,107</td>
+                                    </tr>
+                                    <tr data-categoryid="5">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="80%"><div class="Up" style="width:80%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>2,020</td>
+                                    </tr>
+                                    <tr data-categoryid="6">
+                                        <td>Apartments</td>
+                                        <td><div class="Progres" title="40%"><div class="Up" style="width:40%"></div></div></td>
+                                        <td><div class="Progres" title="90%"><div class="Down" style="width:90%"></div></div></td>
+                                        <td>1,555</td>
+                                    </tr>
+                                    <tr data-categoryid="7">
+                                        <td>Clothing & Fashion</td>
+                                        <td><div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div></td>
+                                        <td><div class="Progres" title="30%"><div class="Down" style="width:30%"></div></div></td>
+                                        <td>1,471</td>
+                                    </tr>
+                                    <tr data-categoryid="8">
+                                        <td>Gardening</td>
+                                        <td><div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div></td>
+                                        <td><div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div></td>
+                                        <td>1,039</td>
+                                    </tr>
+                                    <tr data-categoryid="9">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="80%"><div class="Up" style="width:80%"></div></div></td>
+                                        <td><div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div></td>
+                                        <td>764</td>
+                                    </tr>
+                                    <tr data-categoryid="10">
+                                        <td>Apartments</td>
+                                        <td><div class="Progres" title="90%"><div class="Up" style="width:90%"></div></div></td>
+                                        <td><div class="Progres" title="50%"><div class="Down" style="width:50%"></div></div></td>
+                                        <td>451</td>
+                                    </tr>
+                                    <tr data-categoryid="11">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="70%"><div class="Up" style="width:70%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>427</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="CategoryTableWrapper CTW2">
+                            <table class="CategoryTable CatL2">
+                                <thead>
+                                    <tr>
+                                        <th>CATEGORY LEVEL 2</th>
+                                        <th>DEMAND</th>
+                                        <th>COMPE.</th>
+                                        <th>PRODUCTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-categoryid="101">
+                                        <td>Gardening</td>
+                                        <td><div class="Progres" title="98%"><div class="Up" style="width:98%"></div></div></td>
+                                        <td><div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div></td>
+                                        <td>2,107</td>
+                                    </tr>
+                                    <tr data-categoryid="102">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="80%"><div class="Up" style="width:80%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>2,020</td>
+                                    </tr>
+                                    <tr data-categoryid="103">
+                                        <td>Apartments</td>
+                                        <td><div class="Progres" title="40%"><div class="Up" style="width:40%"></div></div></td>
+                                        <td><div class="Progres" title="90%"><div class="Down" style="width:90%"></div></div></td>
+                                        <td>1,555</td>
+                                    </tr>
+                                    <tr data-categoryid="104">
+                                        <td>Clothing & Fashion</td>
+                                        <td><div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div></td>
+                                        <td><div class="Progres" title="30%"><div class="Down" style="width:30%"></div></div></td>
+                                        <td>1,471</td>
+                                    </tr>
+                                    <tr data-categoryid="105">
+                                        <td>Gardening</td>
+                                        <td><div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div></td>
+                                        <td><div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div></td>
+                                        <td>1,039</td>
+                                    </tr>
+                                    <tr data-categoryid="106">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="80%"><div class="Up" style="width:80%"></div></div></td>
+                                        <td><div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div></td>
+                                        <td>764</td>
+                                    </tr>
+                                    <tr data-categoryid="107">
+                                        <td>Apartments</td>
+                                        <td><div class="Progres" title="90%"><div class="Up" style="width:90%"></div></div></td>
+                                        <td><div class="Progres" title="50%"><div class="Down" style="width:50%"></div></div></td>
+                                        <td>451</td>
+                                    </tr>
+                                    <tr data-categoryid="108">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="70%"><div class="Up" style="width:70%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>427</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="CategoryBlankBox CatL2 active">
+                                <div class="Text">After clicking to <b>1st</b> level category, here we will display (if exist) <b>2nd</b> level category. In any moment you can confirm your current choice by pressing the green Apply button.</div>
+                            </div>
+                        </td>
+                        <td class="CategoryTableWrapper CTW3">
+                            <table class="CategoryTable CatL3">
+                                <thead>
+                                    <tr>
+                                        <th>CATEGORY LEVEL 3</th>
+                                        <th>DEMAND</th>
+                                        <th>COMPE.</th>
+                                        <th>PRODUCTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-categoryid="1101">
+                                        <td>Clothing & Fashion</td>
+                                        <td><div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div></td>
+                                        <td><div class="Progres" title="30%"><div class="Down" style="width:30%"></div></div></td>
+                                        <td>1,471</td>
+                                    </tr>
+                                    <tr data-categoryid="1102">
+                                        <td>Gardening</td>
+                                        <td><div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div></td>
+                                        <td><div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div></td>
+                                        <td>1,039</td>
+                                    </tr>
+                                    <tr data-categoryid="1103">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="80%"><div class="Up" style="width:80%"></div></div></td>
+                                        <td><div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div></td>
+                                        <td>764</td>
+                                    </tr>
+                                    <tr data-categoryid="1104">
+                                        <td>Apartments</td>
+                                        <td><div class="Progres" title="90%"><div class="Up" style="width:90%"></div></div></td>
+                                        <td><div class="Progres" title="50%"><div class="Down" style="width:50%"></div></div></td>
+                                        <td>451</td>
+                                    </tr>
+                                    <tr data-categoryid="1105">
+                                        <td>Real Estate</td>
+                                        <td><div class="Progres" title="70%"><div class="Up" style="width:70%"></div></div></td>
+                                        <td><div class="Progres" title="60%"><div class="Down" style="width:60%"></div></div></td>
+                                        <td>427</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="CategoryBlankBox CatL3 active">
+                                <div class="Text">After clicking to <b>2nd</b> level category, here we will display (if exist) <b>3rd</b> level category. In any moment you can confirm your current choice by pressing the green Apply button.</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right CategoryButtonsWrapper">
+                            <input type="hidden" id="CategoryID" name="CategoryID" value="" />
+                            <a href="#" class="btn btn-gray Btn-Category-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Category-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Brand">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName pt25">Brand</td>
+                        <td>
+                            <div class="input-icon-wrapper">
+                                <i class="flaticon stroke zoom-2"></i>
+                                <input type="text" class="form-control BrandInput" name="BrandName" id="BrandName" />
+                            </div>
+                        </td>
+                        <td class="TopBrands">
+                            <div class="Title">Top Brands</div>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Farah Vintage</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Faux</a></li>
+                                <li><a href="#">HTC</a></li>
+                                <li><a href="#">Calvin Klein</a></li>
+                                <li><a href="#">French Connection</a></li>
+                                <li><a href="#">Google</a></li>
+                                <li><a href="#">Pepe Jeans</a></li>
+                                <li><a href="#">Hilfiger Denim</a></li>
+                                <li><a href="#">Nokia</a></li>
+                                <li><a href="#">Jack & Jones</a></li>
+                                <li><a href="#">Diesel</a></li>
+                                <li><a href="#">Sony Ericsson</a></li>
+                                <li><a href="#">Cheap Monday</a></li>
+                                <li><a href="#">Jack Willis</a></li>
+                                <li><a href="#">Airbus</a></li>
+                                <li><a href="#">Lego</a></li>
+                                <li><a href="#">Marvell</a></li>
+                                <li><a href="#">Levis</a></li>
+                                <li><a href="#">Rebook</a></li>
+                                <li><a href="#">Puma</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Brand-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Brand-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Name">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName pt25">Name</td>
+                        <td>
+                            <div class="input-icon-wrapper">
+                                <i class="flaticon stroke zoom-2"></i>
+                                <input type="text" class="form-control NameInput" name="ProductName" id="ProductName" />
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Name-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Name-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Demand">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">Demand</td>
+                        <td>
+                            <div class="DemandSlider"></div>
+                            <ul class="DemandScale">
+                                <li class="Val0">0</li>
+                                <li class="Val1">1</li>
+                                <li class="Val2">2</li>
+                                <li class="Val3">3</li>
+                                <li class="Val4">4</li>
+                                <li class="Val5">5</li>
+                                <li class="Val6">6</li>
+                                <li class="Val7">7</li>
+                                <li class="Val8">8</li>
+                                <li class="Val9">9</li>
+                                <li class="Val10">10</li>
+                            </ul>
+                            <input type="hidden" id="DemandValueLow" name="DemandValueLow" value="" />
+                            <input type="hidden" id="DemandValueHigh" name="DemandValueHigh" value="" />
+
+                            <br /><br />Chart<br /><br />
+
+
+
+                        </td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Demand-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Demand-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Competition">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">Competition</td>
+                        <td>Bar & Chart</td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Competition-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Competition-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Rating">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">Rating</td>
+                        <td>TextBox & Bar & Chart</td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Rating-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Rating-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox MinPrice">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">Min. Price</td>
+                        <td>TextBox & Chart</td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-MinPrice-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-MinPrice-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox RRP">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">RRP</td>
+                        <td>TextBox & Chart</td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-RRP-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-RRP-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="FBox Flags">
+                <table class="FBoxMainTable">
+                    <tr>
+                        <td class="FName">Flags</td>
+                        <td>Checkboxes</td>
+                        <td class="text-right">
+                            <a href="#" class="btn btn-gray Btn-Flags-Reset">Clear</a>
+                            <a href="#" class="btn btn-green Btn-Flags-Apply">Apply</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
+    <script src="/Assets/External/noUiSlider/jquery.nouislider.all.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".CategoryBlankBox").css('height', $(".CategoryTableWrapper.CTW1").height() + 'px');
+
+            $(".CategoryTable.CatL1 tr").click(function (e) {
+                $(this).parent().find("tr").removeClass("active");
+                $(this).addClass("active");
+                var SelectedID = $(this).attr("data-categoryid");
+                $("#CategoryID").val(SelectedID);
+                //Populate data to CatL2 ...
+                $(".CategoryBlankBox.CatL2").removeClass("active");
+                $(".CategoryTable.CatL2").addClass("active");
+            });
+
+            $(".CategoryTable.CatL2 tr").click(function (e) {
+                $(this).parent().find("tr").removeClass("active");
+                $(this).addClass("active");
+                var SelectedID = $(this).attr("data-categoryid");
+                $("#CategoryID").val(SelectedID);
+                //Populate data to CatL3 ...
+                $(".CategoryBlankBox.CatL3").removeClass("active");
+                $(".CategoryTable.CatL3").addClass("active");
+            });
+
+            $(".CategoryTable.CatL3 tr").click(function (e) {
+                $(this).parent().find("tr").removeClass("active");
+                $(this).addClass("active");
+                var SelectedID = $(this).attr("data-categoryid");
+                $("#CategoryID").val(SelectedID);
+                $(".CategoryBlankBox.CatL3").removeClass("active");
+                $(".CategoryTable.CatL3").addClass("active");
+            });
+            
+            
+            var BrandList = [{ value: 'Apple' }, { value: 'American Apparel' }, { value: 'Appos Clothing' }, { value: 'Apollo Techonlogies' }, { value: 'Google' }, { value: 'Nike' }, { value: 'Adidas' }, { value: 'Reebok' }, { value: 'Dell' }, { value: 'Lenovo' }, { value: 'Samsung' }, { value: 'Philips' }, { value: 'BMW' }, { value: 'Audi' }];
+            $(".BrandInput").autocomplete({
+                lookup: BrandList,
+                onSelect: function (suggestion) {
+                    var SelectedValue = suggestion.value;
+                }
+            });
+
+            $(".TopBrands a").click(function (e) {
+                $(".TopBrands a").removeClass("active");
+                $("#BrandName").val($(this).text());
+                $(this).addClass("active");
+                e.preventDefault();
+            });
+            
+
+            var NameList = [{ value: 'Adidas Runner 750mx Pink' }, { value: 'Adidas Runner 620rx Red' }, { value: 'Nike Sport 78654' }, { value: 'Rebook pants black long XL' }];
+            $(".NameInput").autocomplete({
+                lookup: NameList,
+                onSelect: function (suggestion) {
+                    var SelectedValue = suggestion.value;
+                }
+            });
+
+            $(".DemandSlider").noUiSlider({
+                start: [5, 7],
+                step: 1,
+                behaviour: 'drag',
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 10
+                }
+            });
+            $(".DemandSlider").Link('lower').to($('#DemandValueLow'));
+            $(".DemandSlider").Link('upper').to($('#DemandValueHigh'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+    </script>
+
+
+</body>
+</html>

@@ -242,6 +242,9 @@ a[class~="orange"]:hover {
 .m0{
     margin:0!important;
 }
+.m10{
+    margin:10px!important;
+}
 
 .ml5 {
     margin-left: 5px !important;
@@ -308,6 +311,14 @@ a[class~="orange"]:hover {
 }
 .mb30 {
     margin-bottom:30px!important;
+}
+
+
+.p10 {
+    padding:10px!important;
+}
+.p20 {
+    padding:20px!important;
 }
 
 .pl0 {
@@ -578,6 +589,9 @@ a[class~="orange"]:hover {
     width:60px;
     height:60px;
 }
+.w100p {
+    width:100%;
+}
 .ibm {
     display:inline-block!important;
     vertical-align:middle!important;
@@ -695,6 +709,40 @@ input[type="checkbox"] {
     }
 }
 
+
+/*#endregion */
+
+/*#region Functional */
+
+.autocomplete-suggestions {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-y: auto;
+    margin-top: 2px;
+}
+.autocomplete-suggestion {
+    &:first-child {
+        margin-top: 5px;
+    }
+
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #282b34;
+    font-weight: normal;
+    cursor: pointer;
+
+    strong {
+        color: #282b34 !important;
+        font-weight: 600;
+    }
+    &:hover {
+        background-color:@gray-lighter;
+    }
+}
+.autocomplete-selected {
+    background: #fff;
+}
 
 /*#endregion */
 

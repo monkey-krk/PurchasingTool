@@ -1,4 +1,4 @@
-@import "../External/BudiconCustom/styles.css";
+﻿@import "../External/BudiconCustom/styles.css";
 /*#region Fonts */
 @font-face {
   font-family: 'Gotham Rounded';
@@ -172,6 +172,9 @@ a[class~="orange"]:hover {
 .m0 {
   margin: 0!important;
 }
+.m10 {
+  margin: 10px!important;
+}
 .ml5 {
   margin-left: 5px !important;
 }
@@ -234,6 +237,12 @@ a[class~="orange"]:hover {
 }
 .mb30 {
   margin-bottom: 30px!important;
+}
+.p10 {
+  padding: 10px!important;
+}
+.p20 {
+  padding: 20px!important;
 }
 .pl0 {
   padding-left: 0px !important;
@@ -494,6 +503,9 @@ a[class~="orange"]:hover {
   width: 60px;
   height: 60px;
 }
+.w100p {
+  width: 100%;
+}
 .ibm {
   display: inline-block !important;
   vertical-align: middle!important;
@@ -614,6 +626,35 @@ input[type="checkbox"]:checked + label {
 }
 input[type="checkbox"]:hover:after {
   background-color: #ccd9dd;
+}
+/*#endregion */
+/*#region Functional */
+.autocomplete-suggestions {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow-y: auto;
+  margin-top: 2px;
+}
+.autocomplete-suggestion {
+  padding: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #282b34;
+  font-weight: normal;
+  cursor: pointer;
+}
+.autocomplete-suggestion:first-child {
+  margin-top: 5px;
+}
+.autocomplete-suggestion strong {
+  color: #282b34 !important;
+  font-weight: 600;
+}
+.autocomplete-suggestion:hover {
+  background-color: #d8e2e5;
+}
+.autocomplete-selected {
+  background: #fff;
 }
 /*#endregion */
 /*#endregion */
