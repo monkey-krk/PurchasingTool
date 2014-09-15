@@ -1,0 +1,1 @@
+﻿body{background-color:#d4dee0}.MyAssortment{display:table;width:100%}.MyAssortment .WelcomeBox{display:none;height:600px;width:100%;vertical-align:middle;text-align:center}.MyAssortment .WelcomeBox.active{display:table-cell}.MyAssortment .AssortmentBox{display:none}.MyAssortment .AssortmentBox.active{display:block}

@@ -1,0 +1,35 @@
+﻿@import "Variables.less";
+
+body {
+    background-color:#d4dee0;
+}
+
+/*#region MyAssortment */
+
+.MyAssortment {
+    display: table;
+    width: 100%;
+
+    .WelcomeBox {
+        display: none;
+        height: 600px;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+
+        &.active {
+            display: table-cell;
+        }
+    }
+
+    .AssortmentBox {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+    }
+}
+
+/*#endregion */

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PurchasingTool</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+
+    <link href="/Assets/Css/List.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <header class="MainHeader">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="flaticon stroke basket-1 ml10 mr10"></i>
+                            Purchasing
+                            <span class="caret ml20 mr10"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu Item 1</a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="HeaderLink"><a href="/ProductDiscovery.html"><i class="budiconcustom-stats"></i><span>Products</span></a></li>
+                        <li class="HeaderLink active"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
+                        <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
+                        <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
+                        <li class="HeaderLink"><a href="/Search.html"><i class="budiconcustom-search2"></i><span>Search</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
+                        <li class="HeaderLink"><a href="/Settings.html"><i class="budiconcustom-settings"></i><span>Settings</span></a></li>
+                        <li class="HeaderLink">
+                            <a href="/Account.html" class="mt-5" title="Account">
+                                <div class="Image-r-40 ibm" style="background-image: url('/Assets/Img/dummy/img_200_200_2.jpg'); "></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="MainContent">
+        <div class="TopHeader ptb10 bb2 body-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <span class="gray fw600 ibm pt8">4 Lists</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 text-right">
+                        <a href="#" class="btn btn-small btn-success"><i class="flaticon stroke add-document-1 fs16 ibm mr10"></i>Create New</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MyLists">
+            <div class="WelcomeBox active">
+                <div class="w90h90 br50p red-bg budiconcustom-textbox text-center pt28 fs35 white m0auto"></div>
+                <div class="gray fw600 ptb20">Welcome to:</div>
+                <div class="fs35 fw600">My Lists</div>
+                <div class="gray fw600 pt20 pb100">Organize relevant products in lists to process them later.</div>
+                <a href="#" class="btn btn-success fs16 pull-right mr20 BtnMyListsWelcomeClose">Got it !</a>
+            </div>
+            <div class="ListsBox">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 pt20">
+
+                            <table class="WhiteTable ListsTable">
+                                <thead>
+                                    <tr>
+                                        <th class="w100p">NAME</th>
+                                        <th>PRODUCTS</th>
+                                        <th>DEMAND</th>
+                                        <th>COMPETITION</th>
+                                        <th>PRICE RANGE</th>
+                                        <th>ACTIONS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pt17 fw600"><a href="#">Nike Shoes</a></td>
+                                        <td class="wsnw pt17">26</td>
+                                        <td class="wsnw pt17">
+                                            <div class="Progres" title="60%">
+                                                <div class="Up" style="width:60%"></div>
+                                            </div>
+                                            <i class="Trend Up"></i>
+                                        </td>
+                                        <td class="wsnw pt17">
+                                            <div class="Progres" title="20%">
+                                                <div class="Down" style="width:20%"></div>
+                                            </div>
+                                            <i class="Trend Down"></i>
+                                        </td>
+                                        <td class="wsnw pt17">69.99 - 259.99 €</td>
+                                        <td class="wsnw text-right">
+                                            <a href="#" class="btn btn-small btn-white ba BtnExcelExport"><i class="flaticon stroke download-1 mr10"></i>Excel</a>
+                                            <a href="#" class="btn btn-small btn-white ba BtnDelete"><i class="flaticon stroke trash-2 mr10"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt17 fw600"><a href="#">Indoor Training Shoes</a></td>
+                                        <td class="wsnw pt17">26</td>
+                                        <td class="wsnw pt17">
+                                            <div class="Progres" title="60%">
+                                                <div class="Up" style="width:60%"></div>
+                                            </div>
+                                            <i class="Trend Up"></i>
+                                        </td>
+                                        <td class="wsnw pt17">
+                                            <div class="Progres" title="20%">
+                                                <div class="Down" style="width:20%"></div>
+                                            </div>
+                                            <i class="Trend Down"></i>
+                                        </td>
+                                        <td class="wsnw pt17">69.99 - 259.99 €</td>
+                                        <td class="wsnw text-right">
+                                            <a href="#" class="btn btn-small btn-white ba BtnExcelExport"><i class="flaticon stroke download-1 mr10"></i>Excel</a>
+                                            <a href="#" class="btn btn-small btn-white ba BtnDelete"><i class="flaticon stroke trash-2 mr10"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt17 fw600"><a href="#">Adidas Shoes</a></td>
+                                        <td class="wsnw pt17">0</td>
+                                        <td class="wsnw pt17"></td>
+                                        <td class="wsnw pt17"></td>
+                                        <td class="wsnw pt17"></td>
+                                        <td class="wsnw text-right">
+                                            <a href="#" class="btn btn-small btn-white ba BtnDelete"><i class="flaticon stroke trash-2 mr10"></i>Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".BtnMyListsWelcomeClose").click(function (e) {
+                $(".WelcomeBox").removeClass("active");
+                $(".ListsBox").addClass("active");
+                e.preventDefault();
+            })
+
+
+
+        });
+    </script>
+
+
+</body>
+</html>

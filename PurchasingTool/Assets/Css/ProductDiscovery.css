@@ -2,28 +2,6 @@
 .SelectedFilters input[type="checkbox"]:after {
   top: 2px;
 }
-.ProductsList {
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-.ProductsList input[type="checkbox"]:after {
-  top: -1px;
-}
-.ProductsList thead tr {
-  border-bottom: 2px solid #d8e2e5;
-}
-.ProductsList thead th {
-  position: relative;
-  white-space: nowrap;
-  color: #747880;
-  font-size: 11px;
-  text-transform: uppercase;
-  font-weight: 600;
-  vertical-align: bottom;
-  padding: 10px 10px 12px 10px;
-}
 .ProductsList thead th input[type="checkbox"] + label {
   margin: 0;
   font-size: 11px;
@@ -42,17 +20,6 @@
 }
 .ProductsList tbody {
   font-size: 13px;
-}
-.ProductsList tbody tr {
-  border-bottom: 1px solid #d8e2e5;
-}
-.ProductsList tbody tr:last-child {
-  border-bottom: none;
-}
-.ProductsList tbody td {
-  position: relative;
-  vertical-align: top;
-  padding: 10px;
 }
 .ProductsList tbody td:nth-child(1) {
   vertical-align: middle;

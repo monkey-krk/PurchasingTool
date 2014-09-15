@@ -1,0 +1,100 @@
+﻿@import "Variables.less";
+
+body {
+    background-color:#d4dee0;
+}
+
+/*#region MyLists */
+
+.MyLists {
+    display: table;
+    width: 100%;
+
+    .WelcomeBox {
+        display: none;
+        height: 600px;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+
+        &.active {
+            display: table-cell;
+        }
+    }
+
+    .ListsBox {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .Progres {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: @gray-lighter;
+
+
+            .Up, .Down {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                height: 10px;
+                border-radius: 10px;
+            }
+
+            .Up {
+                background-color: @green;
+            }
+
+            .Down {
+                background-color: @red;
+            }
+        }
+
+        .Trend {
+            font-family: 'Flaticons Stroke';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+
+            &:before {
+                display: block;
+                font-size: 14px;
+                content: "";
+                color: @gray-lighter;
+            }
+
+            &.Up {
+                &:before {
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    color: @green;
+                }
+            }
+
+            &.Down {
+                &:before {
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    color: @red;
+                }
+            }
+        }
+    }
+}
+
+/*#endregion */

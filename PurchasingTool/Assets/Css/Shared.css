@@ -167,10 +167,16 @@ a[class~="orange"]:hover {
 .orange-bg {
   background-color: #f39c12 !important;
 }
+.body-bg {
+  background-color: #e8f0f2 !important;
+}
 /*#endregion */
 /*#region Styles */
 .m0 {
   margin: 0!important;
+}
+.m0auto {
+  margin: 0 auto!important;
 }
 .m10 {
   margin: 10px!important;
@@ -324,6 +330,9 @@ a[class~="orange"]:hover {
 }
 .pt25 {
   padding-top: 25px !important;
+}
+.pt28 {
+  padding-top: 28px !important;
 }
 .pt30 {
   padding-top: 30px !important;
@@ -486,6 +495,9 @@ a[class~="orange"]:hover {
 .lh20 {
   line-height: 2.0;
 }
+.ba {
+  border: 1px solid #d8e2e5;
+}
 .bb {
   border-bottom: 1px solid #d8e2e5;
 }
@@ -503,6 +515,16 @@ a[class~="orange"]:hover {
   width: 60px;
   height: 60px;
 }
+.w90h90 {
+  width: 90px;
+  height: 90px;
+}
+.w400 {
+  width: 400px;
+}
+.h2 {
+  height: 2px;
+}
 .w100p {
   width: 100%;
 }
@@ -515,6 +537,9 @@ a[class~="orange"]:hover {
 }
 .vab {
   vertical-align: bottom!important;
+}
+.op05 {
+  opacity: 0.5;
 }
 .br50p {
   border-radius: 50%;
@@ -547,6 +572,19 @@ a[class~="orange"]:hover {
 .Image-r-40 {
   height: 40px;
   width: 40px;
+  border-radius: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.Image-r-60 {
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: block;
   background-repeat: no-repeat;
@@ -629,6 +667,39 @@ input[type="checkbox"]:checked + label {
 }
 input[type="checkbox"]:hover:after {
   background-color: #ccd9dd;
+}
+.WhiteTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.WhiteTable input[type="checkbox"]:after {
+  top: 1px;
+}
+.WhiteTable thead tr {
+  border-bottom: 2px solid #d8e2e5;
+}
+.WhiteTable thead th {
+  position: relative;
+  white-space: nowrap;
+  color: #747880;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  vertical-align: bottom;
+  padding: 10px 10px 12px 10px;
+}
+.WhiteTable tbody tr {
+  border-bottom: 1px solid #d8e2e5;
+}
+.WhiteTable tbody tr:last-child {
+  border-bottom: none;
+}
+.WhiteTable tbody td {
+  position: relative;
+  vertical-align: top;
+  padding: 10px;
 }
 /*#endregion */
 /*#region Functional */

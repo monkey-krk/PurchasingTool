@@ -1,0 +1,79 @@
+﻿body {
+  background-color: #d4dee0;
+}
+/*#region MyLists */
+.MyLists {
+  display: table;
+  width: 100%;
+}
+.MyLists .WelcomeBox {
+  display: none;
+  height: 600px;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.MyLists .WelcomeBox.active {
+  display: table-cell;
+}
+.MyLists .ListsBox {
+  display: none;
+}
+.MyLists .ListsBox.active {
+  display: block;
+}
+.MyLists .ListsBox .Progres {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #d8e2e5;
+}
+.MyLists .ListsBox .Progres .Up,
+.MyLists .ListsBox .Progres .Down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 10px;
+  border-radius: 10px;
+}
+.MyLists .ListsBox .Progres .Up {
+  background-color: #3dc054;
+}
+.MyLists .ListsBox .Progres .Down {
+  background-color: #f56e74;
+}
+.MyLists .ListsBox .Trend {
+  font-family: 'Flaticons Stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+.MyLists .ListsBox .Trend:before {
+  display: block;
+  font-size: 14px;
+  content: "";
+  color: #d8e2e5;
+}
+.MyLists .ListsBox .Trend.Up:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #3dc054;
+}
+.MyLists .ListsBox .Trend.Down:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: #f56e74;
+}
+/*#endregion */

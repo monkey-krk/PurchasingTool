@@ -235,12 +235,19 @@ a[class~="orange"]:hover {
     background-color: @orange !important;
 }
 
+.body-bg {
+    background-color: @body-bg !important;
+}
+
 /*#endregion */
 
 /*#region Styles */
 
 .m0{
     margin:0!important;
+}
+.m0auto{
+    margin:0 auto!important;
 }
 .m10{
     margin:10px!important;
@@ -403,6 +410,9 @@ a[class~="orange"]:hover {
 }
 .pt25 {
     padding-top: 25px !important;
+}
+.pt28 {
+    padding-top: 28px !important;
 }
 .pt30 {
     padding-top: 30px !important;
@@ -571,6 +581,9 @@ a[class~="orange"]:hover {
     line-height: 2.0;
 }
 
+.ba {
+    border:1px solid @gray-lighter;
+}
 .bb {
     border-bottom:1px solid @gray-lighter;
 }
@@ -589,6 +602,16 @@ a[class~="orange"]:hover {
     width:60px;
     height:60px;
 }
+.w90h90 {
+    width:90px;
+    height:90px;
+}
+.w400 {
+    width:400px;
+}
+.h2 {
+    height:2px;
+}
 .w100p {
     width:100%;
 }
@@ -601,6 +624,9 @@ a[class~="orange"]:hover {
 }
 .vab {
     vertical-align:bottom!important;
+}
+.op05 {
+    opacity:0.5;
 }
 
 .br50p{
@@ -637,6 +663,12 @@ a[class~="orange"]:hover {
 .Image-r-40 {
     height: 40px;
     width: 40px;
+    border-radius: 50%;
+    .Image();
+}
+.Image-r-60 {
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     .Image();
 }
@@ -712,6 +744,48 @@ input[type="checkbox"] {
     }
 }
 
+.WhiteTable {
+    width: 100%;
+    background-color: @white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    input[type="checkbox"]:after {
+        top: 1px;
+    }
+
+    thead {
+        tr {
+            border-bottom: 2px solid @gray-lighter;
+        }
+        th {
+            position: relative;
+            white-space: nowrap;
+            color: @gray;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 600;
+            vertical-align: bottom;
+            padding: 10px 10px 12px 10px;
+        }
+    }
+
+    tbody {
+         tr {
+            border-bottom: 1px solid @gray-lighter;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        td {
+            position: relative;
+            vertical-align: top;
+            padding: 10px;
+        }
+    }
+
+}
 
 /*#endregion */
 
