@@ -2,11 +2,21 @@
 
 /*#region ProductsList */
 
+.SelectedFilters {
+    input[type="checkbox"]:after {
+        top: 2px;
+    }
+}
+
 .ProductsList {
     width: 100%;
     background-color: @white;
     border-radius: 5px;
     margin-bottom: 30px;
+
+    input[type="checkbox"]:after {
+        top: -1px;
+    }
 
     thead {
         tr {
@@ -49,6 +59,7 @@
 
     tbody {
         font-size: 13px;
+
 
         tr {
             border-bottom: 1px solid @gray-lighter;
@@ -303,27 +314,29 @@
 /*#region Filters */
 
 .Filters {
-    position:relative;
+    position: relative;
     background-color: #2e313a;
+
     &:after {
-        display:block;
-        position:absolute;
-        top:-2px;
-        left:52px;
-        content:"";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 52px;
+        content: "";
         width: 0;
         height: 0;
         border-top: 9px solid #e8f0f2;
         border-right: 9px solid transparent;
         border-left: 9px solid transparent;
     }
-    
+
     .FBox {
         border-bottom: 10px solid #4b4f5d;
 
         .FBoxMainTable {
             width: 100%;
             color: #d4dee0;
+
             td {
                 vertical-align: top;
                 padding: 15px;
@@ -340,36 +353,42 @@
             color: #d4dee0;
             width: 120px;
         }
-       
+
         .input-icon-wrapper {
-            position:relative;
+            position: relative;
+
             i {
-                position:absolute;
-                top:8px;
-                left:8px;
-                font-size:16px;
-                color:@gray-light;
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                font-size: 16px;
+                color: @gray-light;
             }
+
             input {
-                padding-left:30px;
+                padding-left: 30px;
             }
         }
 
         input[type="text"] {
-            width:240px;
-            color:@gray-dark;
+            width: 240px;
+            color: @gray-dark;
         }
     }
 
     .Category {
 
         .CategoryTableWrapper {
-            width:33%;
-            &.CTW2 {padding-left:5px; padding-right:5px;}
+            width: 33%;
+
+            &.CTW2 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
         }
 
         .CategoryTable {
-            width:100%;
+            width: 100%;
             background-color: #fff;
             color: #747880;
             border-radius: 5px;
@@ -385,10 +404,11 @@
                     font-size: 11px;
                     font-weight: 600;
                     white-space: nowrap;
-                    padding:7px 5px;
+                    padding: 7px 5px;
                 }
-                th:nth-child(4){
-                    text-align:right;
+
+                th:nth-child(4) {
+                    text-align: right;
                 }
             }
 
@@ -396,18 +416,22 @@
                 tr {
                     &.active, &:hover {
                         color: #000;
+
                         td {
-                            font-weight:600;
+                            font-weight: 600;
                         }
-                        td:nth-child(1){
-                            padding:7px 3px 7px 5px;
+
+                        td:nth-child(1) {
+                            padding: 7px 3px 7px 5px;
                         }
-                        td:nth-child(4){
-                            padding:7px 5px 7px 3px;
+
+                        td:nth-child(4) {
+                            padding: 7px 5px 7px 3px;
                         }
                     }
+
                     &.active {
-                        background: #88b4b6!important;
+                        background: #88b4b6 !important;
                     }
                 }
 
@@ -416,23 +440,24 @@
                 }
 
                 td {
-                    width:auto;
+                    width: auto;
                     font-size: 12px;
-                    padding:7px 5px;
-                    cursor:pointer;
+                    padding: 7px 5px;
+                    cursor: pointer;
                 }
 
-                td:nth-child(1){
-                    white-space:nowrap;
+                td:nth-child(1) {
+                    white-space: nowrap;
                 }
 
-                td:nth-child(4){
-                    text-align:right;
+                td:nth-child(4) {
+                    text-align: right;
                 }
             }
 
             &.CatL2 {
                 display: none;
+
                 &.active {
                     display: table;
                 }
@@ -440,6 +465,7 @@
 
             &.CatL3 {
                 display: none;
+
                 &.active {
                     display: table;
                 }
@@ -474,72 +500,85 @@
         }
 
         .CategoryBlankBox {
-            vertical-align:middle;
-            text-align:center;
-            padding:0px 30px 30px 30px;
-            line-height:1.4;
-            background-color:#d4dee0;
-            color:#747880;
-            border-radius:5px;
-            opacity:0.8;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0px 30px 30px 30px;
+            line-height: 1.4;
+            background-color: #d4dee0;
+            color: #747880;
+            border-radius: 5px;
+            opacity: 0.8;
 
             .Text:before {
-                display:block;
-                content:"";
-                margin:0 auto;
-                margin-bottom:20px;
-                width: 41px;                height: 41px;                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAACVElEQVRYw82Z30sCQRDHT02jCPRB8iGiPyECxcujp9QnoZcIQiF6qV56yeNUKJKiSAjyR6H+t83CHBzbnt7M7pkPHw5kb/br3uzszKzldvsWkyxQBppAGxgAQ2COzwH+3sRxWe5c1BdSOOEDMENBUZmhaBvtGBeZACrAO1FYGMKOg3aNiNwFPEPiZDy0ryWyCIxiEugj7Je4Ik8ZfsdFzFOliqyuSJxMLarIInMFJ+hj90AXGDNXtLhMZIHhg0/AIbAh2UoDR8Ajw0cLYSITjF18qRAnkwQuiHY7wfAUNFYhGmoSD4Im0b4ji0wRA/VLhBWUEeNfiQE/FRRpE//liUJEBtgHDvCZUYyhfi07KLJN3IE7imOzL43rK469bWBKmKvti8wRQ84Xbobg5HshY7cUq/lGXJCshVnNnLH7WsgVpmVRRT4T5ypzdh2FTYXIT6KNlnjJNSjqB91BcK0QmOd8NfHihyGBZwpflWkw7A4sg6lYOkK5MeSkcpbBnHCRwLRO4mxqJYcLBOYxGrAXwJRPhok8Z6Zsf3zSjVHk0IDtjqk4+a3Y2Un8Xdd2i3viqLjFxMPnxpDdMufsXiVCV87/NN6aivR08kkVDcwlfRoGbB7rZOaqSlG1uyearZiUXOM4axaCnLBqsbMmIkOrRW7dPceSIKtIKKbMPKAQVwdjgLFSxMe7Bdm6dgfDp/5PIadO7arVVtxVq3H7kyUDWcwyxjr9yWCntxeTwJ68SXR75s4698zl2wcbOwuc2wc3ztuHsMLKlu5xRoFYF7zHsXXucX4BfvkF2W6MO0oAAAAASUVORK5CYII=);            }
+                display: block;
+                content: "";
+                margin: 0 auto;
+                margin-bottom: 20px;
+                width: 41px;
+                height: 41px;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAACVElEQVRYw82Z30sCQRDHT02jCPRB8iGiPyECxcujp9QnoZcIQiF6qV56yeNUKJKiSAjyR6H+t83CHBzbnt7M7pkPHw5kb/br3uzszKzldvsWkyxQBppAGxgAQ2COzwH+3sRxWe5c1BdSOOEDMENBUZmhaBvtGBeZACrAO1FYGMKOg3aNiNwFPEPiZDy0ryWyCIxiEugj7Je4Ik8ZfsdFzFOliqyuSJxMLarIInMFJ+hj90AXGDNXtLhMZIHhg0/AIbAh2UoDR8Ajw0cLYSITjF18qRAnkwQuiHY7wfAUNFYhGmoSD4Im0b4ji0wRA/VLhBWUEeNfiQE/FRRpE//liUJEBtgHDvCZUYyhfi07KLJN3IE7imOzL43rK469bWBKmKvti8wRQ84Xbobg5HshY7cUq/lGXJCshVnNnLH7WsgVpmVRRT4T5ypzdh2FTYXIT6KNlnjJNSjqB91BcK0QmOd8NfHihyGBZwpflWkw7A4sg6lYOkK5MeSkcpbBnHCRwLRO4mxqJYcLBOYxGrAXwJRPhok8Z6Zsf3zSjVHk0IDtjqk4+a3Y2Un8Xdd2i3viqLjFxMPnxpDdMufsXiVCV87/NN6aivR08kkVDcwlfRoGbB7rZOaqSlG1uyearZiUXOM4axaCnLBqsbMmIkOrRW7dPceSIKtIKKbMPKAQVwdjgLFSxMe7Bdm6dgfDp/5PIadO7arVVtxVq3H7kyUDWcwyxjr9yWCntxeTwJ68SXR75s4698zl2wcbOwuc2wc3ztuHsMLKlu5xRoFYF7zHsXXucX4BfvkF2W6MO0oAAAAASUVORK5CYII=);
+            }
 
             &.CatL2 {
                 display: none;
+
                 &.active {
-                    display:table-cell;
+                    display: table-cell;
                 }
             }
 
             &.CatL3 {
                 display: none;
+
                 &.active {
-                    display:table-cell;
+                    display: table-cell;
                 }
             }
         }
 
         .CategoryButtonsWrapper {
-            padding-top:0px!important;
+            padding-top: 0px !important;
         }
-
     }
 
     .Brand {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+
         .TopBrands {
             .Title {
                 font-size: 18px;
                 color: #d4dee0;
-                margin-bottom:25px;
-                padding-top:10px;
+                margin-bottom: 25px;
+                padding-top: 10px;
             }
+
             ul {
-                margin:0;
-                padding:0;
-                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
                 li {
-                    display:inline-block;
-                    width:20%;
-                    float:left;
-                    line-height:1.5;
-                     a {
-                         font-size:13px;
-                         color:#d4dee0;
-                         &:hover {
-                             color:#fff;
-                         }
-                         &.active {
-                             font-size: 14px;
-                             color:#fff;
-                             font-weight:600;
-                         }
-                     }
+                    display: inline-block;
+                    width: 20%;
+                    float: left;
+                    line-height: 1.5;
+
+                    a {
+                        font-size: 13px;
+                        color: #d4dee0;
+
+                        &:hover {
+                            color: #fff;
+                        }
+
+                        &.active {
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: 600;
+                        }
+                    }
                 }
             }
         }
@@ -547,75 +586,319 @@
 
     .Name {
         input[type="text"] {
-            width:480px;
+            width: 480px;
         }
+
         .FBoxMainTable {
-            margin:15px 0;
+            margin: 15px 0;
         }
     }
 
     .Demand {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+
         .DemandSlider {
-            width:300px;
-            border:none;
-            box-shadow:none;
-            border-radius:5px;
-            height:10px;
-            background:#fff;
+            width: 300px;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+            height: 10px;
+            background: #fff;
+
             .noUi-background {
-                background:#fff;
-                border-radius:5px;
-                box-shadow:none;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: none;
             }
+
             .noUi-origin {
-                border-radius:5px;
+                border-radius: 5px;
             }
+
             .noUi-connect {
-                background:#3dc054;
+                background: #3dc054;
             }
+
             .noUi-handle {
-                background:#3dc054;
-                box-shadow:none;
-                border:none;
-                left:-9px;
-                height:20px;
-                width:20px;
-                border-radius:50%;
-                &:before, &:after {display:none;}
+                background: #3dc054;
+                box-shadow: none;
+                border: none;
+                left: -9px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+
+                &:before, &:after {
+                    display: none;
+                }
             }
         }
+
         .DemandScale {
-            width:331px;
-            margin:0;
-            padding:0;
-            margin-left:-12px;
-            list-style-type:none;
-            margin-top:9px;
-            height:25px;
+            width: 331px;
+            margin: 0;
+            padding: 0;
+            margin-left: -12px;
+            list-style-type: none;
+            margin-top: 9px;
+            height: 25px;
+
             li {
                 &:before {
-                    display:block;
-                    content:"";
-                    height:2px;
-                    width:1px;
-                    background-color:#7c8289;
-                    margin:0 auto;
-                    margin-bottom:5px;
+                    display: block;
+                    content: "";
+                    height: 2px;
+                    width: 1px;
+                    background-color: #7c8289;
+                    margin: 0 auto;
+                    margin-bottom: 5px;
                 }
-                display:inline-block;
-                width:7.821%;
-                text-align:center;
-                font-size:12px;
-                color:#d4dee0;
+
+                display: inline-block;
+                width: 7.821%;
+                text-align: center;
+                font-size: 12px;
+                color: #d4dee0;
             }
         }
 
-
-
+        .DemandChart {
+            width: 350px;
+            margin-left: -25px;
+            margin-top: 10px;
+        }
     }
 
+    .Competition {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
 
+        .CompetitionSlider {
+            width: 300px;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+            height: 10px;
+            background: #fff;
 
+            .noUi-background {
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: none;
+            }
+
+            .noUi-origin {
+                border-radius: 5px;
+            }
+
+            .noUi-connect {
+                background: #e74c3c;
+            }
+
+            .noUi-handle {
+                background: #e74c3c;
+                box-shadow: none;
+                border: none;
+                left: -9px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .CompetitionScale {
+            width: 331px;
+            margin: 0;
+            padding: 0;
+            margin-left: -12px;
+            list-style-type: none;
+            margin-top: 9px;
+            height: 25px;
+
+            li {
+                &:before {
+                    display: block;
+                    content: "";
+                    height: 2px;
+                    width: 1px;
+                    background-color: #7c8289;
+                    margin: 0 auto;
+                    margin-bottom: 5px;
+                }
+
+                display: inline-block;
+                width: 7.821%;
+                text-align: center;
+                font-size: 12px;
+                color: #d4dee0;
+            }
+        }
+
+        .CompetitionChart {
+            width: 350px;
+            margin-left: -25px;
+            margin-top: 10px;
+        }
+    }
+
+    .Rating {
+        .RatingRange {
+            .Title {
+                font-size: 13px;
+                margin-bottom: 9px;
+            }
+
+            .Title2 {
+                font-size: 13px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+
+            input[type="text"], input[type="number"] {
+                display: inline-block;
+                width: 80px;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+        }
+
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+
+        .RatingSlider {
+            width: 300px;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+            height: 10px;
+            background: #fff;
+
+            .noUi-background {
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: none;
+            }
+
+            .noUi-origin {
+                border-radius: 5px;
+            }
+
+            .noUi-connect {
+                background: #26a0c8;
+            }
+
+            .noUi-handle {
+                background: #26a0c8;
+                box-shadow: none;
+                border: none;
+                left: -9px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .RatingScale {
+            width: 331px;
+            margin: 0;
+            padding: 0;
+            margin-left: -12px;
+            list-style-type: none;
+            margin-top: 9px;
+            height: 25px;
+
+            li {
+                &:before {
+                    display: block;
+                    content: "";
+                    height: 2px;
+                    width: 1px;
+                    background-color: #7c8289;
+                    margin: 0 auto;
+                    margin-bottom: 5px;
+                }
+
+                display: inline-block;
+                width: 7.821%;
+                text-align: center;
+                font-size: 12px;
+                color: #d4dee0;
+            }
+        }
+
+        .RatingChart {
+            width: 350px;
+            margin-left: -25px;
+            margin-top: 10px;
+        }
+    }
+
+    .MinPrice {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+
+        .MinPriceInputs {
+            input[type="text"], input[type="number"] {
+                display: inline-block;
+                width: 80px;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+
+            margin-bottom: 30px;
+        }
+
+        .MinPriceChart {
+            width: 350px;
+            margin-left: -25px;
+            margin-top: 10px;
+        }
+    }
+
+    .RRP {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+
+        .RRPInputs {
+            input[type="text"], input[type="number"] {
+                display: inline-block;
+                width: 80px;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+
+            margin-bottom: 30px;
+        }
+
+        .RRPChart {
+            width: 350px;
+            margin-left: -25px;
+            margin-top: 10px;
+        }
+    }
+
+    .Flags {
+        .FBoxMainTable {
+            margin-top: 10px;
+        }
+    }
 
 }
 

@@ -1,9 +1,15 @@
 ﻿/*#region ProductsList */
+.SelectedFilters input[type="checkbox"]:after {
+  top: 2px;
+}
 .ProductsList {
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+.ProductsList input[type="checkbox"]:after {
+  top: -1px;
 }
 .ProductsList thead tr {
   border-bottom: 2px solid #d8e2e5;
@@ -341,7 +347,7 @@
   padding: 7px 5px 7px 3px;
 }
 .Filters .Category .CategoryTable tbody tr.active {
-  background: #88b4b6!important;
+  background: #88b4b6 !important;
 }
 .Filters .Category .CategoryTable tbody tr:nth-child(even) {
   background: #e8f0f2;
@@ -425,7 +431,10 @@
   display: table-cell;
 }
 .Filters .Category .CategoryButtonsWrapper {
-  padding-top: 0px!important;
+  padding-top: 0px !important;
+}
+.Filters .Brand .FBoxMainTable {
+  margin-top: 10px;
 }
 .Filters .Brand .TopBrands .Title {
   font-size: 18px;
@@ -461,6 +470,9 @@
 }
 .Filters .Name .FBoxMainTable {
   margin: 15px 0;
+}
+.Filters .Demand .FBoxMainTable {
+  margin-top: 10px;
 }
 .Filters .Demand .DemandSlider {
   width: 300px;
@@ -518,5 +530,198 @@
   background-color: #7c8289;
   margin: 0 auto;
   margin-bottom: 5px;
+}
+.Filters .Demand .DemandChart {
+  width: 350px;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.Filters .Competition .FBoxMainTable {
+  margin-top: 10px;
+}
+.Filters .Competition .CompetitionSlider {
+  width: 300px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  height: 10px;
+  background: #fff;
+}
+.Filters .Competition .CompetitionSlider .noUi-background {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.Filters .Competition .CompetitionSlider .noUi-origin {
+  border-radius: 5px;
+}
+.Filters .Competition .CompetitionSlider .noUi-connect {
+  background: #e74c3c;
+}
+.Filters .Competition .CompetitionSlider .noUi-handle {
+  background: #e74c3c;
+  box-shadow: none;
+  border: none;
+  left: -9px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.Filters .Competition .CompetitionSlider .noUi-handle:before,
+.Filters .Competition .CompetitionSlider .noUi-handle:after {
+  display: none;
+}
+.Filters .Competition .CompetitionScale {
+  width: 331px;
+  margin: 0;
+  padding: 0;
+  margin-left: -12px;
+  list-style-type: none;
+  margin-top: 9px;
+  height: 25px;
+}
+.Filters .Competition .CompetitionScale li {
+  display: inline-block;
+  width: 7.821%;
+  text-align: center;
+  font-size: 12px;
+  color: #d4dee0;
+}
+.Filters .Competition .CompetitionScale li:before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 1px;
+  background-color: #7c8289;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.Filters .Competition .CompetitionChart {
+  width: 350px;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.Filters .Rating .RatingRange .Title {
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+.Filters .Rating .RatingRange .Title2 {
+  font-size: 13px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.Filters .Rating .RatingRange input[type="text"],
+.Filters .Rating .RatingRange input[type="number"] {
+  display: inline-block;
+  width: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.Filters .Rating .FBoxMainTable {
+  margin-top: 10px;
+}
+.Filters .Rating .RatingSlider {
+  width: 300px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  height: 10px;
+  background: #fff;
+}
+.Filters .Rating .RatingSlider .noUi-background {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.Filters .Rating .RatingSlider .noUi-origin {
+  border-radius: 5px;
+}
+.Filters .Rating .RatingSlider .noUi-connect {
+  background: #26a0c8;
+}
+.Filters .Rating .RatingSlider .noUi-handle {
+  background: #26a0c8;
+  box-shadow: none;
+  border: none;
+  left: -9px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.Filters .Rating .RatingSlider .noUi-handle:before,
+.Filters .Rating .RatingSlider .noUi-handle:after {
+  display: none;
+}
+.Filters .Rating .RatingScale {
+  width: 331px;
+  margin: 0;
+  padding: 0;
+  margin-left: -12px;
+  list-style-type: none;
+  margin-top: 9px;
+  height: 25px;
+}
+.Filters .Rating .RatingScale li {
+  display: inline-block;
+  width: 7.821%;
+  text-align: center;
+  font-size: 12px;
+  color: #d4dee0;
+}
+.Filters .Rating .RatingScale li:before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 1px;
+  background-color: #7c8289;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.Filters .Rating .RatingChart {
+  width: 350px;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.Filters .MinPrice .FBoxMainTable {
+  margin-top: 10px;
+}
+.Filters .MinPrice .MinPriceInputs {
+  margin-bottom: 30px;
+}
+.Filters .MinPrice .MinPriceInputs input[type="text"],
+.Filters .MinPrice .MinPriceInputs input[type="number"] {
+  display: inline-block;
+  width: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.Filters .MinPrice .MinPriceChart {
+  width: 350px;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.Filters .RRP .FBoxMainTable {
+  margin-top: 10px;
+}
+.Filters .RRP .RRPInputs {
+  margin-bottom: 30px;
+}
+.Filters .RRP .RRPInputs input[type="text"],
+.Filters .RRP .RRPInputs input[type="number"] {
+  display: inline-block;
+  width: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.Filters .RRP .RRPChart {
+  width: 350px;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.Filters .Flags .FBoxMainTable {
+  margin-top: 10px;
 }
 /*#endregion */

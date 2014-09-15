@@ -491,15 +491,11 @@
                                 <li class="Val9">9</li>
                                 <li class="Val10">10</li>
                             </ul>
+                            <div class="DemandChart"></div>
+                        </td>
+                        <td class="text-right vab">
                             <input type="hidden" id="DemandValueLow" name="DemandValueLow" value="" />
                             <input type="hidden" id="DemandValueHigh" name="DemandValueHigh" value="" />
-
-                            <br /><br />Chart<br /><br />
-
-
-
-                        </td>
-                        <td class="text-right">
                             <a href="#" class="btn btn-gray Btn-Demand-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-Demand-Apply">Apply</a>
                         </td>
@@ -510,8 +506,26 @@
                 <table class="FBoxMainTable">
                     <tr>
                         <td class="FName">Competition</td>
-                        <td>Bar & Chart</td>
-                        <td class="text-right">
+                        <td>
+                            <div class="CompetitionSlider"></div>
+                            <ul class="CompetitionScale">
+                                <li class="Val0">0</li>
+                                <li class="Val1">1</li>
+                                <li class="Val2">2</li>
+                                <li class="Val3">3</li>
+                                <li class="Val4">4</li>
+                                <li class="Val5">5</li>
+                                <li class="Val6">6</li>
+                                <li class="Val7">7</li>
+                                <li class="Val8">8</li>
+                                <li class="Val9">9</li>
+                                <li class="Val10">10</li>
+                            </ul>
+                            <div class="CompetitionChart"></div>
+                        </td>
+                        <td class="text-right vab">
+                            <input type="hidden" id="CompetitionValueLow" name="CompetitionValueLow" value="" />
+                            <input type="hidden" id="CompetitionValueHigh" name="CompetitionValueHigh" value="" />
                             <a href="#" class="btn btn-gray Btn-Competition-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-Competition-Apply">Apply</a>
                         </td>
@@ -522,8 +536,34 @@
                 <table class="FBoxMainTable">
                     <tr>
                         <td class="FName">Rating</td>
-                        <td>TextBox & Bar & Chart</td>
-                        <td class="text-right">
+                        <td>
+                            <div class="RatingRange">
+                                <div class="Title">Number of Ratings:</div>
+                                <input type="number" id="RatingsNumberLow" name="RatingsNumberLow" class="form-control" value="0" />
+                                <span> - </span>
+                                <input type="number" id="RatingsNumberHigh" name="RatingsNumberHigh" class="form-control" value="1000" />
+                                <i class="flaticon solid question-2 ml10 TooltipHolder" data-toggle="tooltip" data-placement="right" title="Enter the number of ratings you wish to view."></i>
+                                <div class="Title2">Average Rating:</div>
+                            </div>
+                            <div class="RatingSlider"></div>
+                            <ul class="RatingScale">
+                                <li class="Val0">0</li>
+                                <li class="Val1">0.5</li>
+                                <li class="Val2">1</li>
+                                <li class="Val3">1.5</li>
+                                <li class="Val4">2</li>
+                                <li class="Val5">2.5</li>
+                                <li class="Val6">3</li>
+                                <li class="Val7">3.5</li>
+                                <li class="Val8">4</li>
+                                <li class="Val9">4.5</li>
+                                <li class="Val10">5</li>
+                            </ul>
+                            <div class="RatingChart"></div>
+                        </td>
+                        <td class="text-right vab">
+                            <input type="hidden" id="RatingValueLow" name="RatingValueLow" value="" />
+                            <input type="hidden" id="RatingValueHigh" name="RatingValueHigh" value="" />
                             <a href="#" class="btn btn-gray Btn-Rating-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-Rating-Apply">Apply</a>
                         </td>
@@ -534,8 +574,16 @@
                 <table class="FBoxMainTable">
                     <tr>
                         <td class="FName">Min. Price</td>
-                        <td>TextBox & Chart</td>
-                        <td class="text-right">
+                        <td>
+                            <div class="MinPriceInputs">
+                                <input type="text" id="MinPriceLow" name="MinPriceLow" class="form-control" value="0" />
+                                <span> - </span>
+                                <input type="text" id="MinPriceHigh" name="MinPriceHigh" class="form-control" value="1200" />
+                                <span class="ml10 fs16">€</span>
+                            </div>
+                            <div class="MinPriceChart"></div>
+                        </td>
+                        <td class="text-right vab">
                             <a href="#" class="btn btn-gray Btn-MinPrice-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-MinPrice-Apply">Apply</a>
                         </td>
@@ -546,8 +594,16 @@
                 <table class="FBoxMainTable">
                     <tr>
                         <td class="FName">RRP</td>
-                        <td>TextBox & Chart</td>
-                        <td class="text-right">
+                        <td>
+                            <div class="RRPInputs">
+                                <input type="text" id="RRPLow" name="RRPLow" class="form-control" value="0" />
+                                <span> - </span>
+                                <input type="text" id="RRPHigh" name="RRPHigh" class="form-control" value="1200" />
+                                <span class="ml10 fs16">€</span>
+                            </div>
+                            <div class="RRPChart"></div>
+                        </td>
+                        <td class="text-right vab">
                             <a href="#" class="btn btn-gray Btn-RRP-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-RRP-Apply">Apply</a>
                         </td>
@@ -558,8 +614,19 @@
                 <table class="FBoxMainTable">
                     <tr>
                         <td class="FName">Flags</td>
-                        <td>Checkboxes</td>
-                        <td class="text-right">
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="ChkNoShowInMyAssortment" name="ChkNoShowInMyAssortment"> Don’t show products that are currently in my assortment
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="ChkShowOnlyNew" name="ChkShowOnlyNew"> Show only “New” products
+                                </label>
+                            </div>
+                        </td>
+                        <td class="text-right vab">
                             <a href="#" class="btn btn-gray Btn-Flags-Reset">Clear</a>
                             <a href="#" class="btn btn-green Btn-Flags-Apply">Apply</a>
                         </td>
@@ -574,10 +641,27 @@
     <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
     <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
     <script src="/Assets/External/noUiSlider/jquery.nouislider.all.min.js"></script>
+    <script src="/Assets/External/Highcharts/highcharts.js"></script>
     <script src="/Assets/Js/Shared.js"></script>
 
 
     <script>
+
+        function UpdateChartColumnColor(chartSelect, low, high, color) {
+            var chart = $(chartSelect).highcharts();
+            for (var i = 0; i < 11; i++) {
+                if (i >= low && i <= high) {
+                    chart.series[0].data[i].update({ color: color }); //color
+                } else {
+                    if ((i % 2 == 0) == true) {
+                        chart.series[0].data[i].update({ color: '#535766' }); //dark
+                    } else {
+                        chart.series[0].data[i].update({ color: '#707381' }); //light
+                    }
+                }
+            }
+        }
+
         $(document).ready(function () {
 
             $(".CategoryBlankBox").css('height', $(".CategoryTableWrapper.CTW1").height() + 'px');
@@ -610,8 +694,8 @@
                 $(".CategoryBlankBox.CatL3").removeClass("active");
                 $(".CategoryTable.CatL3").addClass("active");
             });
-            
-            
+
+
             var BrandList = [{ value: 'Apple' }, { value: 'American Apparel' }, { value: 'Appos Clothing' }, { value: 'Apollo Techonlogies' }, { value: 'Google' }, { value: 'Nike' }, { value: 'Adidas' }, { value: 'Reebok' }, { value: 'Dell' }, { value: 'Lenovo' }, { value: 'Samsung' }, { value: 'Philips' }, { value: 'BMW' }, { value: 'Audi' }];
             $(".BrandInput").autocomplete({
                 lookup: BrandList,
@@ -626,7 +710,7 @@
                 $(this).addClass("active");
                 e.preventDefault();
             });
-            
+
 
             var NameList = [{ value: 'Adidas Runner 750mx Pink' }, { value: 'Adidas Runner 620rx Red' }, { value: 'Nike Sport 78654' }, { value: 'Rebook pants black long XL' }];
             $(".NameInput").autocomplete({
@@ -635,6 +719,7 @@
                     var SelectedValue = suggestion.value;
                 }
             });
+
 
             $(".DemandSlider").noUiSlider({
                 start: [5, 7],
@@ -645,21 +730,278 @@
                     'min': 0,
                     'max': 10
                 }
+            }).on('set', function () {
+                var low = $(this).val()[0].replace('.00', '');
+                var high = $(this).val()[1].replace('.00', '');
+                UpdateChartColumnColor(".DemandChart", low, high, "#3dc054");
             });
+            $(".DemandChart").highcharts({
+                chart: {
+                    height: 180,
+                    backgroundColor: '#2e313a',
+                    type: 'column'
+                },
+                colors: ['#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766'],
+                title: { text: null }, legend: { enabled: false },
+                xAxis: {
+                    categories: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                    tickWidth: 0
+                },
+                yAxis: {
+                    title: { text: null },
+                    gridLineColor: '#434651',
+                    endOnTick: false,
+                    maxPadding: 0.05,
+                    tickInterval: 300,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -2,
+                        style: { color: '#d4dee0' }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 0,
+                        shadow: false,
+                        colorByPoint: true
+                    }
+                },
+                series: [{
+                    name: ' ',
+                    data: [1000, 800, 900, 950, 850, 1150, 750, 500, 1000, 900, 1100]
+                }],
+                tooltip: {
+                    pointFormat: '<b>{point.y}</b>'
+                }
+            });
+            UpdateChartColumnColor(".DemandChart", $(".DemandSlider").val()[0].replace('.00', ''), $(".DemandSlider").val()[1].replace('.00', ''), "#3dc054");
             $(".DemandSlider").Link('lower').to($('#DemandValueLow'));
             $(".DemandSlider").Link('upper').to($('#DemandValueHigh'));
 
 
+            $(".CompetitionSlider").noUiSlider({
+                start: [7, 9],
+                step: 1,
+                behaviour: 'drag',
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 10
+                }
+            }).on('set', function () {
+                var low = $(this).val()[0].replace('.00', '');
+                var high = $(this).val()[1].replace('.00', '');
+                UpdateChartColumnColor(".CompetitionChart", low, high, "#e74c3c");
+            });
+            $(".CompetitionChart").highcharts({
+                chart: {
+                    height: 180,
+                    backgroundColor: '#2e313a',
+                    type: 'column'
+                },
+                colors: ['#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766'],
+                title: { text: null }, legend: { enabled: false },
+                xAxis: {
+                    categories: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                    tickWidth: 0
+                },
+                yAxis: {
+                    title: { text: null },
+                    gridLineColor: '#434651',
+                    endOnTick: false,
+                    maxPadding: 0.05,
+                    tickInterval: 300,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -2,
+                        style: { color: '#d4dee0' }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 0,
+                        shadow: false,
+                        colorByPoint: true
+                    }
+                },
+                series: [{
+                    name: ' ',
+                    data: [1000, 800, 900, 950, 850, 1150, 750, 500, 1100, 800, 1000]
+                }],
+                tooltip: {
+                    pointFormat: '<b>{point.y}</b>'
+                }
+            });
+            UpdateChartColumnColor(".CompetitionChart", $(".CompetitionSlider").val()[0].replace('.00', ''), $(".CompetitionSlider").val()[1].replace('.00', ''), "#e74c3c");
+            $(".CompetitionSlider").Link('lower').to($('#CompetitionValueLow'));
+            $(".CompetitionSlider").Link('upper').to($('#CompetitionValueHigh'));
 
 
+            $(".RatingSlider").noUiSlider({
+                start: [1.0, 1.5],
+                step: 0.5,
+                behaviour: 'drag',
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 5
+                }
+            }).on('set', function () {
+                var low = $(this).val()[0].slice(0, -1);
+                var high = $(this).val()[1].slice(0, -1);
+                UpdateChartColumnColor(".RatingChart", low * 2, high * 2, "#26a0c8");
+            });
+            $(".RatingChart").highcharts({
+                chart: {
+                    height: 180,
+                    backgroundColor: '#2e313a',
+                    type: 'column'
+                },
+                colors: ['#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766'],
+                title: { text: null }, legend: { enabled: false },
+                xAxis: {
+                    categories: ['0', '0.5', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5'],
+                    tickWidth: 0
+                },
+                yAxis: {
+                    title: { text: null },
+                    gridLineColor: '#434651',
+                    endOnTick: false,
+                    maxPadding: 0.05,
+                    tickInterval: 300,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -2,
+                        style: { color: '#d4dee0' }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 0,
+                        shadow: false,
+                        colorByPoint: true
+                    }
+                },
+                series: [{
+                    name: ' ',
+                    data: [1000, 600, 900, 950, 850, 1150, 750, 400, 1100, 700, 1000]
+                }],
+                tooltip: {
+                    pointFormat: '<b>{point.y}</b>'
+                }
+            });
+            UpdateChartColumnColor(".RatingChart", ($(".RatingSlider").val()[0].slice(0, -1)) * 2, ($(".RatingSlider").val()[1].slice(0, -1)) * 2, "#26a0c8");
+            $(".RatingSlider").Link('lower').to($('#RatingValueLow'));
+            $(".RatingSlider").Link('upper').to($('#RatingValueHigh'));
 
 
+            $(".MinPriceChart").highcharts({
+                chart: {
+                    height: 250,
+                    backgroundColor: '#2e313a',
+                    type: 'column'
+                },
+                colors: ['#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766'],
+                title: { text: null }, legend: { enabled: false },
+                xAxis: {
+                    categories: ['0-50€', '50-100€', '100-150€', '150-200€', '200-250€', '250-300€', '> 300€'],
+                    tickWidth: 0,
+                    labels: {
+                        rotation: -45,
+                        style: {
+                            fontSize: '11px'
+                        }
+                    }
+                },
+                yAxis: {
+                    title: { text: null },
+                    gridLineColor: '#434651',
+                    endOnTick: false,
+                    maxPadding: 0.05,
+                    tickInterval: 300,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -2,
+                        style: { color: '#d4dee0' }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 0,
+                        shadow: false,
+                        colorByPoint: true
+                    }
+                },
+                series: [{
+                    name: ' ',
+                    data: [1000, 600, 900, 950, 850, 1150, 350]
+                }],
+                tooltip: {
+                    pointFormat: '<b>{point.y}</b>'
+                }
+            });
 
 
-
-
-
-
+            $(".RRPChart").highcharts({
+                chart: {
+                    height: 250,
+                    backgroundColor: '#2e313a',
+                    type: 'column'
+                },
+                colors: ['#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766', '#707381', '#535766'],
+                title: { text: null }, legend: { enabled: false },
+                xAxis: {
+                    categories: ['0-50€', '50-100€', '100-150€', '150-200€', '200-250€', '250-300€', '> 300€'],
+                    tickWidth: 0,
+                    labels: {
+                        rotation: -45,
+                        style: {
+                            fontSize: '11px'
+                        }
+                    }
+                },
+                yAxis: {
+                    title: { text: null },
+                    gridLineColor: '#434651',
+                    endOnTick: false,
+                    maxPadding: 0.05,
+                    tickInterval: 300,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -2,
+                        style: { color: '#d4dee0' }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        pointPadding: 0,
+                        groupPadding: 0,
+                        borderWidth: 0,
+                        shadow: false,
+                        colorByPoint: true
+                    }
+                },
+                series: [{
+                    name: ' ',
+                    data: [1000, 600, 900, 950, 850, 1150, 350]
+                }],
+                tooltip: {
+                    pointFormat: '<b>{point.y}</b>'
+                }
+            });
 
         });
     </script>
