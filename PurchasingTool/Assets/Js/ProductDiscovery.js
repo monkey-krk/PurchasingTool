@@ -35,11 +35,7 @@ function results_entries(result_id, page, per_page) {
 
 $(document).ready(function () {
     
-    
     results_entries(3, 1, 10);
-        
-    
-    
 
     $("#TblSelectAll").click(function () {
         if ($('#TblSelectAll:checked').length > 0) {

@@ -1,4 +1,15 @@
 ﻿/*#region ProductsList */
+.ProductDiscovery .WelcomeBox {
+  display: none;
+  height: 600px;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 300px;
+}
+.ProductDiscovery .WelcomeBox.active {
+  display: block;
+}
 .SelectedFilters input[type="checkbox"]:after {
   top: 2px;
 }
