@@ -4,28 +4,28 @@
 
 function results_entries(result_id, page, per_page) {
 
-    var url = APIurl + '/results/' + result_id + '/entries.json';
+    //var url = APIurl + '/results/' + result_id + '/entries.json';
 
-    $.ajax({
-        type: "GET",
-        url: url,
-        data: {
-            organisation_id: org,
-            context_id : ctx,
-            user_token: user_token,
-            country_code: country_code,
-            page: page,
-            per_page: per_page
-        },
-        dataType: "json",
-        success: function (data) {
+    //$.ajax({
+    //    type: "GET",
+    //    url: url,
+    //    data: {
+    //        organisation_id: org,
+    //        context_id : ctx,
+    //        user_token: user_token,
+    //        country_code: country_code,
+    //        page: page,
+    //        per_page: per_page
+    //    },
+    //    dataType: "json",
+    //    success: function (data) {
                                     
-            var template = $('#results_entries_template').html()
-            var rendered = Mustache.render(template, data);
-            $('#results_entries_result').html(rendered);
+    //        var template = $('#results_entries_template').html()
+    //        var rendered = Mustache.render(template, data);
+    //        $('#results_entries_result').html(rendered);
 
-        }
-    });
+    //    }
+    //});
    
 
 }
