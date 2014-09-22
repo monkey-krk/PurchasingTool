@@ -37,11 +37,11 @@
 .ProductsList tbody td:nth-child(8) {
   text-align: right;
 }
-.ProductsList tbody .New {
+.ProductsList tbody .NewIcontrue {
   position: relative;
   overflow: hidden;
 }
-.ProductsList tbody .New:before {
+.ProductsList tbody .NewIcontrue:before {
   display: block;
   content: "";
   width: 0;
@@ -50,7 +50,7 @@
   border-width: 30px 30px 0 0;
   border-color: #3dc054 transparent transparent transparent;
 }
-.ProductsList tbody .New:after {
+.ProductsList tbody .NewIcontrue:after {
   display: block;
   content: "New";
   position: absolute;
@@ -97,6 +97,10 @@
   display: block;
   height: 10px;
   border-radius: 10px;
+}
+.ProductsList tbody .Progres .Up.I1,
+.ProductsList tbody .Progres .Down.I1 {
+  border-radius: 50%;
 }
 .ProductsList tbody .Progres .Up {
   background-color: #3dc054;

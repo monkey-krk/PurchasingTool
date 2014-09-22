@@ -11,8 +11,14 @@
     <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
     <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
     <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
-
     <link href="/Assets/Css/ProductDiscovery.min.css" rel="stylesheet" />
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
+    <script src="/Assets/External/mustache/mustache.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+    <script src="/Assets/Js/ProductDiscovery.js"></script>
 
 </head>
 <body>
@@ -215,7 +221,75 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
-                            <table class="WhiteTable ProductsList">
+
+                            <script id="results_entries_template" type="text/x-template">
+                                <table class="WhiteTable ProductsList">
+                                    <thead>
+                                        <tr>
+                                            <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
+                                            <th colspan="2">Product</th>
+                                            <th>Demand</th>
+                                            <th>Competition</th>
+                                            <th>Rating</th>
+                                            <th>Min. Price</th>
+                                            <th>RRP</th>
+                                            <th>Lists</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {{#entries}}
+                                        <tr data-productid="{{product.id}}">
+                                            <td><div class="pr"><input type="checkbox" name="ProductCheckbox{{product.id}}" /></div></td>
+                                            <td><div class="Image-w70-h60 ProductImage NewIcon{{product.new}} "style="background-image: url('{{#product.image_small}}{{product.image_small}}{{/product.image_small}}{{^product.image_small}}/Assets/Img/dummy/blank_70_60_1.jpg{{/product.image_small}}');"></div></td>
+                                            <td>
+                                                <a href="#" class="ProductName">{{product.brand}} - {{product.name}}</a>
+                                                <p class="ProductDescription">
+                                                    Categroy name (0)<br />
+                                                    ids -> key = asin (0)- Amazon id number<br />
+                                                    assortment_skus -> id (0)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="Progres" title="{{product.demand_index}}0%">
+                                                    <div class="Up I{{product.demand_index}}" style="width:{{product.demand_index}}0%"></div>
+                                                </div>
+                                                <!--<i class="Trend Up"></i>-->
+                                            </td>
+                                            <td>
+                                                <div class="Progres" title="{{product.competition_index}}0%">
+                                                    <div class="Down I{{product.competition_index}}" style="width:{{product.competition_index}}0%"></div>
+                                                </div>
+                                                <!--<i class="Trend Down"></i>-->
+                                            </td>
+                                            <td>
+                                                <div class="Stars x3" title="3"></div>
+                                                <div class="RatingNo">({{product.rating_count}})</div>
+                                            </td>
+                                            <td>
+                                                <div class="Price1">{{product.min_without_shipping_price}}€</div>
+                                                <div class="Price2">{{product.min_without_shipping_shipping}}€</div>
+                                                <div class="Price3">{{product.min_without_shipping_total}}€</div>
+                                            </td>
+                                            <td>
+                                                <div class="MarginPrice">{{product.rrp}}</div>
+                                            </td>
+                                            <td>
+                                                <ul class="FoundOnLists">
+                                                    {{#lists}}
+                                                    <li>{{name}}</li>
+                                                    {{/lists}}
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        {{/entries}}
+                                    </tbody>
+                                </table>
+                            </script>
+
+                            <div id="results_entries_result"></div>
+
+
+                            <!--<table class="WhiteTable ProductsList">
                                 <thead>
                                     <tr>
                                         <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
@@ -538,39 +612,16 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>-->
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="Filters">
-
         </div>
     </div>
-    
-
-    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
-    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
-    <script src="/Assets/Js/Shared.js"></script>
-
-
-    <script>
-        $(document).ready(function () {
-
-            $("#TblSelectAll").click(function () {
-                if ($('#TblSelectAll:checked').length > 0) {
-                    $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", true);
-                }    
-                else {
-                    $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", false);
-                }
-            });
-
-        });
-    </script>
-
 
 </body>
 </html>
