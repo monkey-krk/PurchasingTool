@@ -85,6 +85,10 @@ body {
     background: #e8f0f2;
 }
 
+body.assortment, body.list {
+    background-color:@body-bg2;
+}
+
 a {
     text-decoration: none;
     color: @blue;
@@ -233,6 +237,18 @@ a[class~="orange"]:hover {
 
 .orange-bg {
     background-color: @orange !important;
+}
+
+.purple {
+    color: @purple !important;
+}
+
+a[class~="purple"]:hover {
+    color: darken(@purple, 20%) !important;
+}
+
+.purple-bg {
+    background-color: @purple !important;
 }
 
 .body-bg {

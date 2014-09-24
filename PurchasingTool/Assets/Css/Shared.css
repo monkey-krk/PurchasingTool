@@ -50,6 +50,10 @@ body {
   font-weight: normal;
   background: #e8f0f2;
 }
+body.assortment,
+body.list {
+  background-color: #d4dee0;
+}
 a {
   text-decoration: none;
   color: #26a0c8;
@@ -166,6 +170,15 @@ a[class~="orange"]:hover {
 }
 .orange-bg {
   background-color: #f39c12 !important;
+}
+.purple {
+  color: #4f3dc0 !important;
+}
+a[class~="purple"]:hover {
+  color: #2f2473 !important;
+}
+.purple-bg {
+  background-color: #4f3dc0 !important;
 }
 .body-bg {
   background-color: #e8f0f2 !important;
