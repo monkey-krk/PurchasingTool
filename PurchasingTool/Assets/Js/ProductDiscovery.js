@@ -1,7 +1,6 @@
 ﻿/// <reference path="../External/jQuery/jquery-2.1.1.min.js" />
 
 
-
 function results_entries(result_id, page, per_page) {
 
     //var url = APIurl + '/results/' + result_id + '/entries.json';
@@ -31,19 +30,8 @@ function results_entries(result_id, page, per_page) {
 }
 
 
-
-
 $(document).ready(function () {
     
-    results_entries(3, 1, 10);
-
-    $("#TblSelectAll").click(function () {
-        if ($('#TblSelectAll:checked').length > 0) {
-            $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", true);
-        }
-        else {
-            $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", false);
-        }
-    });
+    
 
 });

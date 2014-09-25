@@ -40,7 +40,7 @@
   background-color: #3dc054;
 }
 .MyLists .ListsBox .Progres .Down {
-  background-color: #f56e74;
+  background-color: #e74c3c;
 }
 .MyLists .ListsBox .Trend {
   font-family: 'Flaticons Stroke';
@@ -71,6 +71,6 @@
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  color: #f56e74;
+  color: #e74c3c;
 }
 /*#endregion */

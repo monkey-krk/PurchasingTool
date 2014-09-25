@@ -121,6 +121,15 @@
     }
 }
 
+.btn-white-red {
+    background-color: @white;
+    color: @red;
+    &:hover, &:focus, &:active {
+        box-shadow: @gray-light 0 0 4px;
+        color: darken(@red,10%);
+    }
+}
+
 .btn-blue {
     background-color: @blue;
     color: @white;

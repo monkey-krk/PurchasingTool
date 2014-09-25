@@ -888,5 +888,284 @@
 
 }
 
+/*#endregion */
+
+/*#region ProductDetails PopUp*/
+
+.ProductDetails {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 860px;
+    margin-left: -430px;
+    background-color:@body-bg;
+    overflow:hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 0 9999px rgba(40, 46, 58, 0.6);
+    margin-bottom:60px;
+    z-index:999;
+
+    .Header {
+        background-color:@body-bg2;
+        padding:10px 5px;
+    }
+
+    .Product {
+        @space:8px;
+        padding:20px 5px;
+        line-height:1.3;
+        color:@gray;
+        margin-bottom:@space;
+
+        .PDImage {
+            width:100%;
+            height:300px;
+            border-radius:7px;
+        }
+
+        .Name {
+            color: #333740;            font-size: 30px;            font-weight:600;            line-height:1.2;            padding-bottom:5px;        }
+
+        .Brand, .Category, .AditionalInfo, .ReleaseDate {
+            padding-top:@space;
+        }
+
+        .ReleaseDate, .AppeareDate b {
+            font-weight:600;
+        }
+
+        .Progres {
+            position: relative;
+            display: inline-block;
+            width: 75px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: @gray-lighter;
+
+
+            .Up, .Down {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                height: 15px;
+                border-radius: 15px;
+                &.I1 {
+                    border-radius: 50%;
+                }
+            }
+
+            .Up {
+                background-color: @green;
+            }
+
+            .Down {
+                background-color: @red;
+            }
+        }
+
+        .Trend {
+            font-family: 'Flaticons Stroke';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            margin-left:3px;
+            &:before {
+                display: block;
+                font-size: 20px;
+                content: "";
+                color: @gray-lighter;
+            }
+
+            &.Up {
+                &:before {
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    color: @green;
+                }
+            }
+
+            &.Down {
+                &:before {
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    color: @red;
+                }
+            }
+        }
+
+        .Stars {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            font-family: 'Flaticons Solid';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            font-size: 12px;
+            cursor: default;
+
+            &:before {
+                content: "    ";
+                color: @gray-lighter;
+            }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                color: @orange;
+            }
+
+            &.x1:after {
+                content: "";
+            }
+
+            &.x2:after {
+                content: " ";
+            }
+
+            &.x3:after {
+                content: "  ";
+            }
+
+            &.x4:after {
+                content: "   ";
+            }
+
+            &.x5:after {
+                content: "    ";
+            }
+        }
+
+        .Demand, .Competition {
+            display:inline-block;
+            margin-top:@space * 2;
+            margin-bottom:@space * 2;
+        }
+
+        .Demand {
+            margin-right:20px;
+        }
+
+        .Ratings {
+            .RatingNo {
+                padding-top:@space / 2;
+                font-size:13px;
+            }
+        }
+
+        .Price {
+            display:inline-block;
+            margin-top:@space * 2;
+            background-color:#26a0c8;
+            border-radius:5px;
+            padding:10px 13px;
+            color:@white;
+            font-size:19px;
+            font-weight:600;
+
+        }
+
+    }
+
+    .Shops {
+        padding:20px 5px;
+        line-height:1.3;
+        color:@gray;
+        
+        table {
+            background:#fff;
+            width:100%;
+            border:2px solid #d4dee0!important;
+            border-collapse:separate;
+            border-radius:5px;
+            overflow:hidden;
+            
+
+            td {
+                padding:12px;
+            }
+            
+            thead {
+                tr {
+                    background:#fff;
+                    
+                }
+                td {
+                    border-bottom:2px solid #ededee;
+                    font-size:11px;
+                    text-transform:uppercase;
+                    font-weight:600;
+                }
+            }
+
+            tbody {
+                tr:nth-child(odd) {background: #e8f0f2}
+                td {
+                    font-size:13px;
+                    font-weight:600;
+                }
+            }
+
+        }
+    }
+
+    .ChartBox {
+        padding:20px 5px;
+        color:@gray;
+        .Head {
+            margin-bottom:20px;
+            .Title {
+                font-size:16px;
+                font-weight:600;
+            }
+            .Range {
+                color:#a6bdc3;
+                font-size:13px;
+                font-weight:600;
+
+            }
+            .Legend {
+                margin:0;
+                padding:0;
+                list-style-type:none;
+                li {
+                    display:inline-block;
+                    margin-right:20px;
+                    &:last-child {
+                        margin-right:0px;
+                    }
+                    i {
+                        display:inline-block;
+                        height:15px;
+                        width:15px;
+                        border-radius:2px;
+                        margin-right:10px;
+                        vertical-align:top;
+                        margin-top:-1px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ChartDemandCompetition, .ChartPriceRatings {
+        height:250px;
+    }
+}
 
 /*#endregion */

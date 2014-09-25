@@ -17,6 +17,7 @@
     <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
     <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
     <script src="/Assets/External/mustache/mustache.js"></script>
+    <script src="/Assets/External/Highcharts/highcharts.js"></script>
     <script src="/Assets/Js/Shared.js"></script>
     <script src="/Assets/Js/ProductDiscovery.js"></script>
 
@@ -70,7 +71,6 @@
             </div>
         </div>
     </header>
-
 
     <div class="MainContent">
         <div class="SelectedFilters pt10 bb2">
@@ -222,74 +222,7 @@
                     <div class="row">
                         <div class="col-sm-12">
 
-                            <script id="results_entries_template" type="text/x-template">
-                                <table class="WhiteTable ProductsList">
-                                    <thead>
-                                        <tr>
-                                            <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
-                                            <th colspan="2">Product</th>
-                                            <th>Demand</th>
-                                            <th>Competition</th>
-                                            <th>Rating</th>
-                                            <th>Min. Price</th>
-                                            <th>RRP</th>
-                                            <th>Lists</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {{#entries}}
-                                        <tr data-productid="{{product.id}}">
-                                            <td><div class="pr"><input type="checkbox" name="ProductCheckbox{{product.id}}" /></div></td>
-                                            <td><div class="Image-w70-h60 ProductImage NewIcon{{product.new}} "style="background-image: url('{{#product.image_small}}{{product.image_small}}{{/product.image_small}}{{^product.image_small}}/Assets/Img/dummy/blank_70_60_1.jpg{{/product.image_small}}');"></div></td>
-                                            <td>
-                                                <a href="#" class="ProductName">{{product.brand}} - {{product.name}}</a>
-                                                <p class="ProductDescription">
-                                                    Categroy name (0)<br />
-                                                    ids -> key = asin (0)- Amazon id number<br />
-                                                    assortment_skus -> id (0)
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <div class="Progres" title="{{product.demand_index}}0%">
-                                                    <div class="Up I{{product.demand_index}}" style="width:{{product.demand_index}}0%"></div>
-                                                </div>
-                                                <!--<i class="Trend Up"></i>-->
-                                            </td>
-                                            <td>
-                                                <div class="Progres" title="{{product.competition_index}}0%">
-                                                    <div class="Down I{{product.competition_index}}" style="width:{{product.competition_index}}0%"></div>
-                                                </div>
-                                                <!--<i class="Trend Down"></i>-->
-                                            </td>
-                                            <td>
-                                                <div class="Stars x3" title="3"></div>
-                                                <div class="RatingNo">({{product.rating_count}})</div>
-                                            </td>
-                                            <td>
-                                                <div class="Price1">{{product.min_without_shipping_price}}€</div>
-                                                <div class="Price2">{{product.min_without_shipping_shipping}}€</div>
-                                                <div class="Price3">{{product.min_without_shipping_total}}€</div>
-                                            </td>
-                                            <td>
-                                                <div class="MarginPrice">{{product.rrp}}</div>
-                                            </td>
-                                            <td>
-                                                <ul class="FoundOnLists">
-                                                    {{#lists}}
-                                                    <li>{{name}}</li>
-                                                    {{/lists}}
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        {{/entries}}
-                                    </tbody>
-                                </table>
-                            </script>
-
-                            <div id="results_entries_result"></div>
-
-
-                            <!--<table class="WhiteTable ProductsList">
+                            <table class="WhiteTable ProductsList">
                                 <thead>
                                     <tr>
                                         <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
@@ -612,7 +545,7 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>-->
+                            </table>
 
                         </div>
                     </div>
@@ -622,6 +555,329 @@
         <div class="Filters">
         </div>
     </div>
+
+    <div class="ProductDetails">
+        <div class="container-fluid">
+            <div class="row Header">
+                <div class="col-sm-8">
+                    <a href="#" class="btn btn-white-green btn-small PD-ExportToExcel"><i class="budiconcustom-download1 mr5"></i> Excel</a>
+                    <div class="dropdown ibm ml5 PD-AddToList">
+                        <a role="button" href="#" class="dropdown-toggle btn btn-white btn-small" data-toggle="dropdown"><span class="SelectedText">Add To List</span><span class="badge ml10 blue-bg">23</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                            <li>
+                                <div class="ml20 mr20 mt5 wsnw pr">
+                                    <input type="checkbox" id="ATList1" checked="" /><label for="ATList1">ShoeList</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ml20 mr20 mt5 wsnw pr">
+                                    <input type="checkbox" id="ATList2" checked="" /><label for="ATList2">Shoes in Action</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ml20 mr20 mt5 wsnw pr">
+                                    <input type="checkbox" id="ATList3" /><label for="ATList3">Sale</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ml20 mr20 mt10 mb5">
+                                    <a href="#" class="blue fs13 fw600">+New List</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown ibm ml5 PD-RemoveFromList">
+                        <a role="button" href="#" class="dropdown-toggle btn btn-white btn-small" data-toggle="dropdown"><span class="SelectedText">Remove From List</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-form" role="menu">
+                            <li>
+                                <div class="ml20 mr20 mt5 wsnw pr">
+                                    <input type="checkbox" id="RFList1" checked="" /><label for="RFList1">ShoeList</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ml20 mr20 mt5 wsnw pr">
+                                    <input type="checkbox" id="RFList2" checked="" /><label for="RFList2">Shoes in Action</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <a href="#" class="btn btn-white btn-small pl7 pr8 mr2 PD-Prev"><i class="flaticon stroke left-2 fs16"></i></a>
+                    <a href="#" class="btn btn-white btn-small pl8 pr7 mr10 PD-Next "><i class="flaticon stroke right-2 fs16"></i></a>
+                    <a href="#" class="btn btn-white-red btn-small pl8 pr8 CloseProductDetails"><i class="flaticon stroke x-1 fs16"></i></a>
+                </div>
+            </div>
+            <div class="row Product">
+                <div class="col-sm-6">
+                    <div class="Image PDImage" style="background-image: url('/Assets/Img/dummy/ProductImage2.jpg'); "></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="Name">Nike - Kobe 9 Elite “Hypebeat”</div>
+                    <div class="Brand"><a href="#">Nike</a></div>
+                    <div class="Category"><a href="#">Sport</a>, <a href="#">Snickers</a>, <a href="#">Shoes</a></div>
+                    <div class="AditionalInfo">04376482910345, 041547892134456</div>
+                    <div class="ReleaseDate"><b>1.5.2014</b> - Product release</div>
+                    <div class="AppeareDate"><b>26.7.2014</b> - First appeared on top list</div>
+                    <div class="Demand">
+                        <div class="Progres" title="80%">
+                            <div class="Up" style="width:80%"></div>
+                        </div>
+                        <i class="Trend Up"></i>
+                    </div>
+                    <div class="Competition">
+                        <div class="Progres" title="40%">
+                            <div class="Down" style="width:40%"></div>
+                        </div>
+                        <i class="Trend Down"></i>
+                    </div>
+                    <div class="Ratings">
+                        <div class="Stars x3" title="3"></div>
+                        <div class="RatingNo">186 Ratings</div>
+                    </div>
+                    <div class="Price">98.99€</div>
+                </div>
+            </div>
+            <div class="row Shops">
+                <div class="col-sm-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Shop Name</td>
+                                <td>Base Price</td>
+                                <td>Shipping Price</td>
+                                <td>Total Price</td>
+                                <td>Availability</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hg Spot, Croatia</td>
+                                <td>€ 45.20</td>
+                                <td>€ 12.20</td>
+                                <td>€ 57.40</td>
+                                <td><span class="green">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Onnit, US</td>
+                                <td>€ 38.00</td>
+                                <td>€ 15.00</td>
+                                <td>€ 53.00</td>
+                                <td><span class="red">Not In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Vemil Computers, Croatia</td>
+                                <td>€ 29.99</td>
+                                <td>€ 26.99</td>
+                                <td>€ 76.98</td>
+                                <td><span class="orange">Low Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nike Running, Ohio, US</td>
+                                <td>€ 28.20</td>
+                                <td>€ 12.20</td>
+                                <td>€ 30.40</td>
+                                <td><span class="green">In Stock</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="DemandCompetition ChartBox">
+                <div class="row Head">
+                    <div class="col-sm-6">
+                        <span class="Title">Demand & Competition</span>
+                        <span class="Range">(Last 15 days)</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="Legend">
+                            <li><i class="green-bg"></i>Demand</li>
+                            <li><i class="red-bg"></i>Competition</li>
+                            <li><i class="orange-bg"></i>Avg. Rating</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ChartDemandCompetition"></div>
+                        <script>
+                            function ChartDemandCompetition() {
+                                $(".ChartDemandCompetition").highcharts({
+                                    chart: {
+                                        backgroundColor: '#e8f0f2',
+                                        type: 'line',
+                                        width: 815,
+                                        height: 250
+                                    },
+                                    colors: ['#3dc054', '#e74c3c', '#f39c12'],
+                                    title: { text: null }, legend: { enabled: false },
+                                    xAxis: {
+                                        type: 'datetime',
+                                        maxZoom: 24 * 3600 * 1000,
+                                        dateTimeLabelFormats: {
+                                            day: '%e.%m'
+                                        }
+                                    },
+                                    yAxis: [{
+                                        title: { text: null },
+                                        min: 0,
+                                        max: 10,
+                                        tickInterval: 1,
+                                        gridLineColor: '#e2e8ea'
+                                    }, {
+                                        title: { text: null },
+                                        opposite: true,
+                                        min: 0,
+                                        max: 5,
+                                        tickInterval: 0.5,
+                                        gridLineColor: '#e2e8ea'
+                                    }],
+                                    tooltip: {
+                                        shared: true
+                                    },
+                                    plotOptions: {
+                                        series: {
+                                            lineWidth: 2.5,
+                                            pointInterval: 24 * 3600 * 1000,
+                                            marker: {
+                                                symbol: 'circle',
+                                                fillColor: '#e8f0f2',
+                                                lineWidth: 2.5,
+                                                radius: 2.5,
+                                                lineColor: null
+                                            }
+                                        }
+                                    },
+                                    series: [{
+                                        name: 'Demand',
+                                        data: [4.5, 3.5, 4.0, 2.2, 3.2, 4.0, 5.0, 3.5, 3.0, 4.0, 4.5, 3.5, 5.0, 3.2, 4.8, 4.0, 3.8, 2.8, 3.7, 4.8, 3.6, 4.5, 3.3, 4.6, 6.5, 5.0, 5.5, 5.1, 5.7],
+                                        yAxis: 0,
+                                        pointStart: Date.UTC(2014, (9) - 1, 15)
+                                    },
+                                    {
+                                        name: 'Competition',
+                                        data: [4.1, 5.5, 5.0, 6.8, 5.9, 5.0, 4.2, 5.5, 6.0, 5.0, 4.7, 5.7, 4.0, 5.8, 4.5, 4.9, 5.2, 6.2, 5.3, 4.5, 5.5, 4.8, 5.3, 4.8, 2.5, 4.2, 3.5, 4.0, 3.6],
+                                        yAxis: 0,
+                                        pointStart: Date.UTC(2014, (9) - 1, 15)
+                                    },
+                                    {
+                                        name: 'Avg. Rating',
+                                        data: [4.2, 4.0, 4.2, 3.8, 4.8, 3.6, 3.2, 3.6, 3.3, 3.7, 3.4, 2.8, 3.4, 3.5, 3.7, 3.2, 3.9, 3.2, 3.6, 3.4, 3.0, 3.3, 3.9, 3.5, 3.0, 2.6, 3.5, 2.8, 3.9],
+                                        yAxis: 1,
+                                        pointStart: Date.UTC(2014, (9) - 1, 15)
+                                    }]
+                                });
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="PriceRatings ChartBox">
+                <div class="row Head">
+                    <div class="col-sm-6">
+                        <span class="Title">Min.Price & Ratings</span>
+                        <span class="Range">(Last 15 days)</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="Legend">
+                            <li><i class="blue-bg"></i>Min. Price</li>
+                            <li><i class="orange-bg"></i>Rating Count</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ChartPriceRatings"></div>
+                        <script>
+                            function ChartPriceRatings() {
+                                $(".ChartPriceRatings").highcharts({
+                                chart: {
+                                    backgroundColor: '#e8f0f2',
+                                    type: 'line',
+                                    width: 820,
+                                    height:250
+                                },
+                                colors: ['#26a0c8', '#f39c12'],
+                                title: { text: null }, legend: { enabled: false },
+                                xAxis: {
+                                    type: 'datetime',
+                                    maxZoom: 24 * 3600 * 1000,
+                                    dateTimeLabelFormats: {
+                                        day: '%e.%m'
+                                    }
+                                },
+                                yAxis: [{
+                                    title: { text: null },
+                                    gridLineColor: '#e2e8ea'
+                                }, {
+                                    title: { text: null },
+                                    opposite: true,
+                                    gridLineColor: '#e2e8ea'
+                                }],
+                                tooltip: {
+                                    shared: true
+                                },
+                                plotOptions: {
+                                    series: {
+                                        lineWidth: 2.5,
+                                        pointInterval: 24 * 3600 * 1000,
+                                        marker: {
+                                            symbol: 'circle',
+                                            fillColor: '#e8f0f2',
+                                            lineWidth: 2.5,
+                                            radius: 2.5,
+                                            lineColor: null
+                                        }
+                                    }
+                                },
+                                series: [{
+                                    name: 'Min. Price',
+                                    data: [120,95,105,60,80,105,125,90,79,100,110,80,125,80,110,105,100,65,100,120,90,110,95,115,160,130,140,135,145],
+                                    yAxis: 0,
+                                    pointStart: Date.UTC(2014, (9) - 1, 15)
+                                },
+                                {
+                                    name: 'Rating Count',
+                                    data: [420,400,410,360,470,340,310,330,305,370,350,280,365,350,360,320,400,310,360,350,300,330,390,350,300,260,350,330,370],
+                                    yAxis: 1,
+                                    pointStart: Date.UTC(2014, (9) - 1, 15)
+                                }]
+                            });
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#TblSelectAll").click(function () {
+                if ($('#TblSelectAll:checked').length > 0) {
+                    $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", true);
+                }
+                else {
+                    $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", false);
+                }
+            });
+
+            $(".ProductName").click(function (e) {
+                ChartDemandCompetition();
+                ChartPriceRatings();
+                $(".ProductDetails").show();
+                e.preventDefault();
+            });
+
+            $(".CloseProductDetails").click(function (e) {
+                $(".ProductDetails").hide();
+                e.preventDefault();
+            });
+
+        });
+    </script>
+
 
 </body>
 </html>
