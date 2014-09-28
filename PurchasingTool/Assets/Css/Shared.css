@@ -200,6 +200,9 @@ a[class~="purple"]:hover {
 .ml10 {
   margin-left: 10px !important;
 }
+.ml12 {
+  margin-left: 12px !important;
+}
 .ml15 {
   margin-left: 15px !important;
 }
@@ -238,6 +241,9 @@ a[class~="purple"]:hover {
 }
 .mt5 {
   margin-top: 5px!important;
+}
+.mt7 {
+  margin-top: 7px!important;
 }
 .mt10 {
   margin-top: 10px!important;
@@ -439,6 +445,14 @@ a[class~="purple"]:hover {
   padding-top: 20px!important;
   padding-bottom: 20px!important;
 }
+.ptb25 {
+  padding-top: 25px!important;
+  padding-bottom: 25px!important;
+}
+.ptb30 {
+  padding-top: 30px!important;
+  padding-bottom: 30px!important;
+}
 .fs10 {
   font-size: 10px !important;
 }
@@ -556,6 +570,9 @@ a[class~="purple"]:hover {
 .w400 {
   width: 400px;
 }
+.h50 {
+  height: 50px;
+}
 .h2 {
   height: 2px;
 }
@@ -571,6 +588,9 @@ a[class~="purple"]:hover {
 }
 .vab {
   vertical-align: bottom!important;
+}
+.vat {
+  vertical-align: top!important;
 }
 .op05 {
   opacity: 0.5;

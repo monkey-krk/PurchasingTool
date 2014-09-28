@@ -1,0 +1,63 @@
+﻿.paymentmethods .form-horizontal .control-label {
+  padding-left: 0px;
+}
+.paymentmethods .form-control-feedback {
+  left: 334px;
+}
+.paymentmethods .help-block {
+  left: 370px;
+}
+.PaymentMethodTabs li {
+  vertical-align: top;
+  margin-bottom: 15px;
+}
+.PaymentMethodTabs li .PaymentMethod {
+  position: relative;
+  display: table-cell;
+  background-color: #ffffff;
+  width: 120px;
+  height: 70px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+.PaymentMethodTabs li .PaymentMethod img {
+  opacity: 0.8;
+}
+.PaymentMethodTabs li .PaymentMethod:hover img {
+  opacity: 1;
+}
+.PaymentMethodTabs li span {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.PaymentMethodTabs li.active .PaymentMethod {
+  border: 1px solid #3dc054;
+}
+.PaymentMethodTabs li.active .PaymentMethod img {
+  opacity: 1;
+}
+.PaymentMethodTabs li.active .PaymentMethod:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABUElEQVQ4y2OwPRDCgAU7AfFMIL4NxD+h+DZUzBmbHnQBDSDeD8T/CeD9ULVYDbIH4k9EGALDn6B6UAwCmf6BBENg+APMZSBDGIH4OBmGwDBILyPIIBdiNTkfivx/+t3F/wsfrEGXcwEZNIsYQ+wPhv0/8ub0fxC4+OEauvwskEF3sGlC5tsdCP2/48VBsCH3vjz873s0Cd2gOwzQNAIX3P7iwP8rH2/+dz0UDRdb/WQr2JBn31/+Dzqejs3FPxnQo/zc+8tgTaCwcDoY8X/u/RVg/rufH/5HnMzB5XWwQTeQBT2OxP2/9fk+WPOtz/fA9JffX//Hny7CF4Z3QQYtQpcAhcHjb8/Ahnz/++N/xrkqQpGxCGSQOzZJUFiAArboYjMxScONqgmS0iyiSZNMi+yy40R6RwNfeQQLMzdo1rkLxL+A+AsQX4eKuUHVoOgDACkH0EC0E/stAAAAAElFTkSuQmCC);
+}
+.PaymentMethodTabs li.active span {
+  display: block;
+}
+.PaymentMethodBox {
+  display: none;
+}
+.PaymentMethodBox.active {
+  display: block;
+}

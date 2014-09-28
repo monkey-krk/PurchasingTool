@@ -6336,6 +6336,11 @@ input[type="checkbox"] {
 .fwc textarea {
   width: 290px;
 }
+.fwc input.w12,
+.fwc select.w12,
+.fwc textarea.w12 {
+  width: 139px;
+}
 .fwc .help-block {
   display: block;
   position: absolute;

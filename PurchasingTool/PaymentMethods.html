@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PurchasingTool</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+
+    <link href="/Assets/Css/PaymentMethods.min.css" rel="stylesheet" />
+
+</head>
+<body class="paymentmethods">
+
+    <header class="MainHeader">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="flaticon stroke basket-1 ml10 mr10"></i>
+                            Purchasing
+                            <span class="caret ml20 mr10"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu Item 1</a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="HeaderLink"><a href="/ProductDiscovery.html"><i class="budiconcustom-stats"></i><span>Products</span></a></li>
+                        <li class="HeaderLink"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
+                        <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
+                        <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
+                        <li class="HeaderLink"><a href="/Search.html"><i class="budiconcustom-search2"></i><span>Search</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
+                        <li class="HeaderLink active"><a href="/Settings.html"><i class="budiconcustom-settings"></i><span>Settings</span></a></li>
+                        <li class="HeaderLink">
+                            <a href="/Account.html" class="mt-5" title="Account">
+                                <div class="Image-r-40 ibm" style="background-image: url('/Assets/Img/dummy/img_200_200_2.jpg'); "></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="MainContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 pb50">
+
+                    <form class="form-horizontal Form1" role="form" action="/" method="post">
+                        <div class="form-group mb20">
+                            <h1 class="col-sm-offset-3 col-sm-9">Payment Methods</h1>
+                        </div>
+                        <div class="form-group">
+                            <h3 class="col-sm-3 text-right">Current Methods</h3>
+                        </div>
+                        <hr class="mt10 mb20" />
+                        <div class="form-group fwc">
+                            <label class="col-sm-3 control-label">Payment Methods:</label>
+                            <ul class="col-sm-9 mt5 list-unstyled">
+                                <li class="pb10">
+                                    <img src="/Assets/Img/PaymentMethods/Visa1.png" />
+                                    <span class="ml10">Visa Credit Card xxxx-xxxx-xxxx-8476, 05/20</span>
+                                    <a href="#" class="blue tdu pull-right">Delete</a>
+                                </li>
+                                <li>
+                                    <img src="/Assets/Img/PaymentMethods/MasterCard1.png" />
+                                    <span class="ml10">MasterCard Credit Card xxxx-xxxx-xxxx-8476, 01/22</span>
+                                    <a href="#" class="blue tdu pull-right">Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <h3 class="col-sm-3 text-right">Availabe Options</h3>
+                        </div>
+                        <hr class="mt10 mb20" />
+                        <div class="form-group fwc">
+                            <label class="col-sm-3 control-label">Add Payment Method:</label>
+                            <ul class="col-sm-9 mt5 list-inline PaymentMethodTabs">
+                                <li>
+                                    <div class="PaymentMethod PayPal">
+                                        <img src="/Assets/Img/PaymentMethods/PayPalIcon.png" />
+                                    </div>
+                                    <span>PayPal</span>
+                                </li>
+                                <li class="active">
+                                    <div class="PaymentMethod CreditCard">
+                                        <img src="/Assets/Img/PaymentMethods/CreditCardIcon.png" />
+                                    </div>
+                                    <span>Credit Card</span>
+                                </li>
+                                <li>
+                                    <div class="PaymentMethod Invoice">
+                                        <img src="/Assets/Img/PaymentMethods/InvoiceIcon.png" />
+                                    </div>
+                                    <span>Invoice</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="PaymentMethodBox PayPal">PayPal input data ..</div>
+                        <div class="PaymentMethodBox CreditCard active">
+                            <div class="form-group fwc">
+                                <label for="creditcardname" class="col-sm-3 control-label required">Name on Card</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="creditcardname" name="creditcardname" class="form-control" placeholder="" required="">
+                                </div>
+                            </div>
+                            <div class="form-group fwc">
+                                <label for="creditcardno" class="col-sm-3 control-label required">Card Number</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="creditcardno" name="creditcardno" class="form-control ibm" placeholder="" required="">
+                                    <i class="flaticon solid question-2 gray-light ibm ml10 TooltipHolder" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lobortis libero. In aliquam tincidunt nisi sed sagittis. Maecenas euismod odio id neque viverra, ac placerat ex posuere."></i>
+                                </div>
+                            </div>
+                            <div class="form-group fwc">
+                                <label for="creditcardccv" class="col-sm-3 control-label required">CCV</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="creditcardccv" name="creditcardccv" class="form-control mr10 w12 ibm" placeholder="" required="">
+                                    <img class="mr10 ibm" src="/Assets/Img/PaymentMethods/CCV1.png" />
+                                    <img class="ibm" src="/Assets/Img/PaymentMethods/CCV2.png" />
+                                    <i class="flaticon solid question-2 gray-light ibm ml12 TooltipHolder" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lobortis libero. In aliquam tincidunt nisi sed sagittis. Maecenas euismod odio id neque viverra, ac placerat ex posuere."></i>
+                                </div>
+                            </div>
+                            <div class="form-group fwc">
+                                <label class="col-sm-3 control-label required">Date Expires</label>
+                                <div class="col-sm-9">
+                                    <select id="creditcardmonth" name="creditcardmonth" class="form-control mr10 w12 ibm" required="">
+                                        <option>Month</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                    </select>
+                                    <select id="creditcardyear" name="creditcardyear" class="form-control w12 ibm" required="">
+                                        <option>Year</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="PaymentMethodBox Invoice">Invoice input data ...</div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9 ptb30">
+                                <button type="submit" class="btn btn-success"><i class="flaticon solid checkmark-1 mr10"></i>Save Payment Method</button>
+                                <button type="reset" class="btn btn-link">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9 ptb20 vat">
+                                <a href="#" class="ibm vat mr20"><img src="/Assets/Img/PaymentMethods/GeoTrust.png" /></a>
+                                <a href="#" class="ibm vat"><img src="/Assets/Img/PaymentMethods/BWT.png" /></a>
+                            </div>
+                        </div>
+                        <hr class="mt20 mb20" />
+                    </form>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="h50 vat"><img class="mt5" src="/Assets/Img/PaymentMethods/Springlane.png" /></div>
+                            <p class="gray lh16">“ PreisAnalytics has all the features I want and a great support team when you run into problems or not sure how something works. ”</p>
+                            <div class="gray pt10">Lars Wilde, <a href="#">Springlane</a></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="h50 vat"><img src="/Assets/Img/PaymentMethods/Tengelmann.png" /></div>
+                            <p class="gray lh16">“ PreisAnalytics has all the features I want and a great support team when you run into problems or not sure how something works. ”</p>
+                            <div class="gray pt10">Bastian Siebers, <a href="#">Tengelman E-Stores</a></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 pt50">
+                            <ul class="list-inline center-block text-center">
+                                <li class="pl15 pr15"><a href="#"><img src="/Assets/Img/PaymentMethods/GartenXXL.png" /></a></li>
+                                <li class="pl15 pr15"><a href="#"><img src="/Assets/Img/PaymentMethods/BabyMarkt.png" /></a></li>
+                                <li class="pl15 pr15"><a href="#"><img src="/Assets/Img/PaymentMethods/Globetrotter.png" /></a></li>
+                                <li class="pl15 pr15"><a href="#"><img src="/Assets/Img/PaymentMethods/Springlane.png" /></a></li>
+                                <li class="pl15 pr15"><a href="#"><img src="/Assets/Img/PaymentMethods/Plusde.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".PaymentMethod").click(function () {
+                $(".PaymentMethodTabs li").removeClass("active");
+                $(".PaymentMethodBox").hide();
+                $(this).parent().addClass("active");
+                switch (true) {
+                    case $(this).hasClass('PayPal'):
+                        $(".PaymentMethodBox.PayPal").show();
+                        break;
+                    case $(this).hasClass('CreditCard'):
+                        $(".PaymentMethodBox.CreditCard").show();
+                        break;
+                    case $(this).hasClass('Invoice'):
+                        $(".PaymentMethodBox.Invoice").show();
+                        break;
+                }
+            })
+
+
+            $('.Form1')
+                .on('init.field.bv', function (e, data) {
+                    var field = data.field,        // Get the field name
+                        $field = data.element,      // Get the field element
+                        bv = data.bv;           // BootstrapValidator instance
+
+                    // Create a span element to show valid message
+                    // and place it right before the field
+                    var $span = $('<small/>')
+                                    .addClass('help-block validMessage')
+                                    .attr('data-field', field)
+                                    .insertAfter($field)
+                                    .hide();
+
+                    // Retrieve the valid message via getOptions()
+                    var message = bv.getOptions(field).validMessage;
+
+                    if (message) {
+                        $span.html(message);
+                    }
+                })
+                .bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'flaticon solid checkmark-2',
+                        invalid: 'flaticon solid exclamation-point-1',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        creditcardno: {
+                            validMessage: 'The Credit Card Number is valid !',
+                            validators: {
+                                notEmpty: {
+                                    message: 'Please add your Credit Card number !'
+                                }
+                            }
+                        },
+                        creditcardname: {
+                            validMessage: 'Name confirmed !',
+                            validators: {
+                                notEmpty: {
+                                    message: 'The Name cannot be empty'
+                                }
+                            }
+                        },
+                        creditcardccv: {
+                            validMessage: 'CCV is valid !',
+                            validators: {
+                                notEmpty: {
+                                    message: 'The CCV cannot be empty'
+                                }
+                            }
+                        }
+                    }
+                })
+            .on('success.field.bv', function (e, data) {
+                var field = data.field,        // Get the field name
+                    $field = data.element;      // Get the field element
+                // Retrieve the valid message element
+                $field
+                    .next('.validMessage[data-field="' + field + '"]')
+                    .show();  // Show it
+            })
+            .on('error.field.bv', function (e, data) {
+                var field = data.field,        // Get the field name
+                    $field = data.element;      // Get the field element
+                // Hide the valid message element
+                $field
+                    .next('.validMessage[data-field="' + field + '"]')
+                    .hide();
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>
+
