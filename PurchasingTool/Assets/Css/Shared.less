@@ -853,6 +853,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     overflow-y: auto;
     margin-top: 2px;
+    box-shadow:rgba(0,0,0,0.2) 0px 1px 2px;
 }
 .autocomplete-suggestion {
     &:first-child {
@@ -860,7 +861,7 @@ input[type="checkbox"] {
     }
 
     padding: 5px 10px;
-    white-space: nowrap;
+    //white-space: nowrap;
     overflow: hidden;
     color: #282b34;
     font-weight: normal;
@@ -879,5 +880,94 @@ input[type="checkbox"] {
 }
 
 /*#endregion */
+
+/*#endregion */
+
+/*#region TopSearch */
+
+.TopSearchBox {
+    display:none;
+    background-color: #313540;
+    height: 70px;
+    vertical-align: middle;
+
+    input[type="text"] {
+        width: 250px;
+        height: 34px;
+        margin: 0px 10px 0px 20px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #747880;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -moz-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .TopSearchGoBtn {
+        display: inline-block;
+        font-size: 24px;
+        vertical-align: middle;
+        margin-right:17px;
+        color:#c0cacc;
+        &:hover {
+            color: @white;
+        }
+    }
+
+    .TopSearchClose {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        height: 24px;
+        width: 24px;
+        cursor:pointer;
+        margin-right:5px;
+
+        .i1, .i2 {
+            display: block;
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            border-left: 2px solid;
+            border-color:#c0cacc;
+        }
+
+        .i1 {
+            top: 5px;
+            left: 0px;
+            -moz-transform: rotate(38deg);
+            -ms-transform: rotate(38deg);
+            -o-transform: rotate(38deg);
+            -webkit-transform: rotate(38deg);
+            transform: rotate(38deg);
+        }
+
+        .i2 {
+            top: -8px;
+            left: 0px;
+            -moz-transform: rotate(-38deg);
+            -ms-transform: rotate(-38deg);
+            -o-transform: rotate(-38deg);
+            -webkit-transform: rotate(-38deg);
+            transform: rotate(-38deg);
+        }
+
+        &:hover {
+            .i1, .i2 {
+                border-color:#ffffff;
+            }
+        }
+    }
+
+    &.active {
+        display: table-cell;
+    }
+}
 
 /*#endregion */

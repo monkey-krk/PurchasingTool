@@ -49,7 +49,14 @@
                         <li class="HeaderLink"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
                         <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
                         <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
-                        <li class="HeaderLink"><a href="/Search.html"><i class="budiconcustom-search2"></i><span>Search</span></a></li>
+                        <li class="HeaderLink">
+                            <a class="TopSearchOpen" href="#"><i class="budiconcustom-search2"></i><span>Search</span></a>
+                            <div class="TopSearchBox">
+                                <input type="text" class="TopSearch" id="TopSearch" name="TopSearch" placeholder="">
+                                <a class="TopSearchGoBtn" href="#" title="Search"><i class="budiconcustom-search2"></i></a>
+                                <a class="TopSearchClose" href="#" title="Close"><i class="i1"></i><i class="i2"></i></a>
+                            </div>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
@@ -230,6 +237,7 @@
 
     <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
     <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
     <script src="/Assets/Js/Shared.js"></script>
     <script src="/Assets/External/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
 
