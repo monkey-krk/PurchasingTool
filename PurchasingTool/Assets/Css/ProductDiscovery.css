@@ -236,32 +236,29 @@
   position: relative;
   background-color: #2e313a;
 }
-.Filters:after {
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 52px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 9px solid #e8f0f2;
-  border-right: 9px solid transparent;
-  border-left: 9px solid transparent;
-}
 .Filters .FBox {
+  position: relative;
   border-bottom: 10px solid #4b4f5d;
 }
 .Filters .FBox .FBoxMainTable {
-  width: 100%;
+  width: 100%!important;
   color: #d4dee0;
 }
 .Filters .FBox .FBoxMainTable td {
   vertical-align: top;
-  padding: 15px;
 }
 .Filters .FBox .FBoxMainTable td td {
   vertical-align: middle;
   padding: 0px;
+}
+.Filters .FBox .FBoxMainTable .CTW1 {
+  padding: 15px 8px 15px 15px;
+}
+.Filters .FBox .FBoxMainTable .CTW2 {
+  padding: 15px 12px 15px 12px;
+}
+.Filters .FBox .FBoxMainTable .CTW3 {
+  padding: 15px 15px 15px 8px;
 }
 .Filters .FBox .FName {
   font-size: 16px;
@@ -286,11 +283,7 @@
   color: #282b34;
 }
 .Filters .Category .CategoryTableWrapper {
-  width: 33%;
-}
-.Filters .Category .CategoryTableWrapper.CTW2 {
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 33%!important;
 }
 .Filters .Category .CategoryTable {
   width: 100%;
@@ -309,6 +302,9 @@
   white-space: nowrap;
   padding: 7px 5px;
 }
+.Filters .Category .CategoryTable thead th:nth-child(1) {
+  width: 100%;
+}
 .Filters .Category .CategoryTable thead th:nth-child(4) {
   text-align: right;
 }
@@ -322,11 +318,11 @@
 }
 .Filters .Category .CategoryTable tbody tr.active td:nth-child(1),
 .Filters .Category .CategoryTable tbody tr:hover td:nth-child(1) {
-  padding: 7px 3px 7px 5px;
+  padding: 5px 3px 5px 5px;
 }
 .Filters .Category .CategoryTable tbody tr.active td:nth-child(4),
 .Filters .Category .CategoryTable tbody tr:hover td:nth-child(4) {
-  padding: 7px 5px 7px 3px;
+  padding: 5px 5px 5px 3px;
 }
 .Filters .Category .CategoryTable tbody tr.active {
   background: #88b4b6 !important;
@@ -337,11 +333,12 @@
 .Filters .Category .CategoryTable tbody td {
   width: auto;
   font-size: 12px;
-  padding: 7px 5px;
+  padding: 5px 5px;
   cursor: pointer;
+  vertical-align: top;
 }
 .Filters .Category .CategoryTable tbody td:nth-child(1) {
-  white-space: nowrap;
+  line-height: 1.3;
 }
 .Filters .Category .CategoryTable tbody td:nth-child(4) {
   text-align: right;
@@ -365,6 +362,7 @@
   height: 10px;
   border-radius: 10px;
   background-color: #d8e2e5;
+  margin-top: 2px;
 }
 .Filters .Category .CategoryTable .Progres .Up,
 .Filters .Category .CategoryTable .Progres .Down {
@@ -390,6 +388,7 @@
   color: #747880;
   border-radius: 5px;
   opacity: 0.8;
+  width: 33%;
 }
 .Filters .Category .CategoryBlankBox .Text:before {
   display: block;
@@ -414,9 +413,6 @@
 }
 .Filters .Category .CategoryButtonsWrapper {
   padding-top: 0px !important;
-}
-.Filters .Brand .FBoxMainTable {
-  margin-top: 10px;
 }
 .Filters .Brand .TopBrands .Title {
   font-size: 18px;
@@ -449,12 +445,6 @@
 }
 .Filters .Name input[type="text"] {
   width: 480px;
-}
-.Filters .Name .FBoxMainTable {
-  margin: 15px 0;
-}
-.Filters .Demand .FBoxMainTable {
-  margin-top: 10px;
 }
 .Filters .Demand .DemandSlider {
   width: 300px;
@@ -516,9 +506,6 @@
 .Filters .Demand .DemandChart {
   width: 350px;
   margin-left: -25px;
-  margin-top: 10px;
-}
-.Filters .Competition .FBoxMainTable {
   margin-top: 10px;
 }
 .Filters .Competition .CompetitionSlider {
@@ -600,9 +587,6 @@
   padding-right: 0;
   text-align: center;
 }
-.Filters .Rating .FBoxMainTable {
-  margin-top: 10px;
-}
 .Filters .Rating .RatingSlider {
   width: 300px;
   border: none;
@@ -665,9 +649,6 @@
   margin-left: -25px;
   margin-top: 10px;
 }
-.Filters .MinPrice .FBoxMainTable {
-  margin-top: 10px;
-}
 .Filters .MinPrice .MinPriceInputs {
   margin-bottom: 30px;
 }
@@ -684,9 +665,6 @@
   margin-left: -25px;
   margin-top: 10px;
 }
-.Filters .RRP .FBoxMainTable {
-  margin-top: 10px;
-}
 .Filters .RRP .RRPInputs {
   margin-bottom: 30px;
 }
@@ -701,9 +679,6 @@
 .Filters .RRP .RRPChart {
   width: 350px;
   margin-left: -25px;
-  margin-top: 10px;
-}
-.Filters .Flags .FBoxMainTable {
   margin-top: 10px;
 }
 /*#endregion */

@@ -11,7 +11,10 @@ $(document).ready(function () {
 
 
     if ($(".TooltipHolder").length > 0) {
-        $(".TooltipHolder").tooltip();
+        try {
+            $(".TooltipHolder").tooltip();
+        } catch (e) {
+        }
     }
     
 
