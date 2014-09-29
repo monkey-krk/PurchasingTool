@@ -2,11 +2,8 @@
 
 $(document).ready(function () {
 
-
-    $('.dropdown-menu').on('click', function (e) {
-        if ($(this).hasClass('dropdown-menu-form')) {
+    $('.dropdown-menu-form input[type="checkbox"], .dropdown-menu-form label').on('click', function (e) {
             e.stopPropagation();
-        }
     });
 
 
