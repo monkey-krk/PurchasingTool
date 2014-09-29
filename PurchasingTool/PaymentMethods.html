@@ -107,19 +107,19 @@
                         <div class="form-group fwc">
                             <label class="col-sm-3 control-label">Add Payment Method:</label>
                             <ul class="col-sm-9 mt5 list-inline PaymentMethodTabs">
-                                <li>
+                                <li title="PayPal">
                                     <div class="PaymentMethod PayPal">
                                         <img src="/Assets/Img/PaymentMethods/PayPalIcon.png" />
                                     </div>
                                     <span>PayPal</span>
                                 </li>
-                                <li class="active">
+                                <li class="active" title="Credit Card">
                                     <div class="PaymentMethod CreditCard">
                                         <img src="/Assets/Img/PaymentMethods/CreditCardIcon.png" />
                                     </div>
                                     <span>Credit Card</span>
                                 </li>
-                                <li>
+                                <li class="disabled" title="Invoice">
                                     <div class="PaymentMethod Invoice">
                                         <img src="/Assets/Img/PaymentMethods/InvoiceIcon.png" />
                                     </div>
@@ -229,19 +229,21 @@
         $(document).ready(function () {
 
             $(".PaymentMethod").click(function () {
-                $(".PaymentMethodTabs li").removeClass("active");
-                $(".PaymentMethodBox").hide();
-                $(this).parent().addClass("active");
-                switch (true) {
-                    case $(this).hasClass('PayPal'):
-                        $(".PaymentMethodBox.PayPal").show();
-                        break;
-                    case $(this).hasClass('CreditCard'):
-                        $(".PaymentMethodBox.CreditCard").show();
-                        break;
-                    case $(this).hasClass('Invoice'):
-                        $(".PaymentMethodBox.Invoice").show();
-                        break;
+                if(!$(this).parent().hasClass("disabled")) {
+                    $(".PaymentMethodTabs li").removeClass("active");
+                    $(".PaymentMethodBox").hide();
+                    $(this).parent().addClass("active");
+                    switch (true) {
+                        case $(this).hasClass('PayPal'):
+                            $(".PaymentMethodBox.PayPal").show();
+                            break;
+                        case $(this).hasClass('CreditCard'):
+                            $(".PaymentMethodBox.CreditCard").show();
+                            break;
+                        case $(this).hasClass('Invoice'):
+                            $(".PaymentMethodBox.Invoice").show();
+                            break;
+                    }
                 }
             })
 
