@@ -353,10 +353,195 @@
   min-height: 810px;
   background-color: #ffffff;
 }
+.SuccessStories .TopTitle {
+  color: #333740;
+  font-size: 32px;
+  text-align: center;
+  padding: 100px 0 10px 0;
+}
+.SuccessStories .Mediabox {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 600px;
+}
+.SuccessStories .Mediabox .UserImage {
+  float: left;
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+.SuccessStories .Mediabox .TextBlock .Name {
+  color: #a6b1b3;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+.SuccessStories .Mediabox .TextBlock .Text {
+  color: #555f70;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+.SuccessStories .ReadMoreBtn {
+  margin: 60px auto 30px auto;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #3dc054;
+  padding: 17px 0px;
+  border-radius: 32px;
+  width: 190px;
+}
+.SuccessStories .ReadMoreBtn:hover {
+  text-decoration: none;
+  background-color: #28d146;
+}
+@media (max-width: 767px) {
+  .SuccessStories .TopTitle {
+    padding: 60px 0 10px 0;
+  }
+  .SuccessStories .Mediabox .UserImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+  }
+  .SuccessStories .Mediabox .TextBlock .Name {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .SuccessStories .Mediabox .TextBlock .Text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .SuccessStories .ReadMoreBtn {
+    margin: 40px auto 50px auto;
+  }
+}
 /*#endregion */
 /*#region Customers */
 .Customers {
   min-height: 200px;
   background-color: #e8f0f2;
+}
+.Customers ul {
+  display: block;
+  margin: 75px auto 0 auto;
+  width: 93%;
+}
+.Customers ul li {
+  width: 19%;
+  text-align: center;
+}
+.Customers ul li a {
+  opacity: 0.60;
+}
+.Customers ul li a:hover {
+  opacity: 1;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Customers ul li a img {
+    max-width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .Customers ul {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .Customers ul li {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*#endregion */
+/*#region Start */
+.Start {
+  min-height: 260px;
+  background-image: url('/Assets/Img/Index/StartBck.jpg');
+  display: block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.Start .TopTitle {
+  text-align: center;
+  font-size: 32px;
+  padding: 65px 0 35px 0;
+}
+.Start .InputBox {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+.Start .InputBox .StartIcon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABZklEQVRIx7WUMU7DMBSGfQDCSrEDJykSYqErGy2MnACJW0BpU1BPAUGchAMgJgYkUNIFFgb4Lf2WrGBbeSEdvlZNnt/n/zWOGu4fqDWxBS7By7qaX4FP8AOKPpsPwBSswDMFX0D31fwa1OAWnIEP8GRT2Jr/NNdgxuY3IAcjCo5BxRrVtfmcTRbA8LoT7PF64dZImhsurPltvHu+wLBGSySGO6uYwDTu+wLFDRR+Tap5zuY1Z68DNU3BnxQxSc6nxDXfjmzCCt49QTBFU7LD5is+74NESicYNsZahxLbj12wZMGUJ1YJBdEUTvIKvsE52Owo0LEUTrIBxuCehSV/Zy0FyRShP942noAHPrJ3PL1HCYFLYdpKfOzoTsEjx3kYqUumkJz4kglDKapUConkhCJxCokk49wzaQrpC7JkIlEKqWTijax1CqnEH9mcL0/Vt8SN7EKSootkzDOzkKyTSuyo3iQpLL9MkSrgdrwLqQAAAABJRU5ErkJggg==);
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+.Start .InputBox input[type="text"] {
+  height: 50px;
+  width: 450px;
+  border-radius: 25px 0 0 25px;
+  padding-left: 60px;
+  font-size: 16px;
+  padding-top: 5px;
+  border: 0;
+  color: #343741;
+  float: left;
+}
+.Start .InputBox .SubmitBtn {
+  vertical-align: top;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  background-color: #3dc054;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 17px 0px;
+  border-radius: 0 32px 32px 0;
+}
+.Start .InputBox .SubmitBtn:hover {
+  text-decoration: none;
+  background-color: #28d146;
+}
+@media (max-width: 767px) {
+  .Start .TopTitle {
+    font-size: 22px;
+    padding: 45px 0 35px 0;
+  }
+  .Start .InputBox {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .Start .InputBox input[type="text"] {
+    width: 300px;
+    border-radius: 25px;
+    padding-left: 55px;
+  }
+  .Start .InputBox .SubmitBtn {
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    border-radius: 32px;
+  }
 }
 /*#endregion */

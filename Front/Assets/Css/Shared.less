@@ -334,7 +334,7 @@ a[class~="purple"]:hover {
             background-color: @blue-dark;
             height: 30px;
             margin-top: 0px;
-            padding-top: 3px;
+            padding-top: 4px;
             margin-left: 5px;
             color: @white;
             font-weight:600;
@@ -450,6 +450,70 @@ a[class~="purple"]:hover {
 
             .navbar-collapse {
                 background-color: rgba(255, 255, 255,0.8);
+            }
+        }
+    }
+}
+
+/*#endregion */
+
+/*#region MainFooter */
+
+.MainFooter {
+    height:120px;
+    background:#232838;
+    color:@white;
+    padding-top:50px;
+
+    .Copyright {
+        display:block;
+        float:left;
+        color:@white;
+        opacity:0.5;
+    }
+
+    ul {
+        display:block;
+        float:right;
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        li {
+            display:inline-block;
+            margin-right:25px;
+            &.social {
+                margin-right:10px;
+            }
+            &:last-child {
+                margin-right:0px;
+            }
+            a {
+                color:@white;
+                opacity:0.5;
+                &:hover {
+                    opacity:1;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .MainFooter {
+        padding-top:25px;
+        height:140px;
+        .Copyright {
+            float:none;
+            text-align:center;
+            margin-bottom:25px;
+        }
+        ul {
+            float:none;
+            text-align:center;
+            li {
+                margin-bottom:22px;
+                
             }
         }
     }

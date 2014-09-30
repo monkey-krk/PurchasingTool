@@ -251,7 +251,7 @@ a[class~="purple"]:hover {
   background-color: #1e80a0;
   height: 30px;
   margin-top: 0px;
-  padding-top: 3px;
+  padding-top: 4px;
   margin-left: 5px;
   color: #ffffff;
   font-weight: 600;
@@ -334,6 +334,62 @@ a[class~="purple"]:hover {
   }
   .MainHeader.sticky .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+/*#endregion */
+/*#region MainFooter */
+.MainFooter {
+  height: 120px;
+  background: #232838;
+  color: #ffffff;
+  padding-top: 50px;
+}
+.MainFooter .Copyright {
+  display: block;
+  float: left;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.MainFooter ul {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.MainFooter ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.MainFooter ul li.social {
+  margin-right: 10px;
+}
+.MainFooter ul li:last-child {
+  margin-right: 0px;
+}
+.MainFooter ul li a {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.MainFooter ul li a:hover {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .MainFooter {
+    padding-top: 25px;
+    height: 140px;
+  }
+  .MainFooter .Copyright {
+    float: none;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .MainFooter ul {
+    float: none;
+    text-align: center;
+  }
+  .MainFooter ul li {
+    margin-bottom: 22px;
   }
 }
 /*#endregion */
