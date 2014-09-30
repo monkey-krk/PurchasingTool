@@ -94,3 +94,73 @@
 }
 
 /*#endregion */
+
+#new_list_modal {
+    .modal-dialog {
+        width:550px;
+        .modal-content {
+            background-color: #fff;
+            .form-horizontal {
+                padding: 0;
+
+                .modal-header {
+                    border-bottom: none;
+
+                    .modal-title {
+                        display: block;
+                        text-align: center;
+                        font-size: 32px;
+                        font-weight: 600;
+                        color: #343741;
+                        text-transform: capitalize;
+                        margin-bottom: 10px;
+
+                        &:before {
+                            display: block;
+                            margin: 0 auto;
+                            margin-top: 40px;
+                            margin-bottom: 15px;
+                            content: "";
+                            width: 55px;
+                            height: 58px;
+                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA6CAYAAAAURcGYAAADVElEQVRo3u2aS09TQRTHb6Ky8BvoRr+BG6MrRYiPFRAISgVd+kSl4FaU7owhyMJogiyMJmw0cQk1ivRBHwSjKalEDdIFah+ARqO2JWU8ZzK3Tu+9bW9b2rmQmeSfNDNz5v5/7e3MnMko+w82KKDtoD7QPCgNIhZTmnnrY17Rs0IIKSjstA00bkGgfBpnnk3B2VlQFNQC2qF+MxbSTlAr84hee83CzbGAZgtCadXMvIbMwqVYQN0mgKtjXlNm4dR3WdkkyvqVcBJOwkk4CSfhJJyE29pw3hqkM56tDOeVr6WEk3ASTsJJOAknF3EJVzUVM2ck1a+ZvhJOwkk403C7QZdBY6BFUAr0CzQ/4XxFbt8ZRrhdloY7NNWeIzB0ABQk5kuQxVgbDsz0k/LLTUvCgYl9IB/vNL2+Ribj08TxfpicDFwijS4bOe45Q7pmemjdZNxH+2iKj41lnUU8FArnOHQlgsQWvEIAvKCwjysRMAK0BtzIw0dZV5n1DHmw8KQolFYYg7FcGRD+WsLDD/OOygHjATWlXjRcdlZ8HfeXDaYKx9DMomLg4MF7+MmjzX+hYrg2/3ntJLNXFFyP6uBFzF0ySKvvHIn8XiIjn8dy6p1RFw9nFwX3VHXQHx4sCazdf5Es/flGY998n8tpuwFjceWZKLiI6gDXMSOIetcpXR32/fo3RuPe/QjTtU/bzpWIKLik6qDRfVoH8fyLk0Lw4B2BbhJNJmjM7GqIHHN36eJwsedKSsglG3jwT9XBCc9ZncnAylvahjC2YDfsTK6ReHKF1mHbUXen4a9tBFfz61Hw4A+qg87gVZ1JNK8CItRyapV+nl6epQD5/o9Gr2Uvd7Gtib/yJ3JCQQiE+b8tCxQEyzeh4PW+iVpeKxwcukfMLAUI8zLmpX2OuDqKzqRGS4HCriFeZxc216oN19RiI1VZxDNp3SKuCMrCs9svTGEqhcMxuDJDt1/lnGNskHI2zvcXHpcNhrGGG2eBcCgHn/Lc/TRaMtjQx1FtyuPIpjwi4VgmnvM+TcHu3myyqskE9MmqBeAMjxlwhsSpHdeuBpgpUfgZ67DN1DGDaDjugOhWBQdEA4YHRIL/c1pt7NGexeBUYTJrx10GO5RNMy2yOjvrU3CcfwMrytpvWBbvAAAAAElFTkSuQmCC);
+                        }
+                    }
+                }
+
+                .modal-body {
+                    .control-label {
+                        margin-top: 4px;
+                    }
+
+                    .form-control {
+                        background-color: #e8f0f2;
+                        height: 40px;
+                        font-size: 16px;
+                        color: #343741;
+                    }
+                }
+
+                .modal-footer {
+                    border-top: none;
+                    padding-bottom: 50px;
+
+                    .btn-default {
+                        display: none;
+                    }
+
+                    .btn-primary {
+                        display: block;
+                        margin: 0 auto;
+                        background-color: @green;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        &:hover {
+                            background-color: darken(@green,5%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
