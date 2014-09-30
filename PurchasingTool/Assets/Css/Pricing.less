@@ -197,29 +197,63 @@
             .TopLine {
                 background-color: #d7e1e4;
             }
+
+            &.featured {
+                .TopTitle {
+                    background-color: #d7e1e4;
+                }
+
+                .SelectPlanBtnWrapper {
+                    .SelectPlanBtn {
+                        background-color: #87a5b2;
+
+                        &:hover {
+                            background-color: darken(#87a5b2,5%);
+                        }
+                    }
+                }
+            }
         }
 
         &.Starter {
             .TopLine {
                 background-color: @red;
             }
+
+            &.featured {
+                .TopTitle {
+                    background-color: @red;
+                }
+
+                .SelectPlanBtnWrapper {
+                    .SelectPlanBtn {
+                        background-color: @red;
+
+                        &:hover {
+                            background-color: darken(@red,11%);
+                        }
+                    }
+                }
+            }
         }
 
         &.Pro {
-            .TopTitle {
-                background-color: @blue;
-            }
-
             .TopLine {
                 background-color: @blue;
             }
 
-            .SelectPlanBtnWrapper {
-                .SelectPlanBtn {
+            &.featured {
+                .TopTitle {
                     background-color: @blue;
+                }
 
-                    &:hover {
-                        background-color: darken(@blue,5%);
+                .SelectPlanBtnWrapper {
+                    .SelectPlanBtn {
+                        background-color: @blue;
+
+                        &:hover {
+                            background-color: darken(@blue,5%);
+                        }
                     }
                 }
             }
@@ -233,6 +267,32 @@
             .TopLine {
                 background-color: @green;
             }
+
+            &.featured {
+                .TopTitle {
+                    background-color: @green;
+                }
+
+                .SelectPlanBtnWrapper {
+                    .SelectPlanBtn {
+                        background-color: @green;
+
+                        &:hover {
+                            background-color: darken(@green,5%);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.featured {
+            .TopTitle {
+
+                &:before {
+                    display: block;
+                    content: "Recomended";
+                }
+            }
         }
     }
 }
@@ -245,6 +305,7 @@
                     padding-left: 6px;
                     padding-right: 6px;
                 }
+
                 span {
                     font-size: 12px;
                 }

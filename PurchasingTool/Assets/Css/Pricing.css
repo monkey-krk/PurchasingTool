@@ -163,19 +163,37 @@
 .pricing .Plan.Free .TopLine {
   background-color: #d7e1e4;
 }
+.pricing .Plan.Free.featured .TopTitle {
+  background-color: #d7e1e4;
+}
+.pricing .Plan.Free.featured .SelectPlanBtnWrapper .SelectPlanBtn {
+  background-color: #87a5b2;
+}
+.pricing .Plan.Free.featured .SelectPlanBtnWrapper .SelectPlanBtn:hover {
+  background-color: #7799a8;
+}
 .pricing .Plan.Starter .TopLine {
   background-color: #e74c3c;
 }
-.pricing .Plan.Pro .TopTitle {
-  background-color: #26a0c8;
+.pricing .Plan.Starter.featured .TopTitle {
+  background-color: #e74c3c;
+}
+.pricing .Plan.Starter.featured .SelectPlanBtnWrapper .SelectPlanBtn {
+  background-color: #e74c3c;
+}
+.pricing .Plan.Starter.featured .SelectPlanBtnWrapper .SelectPlanBtn:hover {
+  background-color: #d12b1a;
 }
 .pricing .Plan.Pro .TopLine {
   background-color: #26a0c8;
 }
-.pricing .Plan.Pro .SelectPlanBtnWrapper .SelectPlanBtn {
+.pricing .Plan.Pro.featured .TopTitle {
   background-color: #26a0c8;
 }
-.pricing .Plan.Pro .SelectPlanBtnWrapper .SelectPlanBtn:hover {
+.pricing .Plan.Pro.featured .SelectPlanBtnWrapper .SelectPlanBtn {
+  background-color: #26a0c8;
+}
+.pricing .Plan.Pro.featured .SelectPlanBtnWrapper .SelectPlanBtn:hover {
   background-color: #228fb3;
 }
 .pricing .Plan.Enterprise .Package,
@@ -190,6 +208,19 @@
 }
 .pricing .Plan.Enterprise .TopLine {
   background-color: #3dc054;
+}
+.pricing .Plan.Enterprise.featured .TopTitle {
+  background-color: #3dc054;
+}
+.pricing .Plan.Enterprise.featured .SelectPlanBtnWrapper .SelectPlanBtn {
+  background-color: #3dc054;
+}
+.pricing .Plan.Enterprise.featured .SelectPlanBtnWrapper .SelectPlanBtn:hover {
+  background-color: #37ad4c;
+}
+.pricing .Plan.featured .TopTitle:before {
+  display: block;
+  content: "Recomended";
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .pricing .Plan .Chk i {
