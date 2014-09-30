@@ -363,13 +363,21 @@
   margin: 0 auto;
   margin-top: 50px;
   max-width: 600px;
+  display: table;
 }
-.SuccessStories .Mediabox .UserImage {
-  float: left;
+.SuccessStories .Mediabox .UserImageWrapper {
+  display: table-cell;
+  vertical-align: top;
+}
+.SuccessStories .Mediabox .UserImageWrapper .UserImage {
   width: 110px;
   height: 110px;
   border-radius: 5px;
   margin-right: 50px;
+}
+.SuccessStories .Mediabox .TextBlock {
+  display: table-cell;
+  vertical-align: top;
 }
 .SuccessStories .Mediabox .TextBlock .Name {
   color: #a6b1b3;
@@ -402,12 +410,11 @@
   .SuccessStories .TopTitle {
     padding: 60px 0 10px 0;
   }
-  .SuccessStories .Mediabox .UserImage {
+  .SuccessStories .Mediabox .UserImageWrapper .UserImage {
     width: 60px;
     height: 60px;
     border-radius: 5px;
     margin-right: 25px;
-    margin-bottom: 100px;
   }
   .SuccessStories .Mediabox .TextBlock .Name {
     padding-top: 0px;

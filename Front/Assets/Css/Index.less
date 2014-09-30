@@ -468,16 +468,22 @@
         margin: 0 auto;
         margin-top: 50px;
         max-width: 600px;
+        display:table;
 
-        .UserImage {
-            float: left;
-            width: 110px;
-            height: 110px;
-            border-radius: 5px;
-            margin-right: 50px;
+        .UserImageWrapper {
+            display:table-cell;
+            vertical-align:top;
+            .UserImage {
+                width: 110px;
+                height: 110px;
+                border-radius: 5px;
+                margin-right: 50px;
+            }
         }
 
         .TextBlock {
+            display:table-cell;
+            vertical-align:top;
             .Name {
                 color: #a6b1b3;
                 text-transform: uppercase;
@@ -519,14 +525,14 @@
         }
 
         .Mediabox {
-            .UserImage {
-                width: 60px;
-                height: 60px;
-                border-radius: 5px;
-                margin-right: 25px;
-                margin-bottom: 100px;
+            .UserImageWrapper {
+                .UserImage {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+                    margin-right: 25px;
+                }
             }
-
             .TextBlock {
                 .Name {
                     padding-top: 0px;
