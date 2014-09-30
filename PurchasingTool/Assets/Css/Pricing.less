@@ -1,0 +1,264 @@
+﻿@import "Variables.less";
+
+.pricing {
+    .Plan {
+        background-color: @white;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 50px;
+
+        .Package, .PriceTop, .PriceMiddle, .PriceBottom, .UsersNo, .TopSellers, .Chk, .SelectPlanBtnWrapper {
+            border-right: 2px solid #d7e1e4;
+        }
+
+        .TopTitle {
+            height: 24px;
+            background-color: @body-bg;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            color: @white;
+            padding-top: 9px;
+        }
+
+        .TopLine {
+            height: 6px;
+        }
+
+        .Package {
+            height: 90px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #282b34;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 37px;
+        }
+
+        .PriceTop {
+            height: 19px;
+            font-size: 14px;
+            font-weight: 600;
+            color: @blue;
+            text-align: center;
+            text-decoration: line-through;
+        }
+
+        .PriceMiddle {
+            height: 29px;
+            font-size: 22px;
+            font-weight: 600;
+            color: @blue;
+            text-align: center;
+        }
+
+        .PriceBottom {
+            height: 46px;
+            font-size: 12px;
+            color: @blue;
+            text-align: center;
+        }
+
+        .UsersNo {
+            height: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #282b34;
+            text-align: center;
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .TopSellers {
+            height: 54px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #282b34;
+            text-align: center;
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .Chk {
+            display: block;
+            padding-top: 12px;
+
+            i {
+                display: table-cell;
+                vertical-align: top;
+                padding-left: 19px;
+                padding-right: 11px;
+
+                &:before {
+                    display: block;
+                    content: "";
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+
+            span {
+                display: table-cell;
+                vertical-align: top;
+                width: 100%;
+                color: #747880;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            b {
+                display: table-cell;
+                vertical-align: top;
+
+                &:after {
+                    display: block;
+                    content: " ";
+                    width: 50px;
+                }
+            }
+
+            &.No {
+                i {
+                    &:before {
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAA9UlEQVQ4y62UMQ7CMAxFM3ECWqlI7SXoIbpwHZZepBdoJ7YuRGLgIO0KA5wACQVb+gZTpaVUGb4ix85TnNg2zjkjOpzOopS0J7WkG8lhbbGfqti3jAdW4fAvVaMwMmLSEYFPUkPakSL4I9gN/A7xsQ8moJ601Tceiv2IE+AHplLjgHgKNMik1ynzZqZSy+eAFDBXKWe8UcKo/wEpYI3zpX6rYiGskLdj4w5jvRCW4PzVSN0sAQG2AuMR/GZB3yzob4ars0EHdH92QPfVAcppFXBObwrIjk0N65kaG3x/ArtWqVnv1Ag6zyYm7YULkutITdrMN2lf4MEAiIy+xIMAAAAASUVORK5CYII=);
+                    }
+                }
+            }
+
+            &.Yes {
+                i {
+                    &:before {
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABQElEQVQ4y2P4//8/AwzbHgiBYVkgLgPizUD8Goj/Q+nNUHFZJLVwzIDFsBlQzYTwDJyGATliQLyDSINgeAdUH4ZhpBqEbCDCMBK8htfLIIPkKDQIhuVAhlWToinwWOr/B1+f/J91bxm6XDVJYRVyPOP/k2/P/4PAufdXMMIOZNgbdE32B8MwDAo9kfn/2feXYIMufLj63+1wDLqa5wzomtY/3QnWBNIMEws/kf3/xY/XYIPOvLv03/VQNDaX/8Jw2Ym358GaQJojTmb/jz6V9//Vj7dgMZCcy6EoXMHwHCPMQIphBoIMefPzHZh99M2Z/04HI/CmN6yxCdIE0gwDB1+fIGQQPDaxpjOQ5j0vj/zf9fLQf4eD4cSlM6rmAKS8uZNMg3biKjV2kmGQGG3LMzwl7TNQggSlI6SSVg5bSQsAICtFpq/tDo8AAAAASUVORK5CYII=);
+                    }
+                }
+            }
+
+            &.Soon {
+                i {
+                    &:before {
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABTElEQVQ4y62U307CMBTG9xTcscfkhhfhIRiIJGQ1KlMQlHsugUTF4cYfY2ADb4493Tpqe6aTsOTL1q7fLz3ntMcCAEuqfu1JlbkqXG2ukAvSdzudLytrM1kErJaa/1ItF8YHJS5XLnZQN3fQUIRj5yfQTX0GLAM1NAglDXiEqaEVARFAETKC7FNABNBGWFXmqIi50x/C53YH48ksyeMRVs1y5RQAuQ+PsI0iwCdcb7KiyNwhbKmH2Ly9J0BPsIviBLT5gEuvr4fqW3q+pq9zYUKznGMDDor3AhTwHbW8HpW3L2Nni+VKmNDMBiO4Go4g2icg/Nfq9vKK4Bs5w8USiJD4cBDffriCi64Zvp4zo5poQrN85kFIgqhqkucMzS+LAJ79d7Ig5Dk76w1Q7iY78W6yvK7B/tk1GNk1ztrPfum0b3gg8RwpndamOu03Aw5OJojmqXIAAAAASUVORK5CYII=);
+                    }
+                }
+
+                b {
+                    display: table-cell;
+                    vertical-align: top;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: normal;
+
+                    &:before {
+                        display: block;
+                        content: "SOON";
+                        font-size: 8px;
+                        background-color: #aebdc1;
+                        color: @white;
+                        padding: 2px;
+                        border-radius: 2px;
+                        margin-top: 4px;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .SelectPlanBtnWrapper {
+            height: 140px;
+            padding: 0 30px;
+            padding-top: 60px;
+
+            .SelectPlanBtn {
+                display: block;
+                background-color: @green;
+                color: @white;
+                border-radius: 5px;
+                height: 40px;
+                text-align: center;
+                font-size: 16px;
+                padding-top: 12px;
+
+                &:hover {
+                    background-color: darken(@green,5%);
+                }
+            }
+        }
+
+        &.Free {
+            background-color: #f6f9fa;
+
+            .TopLine {
+                background-color: #d7e1e4;
+            }
+        }
+
+        &.Starter {
+            .TopLine {
+                background-color: @red;
+            }
+        }
+
+        &.Pro {
+            .TopTitle {
+                background-color: @blue;
+            }
+
+            .TopLine {
+                background-color: @blue;
+            }
+
+            .SelectPlanBtnWrapper {
+                .SelectPlanBtn {
+                    background-color: @blue;
+
+                    &:hover {
+                        background-color: darken(@blue,5%);
+                    }
+                }
+            }
+        }
+
+        &.Enterprise {
+            .Package, .PriceTop, .PriceMiddle, .PriceBottom, .UsersNo, .TopSellers, .Chk, .SelectPlanBtnWrapper {
+                border-right: none;
+            }
+
+            .TopLine {
+                background-color: @green;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pricing {
+        .Plan {
+            .Chk {
+                i {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing {
+        .Plan {
+            .Package, .PriceTop, .PriceMiddle, .PriceBottom, .UsersNo, .TopSellers, .Chk, .SelectPlanBtnWrapper {
+                border-right: none;
+            }
+        }
+    }
+}
