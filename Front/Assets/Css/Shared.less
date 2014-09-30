@@ -1,0 +1,458 @@
+﻿@import "Variables.less";
+
+/*#region Fonts */
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('/Assets/Font/GothamRounded-Light.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/GothamRounded-Light.otf') format('opentype'), url('/Assets/Font/GothamRounded-Light.woff') format('woff'), url('/Assets/Font/GothamRounded-Light.ttf') format('truetype'), url('/Assets/Font/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/Assets/Font/GothamRounded-Book.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/GothamRounded-Book.otf') format('opentype'), url('/Assets/Font/GothamRounded-Book.woff') format('woff'), url('/Assets/Font/GothamRounded-Book.ttf') format('truetype'), url('/Assets/Font/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/Assets/Font/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/GothamRounded-Medium.otf') format('opentype'), url('/Assets/Font/GothamRounded-Medium.woff') format('woff'), url('/Assets/Font/GothamRounded-Medium.ttf') format('truetype'), url('/Assets/Font/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/Assets/Font/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/GothamRounded-Bold.otf') format('opentype'), url('/Assets/Font/GothamRounded-Bold.woff') format('woff'), url('/Assets/Font/GothamRounded-Bold.ttf') format('truetype'), url('/Assets/Font/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+}
+
+/*#endregion */
+
+/*#region Responsive Templates */
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+/*#endregion */
+
+/*#region Layout */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #555f70;
+    font-size: 14px;
+    line-height: 1;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: @blue;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+
+
+    &:hover, &:active {
+        outline: 0;
+        text-decoration: none;
+        color: lighten(@blue, 10%);
+    }
+}
+
+input[type="radio"], input[type="checkbox"] {
+    outline: none;
+
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+/*#endregion */
+
+/*#region Shared */
+
+/*#region Colors */
+
+.white {
+    color: @white !important;
+}
+
+a[class~="white"]:hover {
+    color: @white !important;
+}
+
+.white-bg {
+    background-color: @white !important;
+}
+
+.gray-lighter {
+    color: @gray-lighter !important;
+}
+
+a[class~="gray-lighter"]:hover {
+    color: darken(@gray-lighter, 20%) !important;
+}
+
+.gray-lighter-bg {
+    background-color: @gray-lighter !important;
+}
+
+.gray-light {
+    color: @gray-light !important;
+}
+
+a[class~="gray-light"]:hover {
+    color: darken(@gray-light, 20%) !important;
+}
+
+.gray-light-bg {
+    background-color: @gray-light !important;
+}
+
+.gray {
+    color: @gray !important;
+}
+
+a[class~="gray"]:hover {
+    color: darken(@gray, 20%) !important;
+}
+
+.gray-bg {
+    background-color: @gray !important;
+}
+
+.gray-dark {
+    color: @gray-dark !important;
+}
+
+a[class~="gray-dark"]:hover {
+    color: darken(@gray-dark, 20%) !important;
+}
+
+.gray-dark-bg {
+    background-color: @gray-dark !important;
+}
+
+.blue {
+    color: @blue !important;
+}
+
+a[class~="blue"]:hover {
+    color: darken(@blue, 10%) !important;
+}
+
+.blue-bg {
+    background-color: @blue !important;
+}
+
+.red {
+    color: @red !important;
+}
+
+a[class~="red"]:hover {
+    color: darken(@red, 20%) !important;
+}
+
+.red-bg {
+    background-color: @red !important;
+}
+
+.green {
+    color: @green !important;
+}
+
+a[class~="green"]:hover {
+    color: darken(@green, 20%) !important;
+}
+
+.green-bg {
+    background-color: @green !important;
+}
+
+.yellow {
+    color: @yellow !important;
+}
+
+a[class~="yellow"]:hover {
+    color: darken(@yellow, 20%) !important;
+}
+
+.yellow-bg {
+    background-color: @yellow !important;
+}
+
+.orange {
+    color: @orange !important;
+}
+
+a[class~="orange"]:hover {
+    color: darken(@orange, 20%) !important;
+}
+
+.orange-bg {
+    background-color: @orange !important;
+}
+
+.purple {
+    color: @purple !important;
+}
+
+a[class~="purple"]:hover {
+    color: darken(@purple, 20%) !important;
+}
+
+.purple-bg {
+    background-color: @purple !important;
+}
+
+
+/*#endregion */
+
+/*#region Styles */
+
+.Image {
+    display: block;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/*#endregion */
+
+/*#endregion */
+
+/*#region MainHeader */
+
+.MainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0px;
+    }
+
+    .navbar-brand {
+        color: @white;
+
+        i, div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .LogoIcon {
+            font-size: 23px;
+        }
+
+        .LogoName {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 0 13px 0 5px;
+        }
+
+        .LogoPhone {
+            font-size: 14px;
+            font-weight: normal;
+            opacity: 0.6;
+            padding-left: 15px;
+            border-left: 2px solid #fff;
+        }
+
+        &:hover {
+            color: @white;
+        }
+    }
+
+    .navbar-collapse {
+        padding: 0;
+    }
+
+    .LinksList {
+        a {
+            padding-left: 12px;
+            padding-right: 12px;
+            font-weight: normal;
+        }
+    }
+
+    .NavTogleBtn {
+        a {
+            display: inline-block;
+            color: rgba(255,255,255,0.6);
+            height: 20px;
+            margin-top: ((@navbar-height - 20px) / 2) + 3px;
+            padding: 0 15px;
+            font-weight: normal;
+
+            &:hover {
+                color: rgba(255,255,255,1);
+            }
+        }
+
+
+        .BtnRegister {
+            background-color: @blue-dark;
+            height: 30px;
+            margin-top: 0px;
+            padding-top: 3px;
+            margin-left: 5px;
+            color: @white;
+            font-weight:600;
+            &:hover {
+                background-color: darken(@blue-dark,5%);
+            }
+        }
+    }
+
+    &.sticky {
+        .navbar-default {
+            background-color: @white;
+            border-color: #d8e2e5;
+            border-radius: 0px;
+            border-bottom:1px solid #d8e2e5;
+
+            .navbar-nav > li > a {
+                color: #747880;
+
+                &:hover, &:focus {
+                    color: #444748;
+                }
+            }
+        }
+
+        .navbar-brand {
+            color: #343741;
+
+            .LogoIcon {
+                color: @blue;
+            }
+
+            .LogoPhone {
+                font-size: 13px;
+                opacity: 0.6;
+                padding-left: 15px;
+                border-left: 2px solid rgba(52, 55, 65, 0.6);
+                font-weight:600;
+            }
+
+            &:hover {
+                color: #343741;
+            }
+        }
+
+        .NavTogleBtn {
+            a {
+                color: #747880;
+
+                &:hover, &:focus {
+                    color: #444748;
+                }
+            }
+
+            .BtnRegister {
+                background-color: @green;
+                color: @white;
+
+                &:hover {
+                    color: @white;
+                    background-color: darken(@green,5%);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .MainHeader {
+        .navbar-brand {
+            .LogoPhone {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .MainHeader {
+
+        .navbar-brand {
+            .LogoPhone {
+                display: none;
+            }
+        }
+
+        .NavTogleBtn {
+            float: none !important;
+        }
+
+        .navbar-collapse {
+            box-shadow: none !important;
+            background-color: rgba(30, 126, 157,0.95);
+            width: 150%;
+            overflow: hidden;
+            padding-left: 20px;
+        }
+
+        .navbar-toggle {
+            .icon-bar {
+                background-color: #fff !important;
+            }
+
+            &:hover, &:focus {
+                background-color: transparent !important;
+            }
+        }
+
+        &.sticky {
+            .icon-bar {
+                background-color: #444748 !important;
+            }
+
+            .navbar-collapse {
+                background-color: rgba(255, 255, 255,0.8);
+            }
+        }
+    }
+}
+
+/*#endregion */
