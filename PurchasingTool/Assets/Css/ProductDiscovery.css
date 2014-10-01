@@ -246,6 +246,7 @@
 }
 .Filters .FBox .FBoxMainTable td {
   vertical-align: top;
+  padding: 15px;
 }
 .Filters .FBox .FBoxMainTable td td {
   vertical-align: middle;
