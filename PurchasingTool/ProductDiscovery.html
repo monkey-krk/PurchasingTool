@@ -24,7 +24,6 @@
 </head>
 <body>
 
-
     <header class="MainHeader">
         <div class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
@@ -213,353 +212,444 @@
                 </div>
             </div>
         </div>
-        <div class="Products">
-            <div class="MainContentProductsHeader ptb20">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12 text-center fw600 gray">
-                            Showing <a href="#" class="blue">40 products</a> out of 1,901
-                            <a href="#" class="btn btn-white ibm ml5 ptb2"><i class="flaticon solid star-1 yellow mr10"></i>7,481 more in our <span class="blue">Pro Plan !</span></a>
+        <div class="Filters"></div>
+        <div class="ProductDiscovery">
+            <div class="WelcomeBox active" data-after-tutorial="#result" data-tutorial-name="top_sellers" data-tutorial-version="v1">
+                <div class="w90h90 br50p blue-bg budiconcustom-stats text-center pt28 fs35 white m0auto"></div>
+                <div class="gray fw600 ptb20">Welcome to</div>
+                <div class="fs35 fw600">Product Discovery</div>
+                <div class="gray fw600 pt20 pb20 w400 m0auto">
+                    <p>Identify great products with high demand, low competition, good rating pr descent margins.</p>
+                    <p>
+                        To get results, select a
+                        <a data-open-filter="category" href="#">Category</a> or <a data-open-filter="brand" href="#">Brand</a>.
+                    </p>
+                    <p>You can choose among additional filters.</p>
+                </div>
+                <a class="btn btn-success fs16 pull-right mr20 BtnMyAssortmentWelcomeClose" data-complete-tutorial="top_sellers" href="#">Got it</a>
+                <a class="btn btn-success fs16 pull-right mr20 BtnTutorialShow" href="#">Show Tutorial</a>
+            </div>
+            <div id="result" class="">
+                <div class="Products">
+                    <div class="MainContentProductsHeader ptb20">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 text-center fw600 gray">
+                                    Showing <a href="#" class="blue">40 products</a> out of 1,901
+                                    <a href="#" class="btn btn-white ibm ml5 ptb2"><i class="flaticon solid star-1 yellow mr10"></i>7,481 more in our <span class="blue">Pro Plan !</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MainContentProductsBody">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+
+                                    <table class="WhiteTable ProductsList">
+                                        <thead>
+                                            <tr>
+                                                <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
+                                                <th colspan="2">Product</th>
+                                                <th>Demand</th>
+                                                <th>Competition</th>
+                                                <th>Rating</th>
+                                                <th>Min. Price</th>
+                                                <th>Margin</th>
+                                                <th>Lists</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60 New" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="20%">
+                                                        <div class="Down" style="width:20%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars x3" title="3"></div>
+                                                    <div class="RatingNo">(30)</div>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60 New" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="40%">
+                                                        <div class="Up" style="width:40%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="40%">
+                                                        <div class="Down" style="width:40%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars x5" title="5"></div>
+                                                    <div class="RatingNo">(30)</div>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Down">-3%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="80%">
+                                                        <div class="Up" style="width:80%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="20%">
+                                                        <div class="Down" style="width:20%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars x3" title="3"></div>
+                                                    <div class="RatingNo">(30)</div>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="40%">
+                                                        <div class="Down" style="width:40%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars x2" title="2"></div>
+                                                    <div class="RatingNo">(30)</div>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Enterprise</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="20%">
+                                                        <div class="Down" style="width:20%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars x3" title="3"></div>
+                                                    <div class="RatingNo">(30)</div>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Pro</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="20%">
+                                                        <div class="Down" style="width:20%"></div>
+                                                    </div>
+                                                    <i class="Trend Down"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars"></div>
+                                                    <a class="Upgrade pt10" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <div class="Price2">+4.99€</div>
+                                                    <div class="Price3">102.89€</div>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Starter</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres"></div>
+                                                    <i class="Trend"></i>
+                                                    <a class="Upgrade" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars"></div>
+                                                    <a class="Upgrade pt10" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <a class="Upgrade" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
+                                                <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div></td>
+                                                <td>
+                                                    <a href="#" class="ProductName">Free</a>
+                                                    <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres" title="60%">
+                                                        <div class="Up" style="width:60%"></div>
+                                                    </div>
+                                                    <i class="Trend Up"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="Progres"></div>
+                                                    <i class="Trend"></i>
+                                                    <a class="Upgrade" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="Stars"></div>
+                                                    <a class="Upgrade pt10" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="Price1">98.99€</div>
+                                                    <a class="Upgrade" href="#">UPGRADE!</a>
+                                                </td>
+                                                <td>
+                                                    <div class="MarginValue Up">+6%</div>
+                                                    <div class="MarginPrice">-20.99€</div>
+                                                </td>
+                                                <td>
+                                                    <ul class="FoundOnLists">
+                                                        <li>Sport G.</li>
+                                                        <li>Adidas</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="MainContentProductsBody">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <table class="WhiteTable ProductsList">
-                                <thead>
-                                    <tr>
-                                        <th><div class="pr"><input type="checkbox" id="TblSelectAll" /><label for="TblSelectAll">All</label></div></th>
-                                        <th colspan="2">Product</th>
-                                        <th>Demand</th>
-                                        <th>Competition</th>
-                                        <th>Rating</th>
-                                        <th>Min. Price</th>
-                                        <th>Margin</th>
-                                        <th>Lists</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60 New" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="20%">
-                                                <div class="Down" style="width:20%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars x3" title="3"></div>
-                                            <div class="RatingNo">(30)</div>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60 New" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="40%">
-                                                <div class="Up" style="width:40%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="40%">
-                                                <div class="Down" style="width:40%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars x5" title="5"></div>
-                                            <div class="RatingNo">(30)</div>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Down">-3%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="80%">
-                                                <div class="Up" style="width:80%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="20%">
-                                                <div class="Down" style="width:20%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars x3" title="3"></div>
-                                            <div class="RatingNo">(30)</div>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Adidas “Runner Runner” 750mx Pink</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="40%">
-                                                <div class="Down" style="width:40%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars x2" title="2"></div>
-                                            <div class="RatingNo">(30)</div>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Enterprise</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="20%">
-                                                <div class="Down" style="width:20%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars x3" title="3"></div>
-                                            <div class="RatingNo">(30)</div>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Pro</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="20%">
-                                                <div class="Down" style="width:20%"></div>
-                                            </div>
-                                            <i class="Trend Down"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Stars"></div>
-                                            <a class="Upgrade pt10" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <div class="Price2">+4.99€</div>
-                                            <div class="Price3">102.89€</div>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/img_140_140_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Starter</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres"></div>
-                                            <i class="Trend"></i>
-                                            <a class="Upgrade" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="Stars"></div>
-                                            <a class="Upgrade pt10" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <a class="Upgrade" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><div class="pr"><input type="checkbox" name="ItemChk1" /></div></td>
-                                        <td><div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div></td>
-                                        <td>
-                                            <a href="#" class="ProductName">Free</a>
-                                            <p class="ProductDescription">Sporting Goods 107XDLCJ22 04376482910345</p>
-                                        </td>
-                                        <td>
-                                            <div class="Progres" title="60%">
-                                                <div class="Up" style="width:60%"></div>
-                                            </div>
-                                            <i class="Trend Up"></i>
-                                        </td>
-                                        <td>
-                                            <div class="Progres"></div>
-                                            <i class="Trend"></i>
-                                            <a class="Upgrade" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="Stars"></div>
-                                            <a class="Upgrade pt10" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="Price1">98.99€</div>
-                                            <a class="Upgrade" href="#">UPGRADE!</a>
-                                        </td>
-                                        <td>
-                                            <div class="MarginValue Up">+6%</div>
-                                            <div class="MarginPrice">-20.99€</div>
-                                        </td>
-                                        <td>
-                                            <ul class="FoundOnLists">
-                                                <li>Sport G.</li>
-                                                <li>Adidas</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
+            <div class="Tutorial">
+                <div class="Step S1">
+                    <div class="popover bottom P1">
+                        <div class="point"></div><div class="arrow"></div>
+                        You can choose additional filters.
+                    </div>
+                    <div class="popover bottom P2">
+                        <div class="point"></div><div class="arrow"></div>
+                        To start searching for Products you need to select Category or Brand (or both).
+                    </div>
+                    <footer class="Navigation">
+                        <a class="btn btn-green btn-small BtnTutS1Next" href="#">Next Step ></a>
+                    </footer>
+                </div>
+                <div class="Step S2">
+                    <div class="WithBackground">
+                        <div class="InnerWrapper">
+                            <img src="/Assets/Img/ProductDiscovery/TutorialS2Bck.jpg" />
+                            <div class="popover bottom P1"><div class="point"></div><div class="arrow"></div>
+                                By clicking on Category filter you can choose from various Categories and SubCategories to find products you are searching for.
+                            </div>
+                            <div class="popover bottom P2"><div class="point"></div><div class="arrow"></div>
+                                Each category has it's own demand and competition ratings.
+                            </div>
+                            <div class="popover bottom P3"><div class="point"></div><div class="arrow"></div>
+                                Also you can see a number of products in selected Category or SubCategroy.
+                            </div>
                         </div>
                     </div>
+                    <footer class="Navigation">
+                        <a class="btn btn-green btn-small BtnTutS2Prev" href="#">< Previous Step</a>
+                        <a class="btn btn-green btn-small BtnTutS2Next" href="#">Next Step ></a>
+                    </footer>
+                </div>
+                <div class="Step S3">
+                    <div class="WithBackground">
+                        <div class="InnerWrapper">
+                            <img src="/Assets/Img/ProductDiscovery/TutorialS3Bck.jpg" />
+                            <div class="popover bottom P1">
+                                <div class="point"></div><div class="arrow"></div>
+                                You can click on the Checkbox to select product.
+                            </div>
+                            <div class="popover bottom P2">
+                                <div class="point"></div><div class="arrow"></div>
+                                Click on Product name to view Product Details.
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="Navigation">
+                        <a class="btn btn-green btn-small BtnTutS3Prev" href="#">< Previous Step</a>
+                        <a class="btn btn-green btn-small BtnTutS3Next" href="#">Next Step ></a>
+                    </footer>
+                </div>
+                <div class="Step S4">
+                    <div class="WithBackground">
+                        <div class="InnerWrapper">
+                            <img src="/Assets/Img/ProductDiscovery/TutorialS4Bck.jpg" />
+                        </div>
+                    </div>
+                    <div class="popover bottom P1">
+                        <div class="point"></div><div class="arrow"></div>
+                        Download Results as Excel file.
+                    </div>
+                    <div class="popover bottom P2">
+                        <div class="point"></div><div class="arrow"></div>
+                        Add or Remove Selected Products to or from a list.
+                    </div>
+                    <footer class="Navigation">
+                        <a class="btn btn-green btn-small BtnTutS4Prev" href="#">< Previous Step</a>
+                        <a class="btn btn-gray btn-small BtnTutS4Close" href="#">Close tutorial</a>
+                    </footer>
                 </div>
             </div>
-        </div>
-        <div class="Filters">
         </div>
     </div>
 
@@ -861,6 +951,58 @@
     <script>
         $(document).ready(function () {
 
+            $(".BtnTutS1Next").click(function (e) {
+                $(".Step.S1").removeClass("active");
+                $(".Step.S2").addClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS2Prev").click(function (e) {
+                $(".Step.S1").addClass("active");
+                $(".Step.S2").removeClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS2Next").click(function (e) {
+                $(".Step.S2").removeClass("active");
+                $(".Step.S3").addClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS3Prev").click(function (e) {
+                $(".Step.S2").addClass("active");
+                $(".Step.S3").removeClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS3Next").click(function (e) {
+                $(".Step.S3").removeClass("active");
+                $(".Step.S4").addClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS4Prev").click(function (e) {
+                $(".Step.S3").addClass("active");
+                $(".Step.S4").removeClass("active");
+                e.preventDefault();
+            });
+            $(".BtnTutS4Close").click(function (e) {
+                $(".Step.S1").addClass("active");
+                $(".Step.S4").removeClass("active");
+                $(".Tutorial").removeClass("active");
+                $(".WelcomeBox").addClass("active");
+                e.preventDefault();
+            });
+
+
+            $(".BtnMyAssortmentWelcomeClose").click(function (e) {
+                $(".WelcomeBox").removeClass("active");
+                $("#result").addClass("active");
+                e.preventDefault();
+            });
+
+            $(".BtnTutorialShow").click(function (e) {
+                $(".WelcomeBox").removeClass("active");
+                $(".Tutorial").addClass("active");
+                $(".Tutorial .Step.S1").addClass("active");
+                e.preventDefault();
+            });
+
             $("#TblSelectAll").click(function () {
                 if ($('#TblSelectAll:checked').length > 0) {
                     $(".ProductsList tbody").find("input[type='checkbox']").prop("checked", true);
@@ -882,10 +1024,8 @@
                 e.preventDefault();
             });
 
-
         });
     </script>
-
 
 </body>
 </html>
