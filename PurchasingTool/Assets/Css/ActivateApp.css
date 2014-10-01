@@ -1,0 +1,63 @@
+﻿.activateapp .TopName {
+  display: inline-block;
+  margin: 15px 0 0 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #26a0c8;
+  font-size: 12px;
+  font-weight: 600;
+}
+.activateapp .AppBox {
+  margin-bottom: 20px;
+}
+.activateapp .AppBox .ImageBox {
+  display: table-cell;
+  vertical-align: top;
+}
+.activateapp .AppBox .ImageBox .IconBox {
+  width: 120px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-top: 16px;
+  text-align: center;
+}
+.activateapp .AppBox .ImageBox .IconBox .DataapiIcon {
+  display: inline-block;
+  width: 50px;
+  height: 46px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAuCAYAAABqK0pRAAACaElEQVRo3u2aO0zCQBjH0RATNXFyccPFx4SOOoqjMAKjj1FcddQVVh+rrLjiKI7IiBtO6KKDMOBgQvD1b/JvcrlchUKvPQjDjxB6/R7XXv/fdzS0lK+ENLIB7kCJ37X50mU4CorgV6LIY8YnsgwK4IeBt8EVafO3H45ZMTGRCLgGHQb7BfJgURizyN++OKbDcyImJLIALqTZvuky2yscI161C9ryPZF5kAWfwv1/C9Zd2FjjOfb5lq0cbWtPZA6cgZYQwD3YHGA2N2nDtvdBH3M6EpkBx6AhOKyAbQ8X7DZt2vYb9DnjRSJTIANeBQePIK5RE+L0YfuzfB8xFteJhMEeeBYMPoEUmNQsoiH6SNOn7f+ZMYV7SWSSwdYkA/tOBjQTpm9xQmuqCZUvadXtJfWJKcbieItbHzHw0O8i8xnVQ8eKPWYd3AJl4UATnBiayCxjawrxlu1EbHakW+vNwFvrTYivypiVi30CJKXF/hLwYj9gDOJiT/632GUDu6AuPX7TAT5+64wp3K8gHiqeFgmNSSQUgpjpVxBlpvm0ePexRHmnz2ldReOp5qKxpbNo7KWML7I0d1PGF6UyPutXGa9qrM6HubHq1up22NZGpDF5aYwxra7T5sO3MNuXina4wLFaNh+8LBq93g5SFY1VuWjUWcYPukHnVMa7UnZVY+WnsqcGaax6bXUTPre6nil7kJsP2pT9bNSUPTfMG3S9bpmujoqyD90mtpF/K4yVfRiVPeWzstd0K3t8rOzOxIJW9pIHyl4ySdnd9uxRRc9unLJ369kL4549QGV36tmNfGFg5F7hCOylmj9xk4zdhQaoSAAAAABJRU5ErkJggg==);
+}
+.activateapp .AppBox .ImageBox .IconBox .PricingIcon {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAACqElEQVRo3s3ZuWsWQRzG8bUREgJiJShoExXFyioWsVKjlTYmElJKBMW4oikULJRY+MbujeJRiAZskuARO+PxF2gXKwUtFY8ieEUSn8EZeFhnr5nfZLb4NjvvTD77Zo8MSYYOnEgCtQpNoG9oHj1Dk6iFUjSAelE36qy7fmj0co3MCT7XJziuT/CIPsHNfIJNQdepIwQ8i15Cp1AXWo+2oR7Uhw6jYTSKxlAb3UUP0Qv0Cr1Fn9EfWrNbGp6Hllrf4Hsl4aHRif7m1dr9UnAf9Dp0XM9Xl8pRtCbns+/0+qkE3Ad9Ei1Ybr6vaNDy+dd6vOUL90GfLnlyLFnwL/XYpA/cB70J/aS5CrIXHUKzdPwLWkvzHunjc65w3xvxAs29bVn7MY0fo7F7+ti8C1zi6TFN83daxvfT+HU63qY3bBLjkTdDa+ywjO+h8Vt0fIzfnjGe05donauW8fs0PkLHR/nt6Yoe8XgabUWLtNa4/uZ79DVvfs6Cfs6becM0trsK+pog2vZrzyvNzBmgsf4YaLP2FfrmuV/6OV9006Yx0NwWdBE9QFPoPNqY89ld5GnFRNdtO7+0ytCq3+hgA+AbyDRXhubrLja+izxvii6PM+hJg/Ap70/LrunVDcGn2mUc7UTfyUU3Ymz8f2j1ZauBD3TwZs7kWHgr2vyR9YkGLhcsstL4XLSB36DB72hfA/CFaAPv1LuKpuBL0fz3eFPwldDZjURsfGW0bQfkgp8VwKeZN3UhOm/rttL42uiiPafCP83g+wLgndBlm+XQeGd0lV1+KLwXugo8BN4bXRUuiRdB14FL4Bel0HXhEngRtAvcBX9WGu0Kr4NPQ6B94FXwwdC+cBv+x9C/f3XcCYmWgNvwy6HRUvAifBC0JFzVobeBH9F7dC4UWvUXfQrFCXJ+yz4AAAAASUVORK5CYII=);
+}
+.activateapp .AppBox .ImageBox .IconBox .PurchasingIcon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABg0lEQVRo3u2YsUsCUQCHj5RII4e2WkQc/QMEoQZX10BwcKnRP0CwEIdABDGbHFwanBtaHEScmptcQlwUpwOnQCTqPfgdHHLJeXfV++EbvsHj8d73wd17PI2L0dUXMQtBVRAyyEMs7mTIT8wxqCWIbBn3X0TgJh3n2wZatVEFIyxO4PjhJsRQmDM4jtlDMnDss4cU4NhhD6nAscwe0oVjgT1kCMcMe8gUjufMIWHBWrASHDCHJOD3Ln8zh2ThN2APuYFflz3kHn637CE9+BXZQ17hd8kesoBfnDkkCrc1zhPakBTcptYz1pAc3EbsISW4PbGHNOFWYw95hts1e8gb3LLsIUu4JZlDTuH1KTjcJeRYsZA0vGb2525C5N+SR4pExAQvm2eI2xBVye8aMlEsYGLfdtl3LUOH6BAdokPozpH9C6FCh+gQhULkZaaNW5rk0X7B8YGveb0s+OCwgzQCCPE1r5cFTYcFzQBCfM271yFOr0D9l16t+l987CZoB/yxe5r3G7t9kikYhm3LAAAAAElFTkSuQmCC);
+}
+.activateapp .AppBox .TextBox {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 20px;
+}
+.activateapp .AppBox .TextBox .Title {
+  font-size: 18px;
+  color: #343741;
+  font-weight: 600;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+.activateapp .AppBox .TextBox .SubTitle {
+  color: #747880;
+  padding-bottom: 7px;
+}
+.activateapp .AppBox .TextBox .ButtonHolder {
+  height: 30px;
+  vertical-align: bottom;
+}
