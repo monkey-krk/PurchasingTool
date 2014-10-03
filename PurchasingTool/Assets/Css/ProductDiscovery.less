@@ -19,38 +19,39 @@
     .FBox {
         position: relative;
         border-bottom: 10px solid #4b4f5d;
-        padding:10px;
+        padding: 10px;
 
         .FBoxMainTable {
-            width: 100%!important;
+            width: 100% !important;
             color: #d4dee0;
 
             td {
                 vertical-align: top;
-                padding:15px;
+                padding: 15px;
 
                 td {
                     vertical-align: middle;
                     padding: 0px;
                 }
             }
+
             .CTW1 {
                 padding: 15px 8px 15px 15px;
             }
+
             .CTW2 {
                 padding: 15px 12px 15px 12px;
             }
+
             .CTW3 {
                 padding: 15px 15px 15px 8px;
             }
-
         }
 
         .FName {
             font-size: 16px;
             color: #d4dee0;
             width: 140px;
-            
         }
 
         .input-icon-wrapper {
@@ -73,14 +74,13 @@
             width: 240px;
             color: @gray-dark;
         }
-       
     }
 
     .Category {
-        padding:0px;
+        padding: 0px;
 
         .CategoryTableWrapper {
-            width: 33%!important;
+            width: 33% !important;
         }
 
         .CategoryTable {
@@ -104,7 +104,7 @@
                 }
 
                 th:nth-child(1) {
-                    width:100%
+                    width: 100%;
                 }
 
                 th:nth-child(4) {
@@ -144,12 +144,12 @@
                     font-size: 12px;
                     padding: 5px 5px;
                     cursor: pointer;
-                    vertical-align:top;
+                    vertical-align: top;
                 }
 
                 td:nth-child(1) {
                     //white-space: nowrap;
-                    line-height:1.3;
+                    line-height: 1.3;
                 }
 
                 td:nth-child(4) {
@@ -180,7 +180,7 @@
                 height: 10px;
                 border-radius: 10px;
                 background-color: @gray-lighter;
-                margin-top:2px;
+                margin-top: 2px;
 
                 .Up, .Down {
                     position: absolute;
@@ -247,7 +247,7 @@
     .Brand {
 
         .TopBrands {
-            padding-left:40px;
+            padding-left: 40px;
             padding-bottom: 20px;
 
             .Title {
@@ -542,7 +542,7 @@
     .MinPrice {
         .FBoxMainTable {
             .FName {
-                padding-top:25px;
+                padding-top: 25px;
             }
         }
 
@@ -568,7 +568,7 @@
     .RRP {
         .FBoxMainTable {
             .FName {
-                padding-top:25px;
+                padding-top: 25px;
             }
         }
 
@@ -594,11 +594,10 @@
     .Flags {
         .FBoxMainTable {
             .FName {
-                padding-top:25px;
+                padding-top: 25px;
             }
         }
     }
-
 }
 
 /*#endregion */
@@ -613,7 +612,7 @@
         width: 100%;
         vertical-align: middle;
         text-align: center;
-        margin-top:100px;
+        margin-top: 100px;
 
         &.active {
             display: block;
@@ -621,13 +620,12 @@
     }
 
     #result {
-        display:none;
+        display: none;
+
         &.active {
             display: block;
         }
     }
-
-
 }
 
 
@@ -666,7 +664,7 @@
 
     tbody {
         font-size: 13px;
-        
+
         td:nth-child(1) {
             vertical-align: middle;
             padding-right: 0;
@@ -754,6 +752,7 @@
                 display: block;
                 height: 10px;
                 border-radius: 10px;
+
                 &.I1 {
                     border-radius: 50%;
                 }
@@ -909,157 +908,181 @@
 /*#region Tutorial */
 
 .Tutorial {
-    display:none;
-    height:550px;
-    margin-bottom:100px;
-    &.active {display: block;}
+    display: none;
+    height: 550px;
+    margin-bottom: 100px;
+
+    &.active {
+        display: block;
+    }
 
     .Step {
-        display:none;
-        position:relative;
-        height:550px;
+        display: none;
+        position: relative;
+        height: 550px;
 
-        &.active {display: block;}
+        &.active {
+            display: block;
+        }
 
         .popover {
-            position:absolute;
-            display:block;
-            max-width:250px;
+            position: absolute;
+            display: block;
+            max-width: 250px;
             padding: 15px;
-            text-align:center;
-            line-height:1.5;
-            margin-top:40px;
-            color:#747880;
-            font-size:13px;
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 40px;
+            color: #747880;
+            font-size: 13px;
+
             .point {
-                height:20px;
-                width:20px;
-                position:absolute;
+                height: 20px;
+                width: 20px;
+                position: absolute;
                 left: 50%;
                 margin-left: -10px;
                 top: -40px;
-                background-color:@green;
-                border-radius:50%;
-                opacity:0.75;
+                background-color: @green;
+                border-radius: 50%;
+                opacity: 0.75;
             }
         }
 
         .Navigation {
-            position:absolute;
-            bottom:0px;
-            right:20px;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
         }
-
     }
 
     .S1 {
         .P1 {
-            max-width:180px;
-            top:-38px;
-            left:2px;
+            max-width: 180px;
+            top: -38px;
+            left: 2px;
+
             .point, .arrow {
-                left:15px;
+                left: 15px;
             }
         }
+
         .P2 {
-            max-width:210px;
-            top:-37px;
-            left:310px;
+            max-width: 210px;
+            top: -37px;
+            left: 310px;
+
             .point, .arrow {
-                left:50%;
+                left: 50%;
             }
         }
     }
 
     .S2 {
         .WithBackground {
-            background-color:#2e313a;
-            text-align:center;
+            background-color: #2e313a;
+            text-align: center;
+
             .InnerWrapper {
-                display:inline-block;
-                position:relative;
+                display: inline-block;
+                position: relative;
             }
         }
+
         .P1 {
-            max-width:240px;
-            top:116px;
-            left:55px;
+            max-width: 240px;
+            top: 116px;
+            left: 55px;
+
             .point, .arrow {
-                left:50px;
+                left: 50px;
             }
         }
+
         .P2 {
-            max-width:260px;
-            top:217px;
-            left:403px;
+            max-width: 260px;
+            top: 217px;
+            left: 403px;
+
             .point, .arrow {
-                left:50%;
+                left: 50%;
             }
         }
+
         .P3 {
-            max-width:220px;
-            top:141px;
-            left:785px;
+            max-width: 220px;
+            top: 141px;
+            left: 785px;
+
             .point, .arrow {
-                left:86%;
+                left: 86%;
             }
         }
     }
 
     .S3 {
-         .WithBackground {
-            text-align:center;
+        .WithBackground {
+            text-align: center;
+
             .InnerWrapper {
-                display:inline-block;
-                position:relative;
+                display: inline-block;
+                position: relative;
             }
         }
+
         .P1 {
-            max-width:240px;
-            top:220px;
-            left:5px;
+            max-width: 240px;
+            top: 220px;
+            left: 5px;
+
             .point, .arrow {
-                left:33px;
+                left: 33px;
             }
         }
+
         .P2 {
             max-width: 220px;
             top: 194px;
             left: 316px;
+
             .point, .arrow {
-                left:33px;
+                left: 33px;
             }
         }
     }
 
     .S4 {
-         .WithBackground {
-            text-align:center;
+        .WithBackground {
+            text-align: center;
+
             .InnerWrapper {
-                display:inline-block;
-                position:relative;
+                display: inline-block;
+                position: relative;
             }
         }
+
         .P1 {
-            max-width:170px;
-            top:-38px;
-            left:auto;
-            right:365px;
+            max-width: 170px;
+            top: -38px;
+            left: auto;
+            right: 365px;
+
             .point, .arrow {
-                left:50%;
+                left: 50%;
             }
         }
+
         .P2 {
             max-width: 210px;
-            top:-38px;
-            left:auto;
-            right:82px;
+            top: -38px;
+            left: auto;
+            right: 82px;
+
             .point, .arrow {
-                left:50%;
+                left: 50%;
             }
         }
     }
-
 }
 
 /*#endregion */
@@ -1073,73 +1096,84 @@
     left: 50%;
     width: 860px;
     margin-left: -430px;
-    background-color:@body-bg;
-    overflow:hidden;
+    background-color: @body-bg;
+    overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 0 9999px rgba(40, 46, 58, 0.6);
-    margin-bottom:60px;
-    z-index:999;
+    margin-bottom: 60px;
+    z-index: 999;
 
     .Header {
-        background-color:@body-bg2;
-        padding:10px 5px;
+        background-color: @body-bg2;
+        padding: 10px 5px;
     }
 
     .Product {
-        @space:8px;
-        padding:20px 5px;
-        line-height:1.3;
-        color:@gray;
-        margin-bottom:@space;
+        @space: 8px;
+        padding: 20px 5px;
+        line-height: 1.3;
+        color: @gray;
+        margin-bottom: @space;
 
         .PDImage {
-            width:100%;
-            height:300px;
-            border-radius:7px;
+            width: 100%;
+            height: 300px;
+            border-radius: 7px;
         }
 
         .NoImage {
-            background-color:#e1e8ef;
-            width:400px;
-            height:300px;
-            border-radius:5px;
-            padding-top:75px;
+            background-color: #e1e8ef;
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+            padding-top: 75px;
 
             .TopIcon {
-                display:block;
-                margin:0 auto;
-                width: 70px;                height: 70px;                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAACIUlEQVR42u3cvy8DYRzH8SPE0EgTMTepdDIZbGYmUweLBYmJoJMBg70/TLp1kZguJCRM/gOEwWZR2llioBLlc3HX9MfT3K8nzXP3fIb3emlfvT73vWd4DPPyxkBJlEcvqIl+Ncv6zlVUtC0MB+VBQ4x+WRZJw75TCNJZ3rD/PsTorGpouqa4rjkGEcQRhjCEIQxhCEMYwhCGMIQhTIT6QGeogEroCn3qDPONDlDC/N9xbG8CHZmSdwmiANNACwKQ7lZ0g9n1gOJU1gWmhsZ8wEyiLx1gyj5QnK51gNkOAFPUAWYjAExeB5hSAJhzHWCe0bAPlIQ9BCoJc4Hm0CJ6knC9VR8wh6o+ritdv7A1ld6HvOY7mvGAMm8Pg8rBVPrc9rJwltGQ4PqjKCdrfpENU3FZC2TgOGuO9QK5ibbQMXpT9SXSDUU2TiS2HbyiRA4nDMypT5RI4QSFqZnivZHY4ASF2QuBIhOnIftpFBZmVgJMWJwTNI5G0I6pyA5eShJMUBzRor+GfuIE4+DcSXgSSsNRBcYrjpfxQAqOSjBuOH5mptA4qsH0w/E7SIbGURGmGycIilMubjAOzn4IFMN+G7+NG4ys1gkjbpow4lKEIQxhCEMYwhCGMG2lIwSTHiRMNkIw2UHC1NESyqApRcvYn7E+SJjYRxjCEIYwhCEMYSIBw0MvemvymBRxrxZMgRA9FZyjmB6J0ap1FBMP7xIc3vUH15lQLgj6RNgAAAAASUVORK5CYII=);            }
-            .Title {
-                display:block;
-                text-align:center;
-                margin-top:40px;
-                margin-bottom:20px;
+                display: block;
+                margin: 0 auto;
+                width: 70px;
+                height: 70px;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAACIUlEQVR42u3cvy8DYRzH8SPE0EgTMTepdDIZbGYmUweLBYmJoJMBg70/TLp1kZguJCRM/gOEwWZR2llioBLlc3HX9MfT3K8nzXP3fIb3emlfvT73vWd4DPPyxkBJlEcvqIl+Ncv6zlVUtC0MB+VBQ4x+WRZJw75TCNJZ3rD/PsTorGpouqa4rjkGEcQRhjCEIQxhCEMYwhCGMIQhTIT6QGeogEroCn3qDPONDlDC/N9xbG8CHZmSdwmiANNACwKQ7lZ0g9n1gOJU1gWmhsZ8wEyiLx1gyj5QnK51gNkOAFPUAWYjAExeB5hSAJhzHWCe0bAPlIQ9BCoJc4Hm0CJ6knC9VR8wh6o+ritdv7A1ld6HvOY7mvGAMm8Pg8rBVPrc9rJwltGQ4PqjKCdrfpENU3FZC2TgOGuO9QK5ibbQMXpT9SXSDUU2TiS2HbyiRA4nDMypT5RI4QSFqZnivZHY4ASF2QuBIhOnIftpFBZmVgJMWJwTNI5G0I6pyA5eShJMUBzRor+GfuIE4+DcSXgSSsNRBcYrjpfxQAqOSjBuOH5mptA4qsH0w/E7SIbGURGmGycIilMubjAOzn4IFMN+G7+NG4ys1gkjbpow4lKEIQxhCEMYwhCGMG2lIwSTHiRMNkIw2UHC1NESyqApRcvYn7E+SJjYRxjCEIYwhCEMYSIBw0MvemvymBRxrxZMgRA9FZyjmB6J0ap1FBMP7xIc3vUH15lQLgj6RNgAAAAASUVORK5CYII=);
             }
+
+            .Title {
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
             a {
-                display:block;
-                margin:0 auto;
-                text-align:center;
-                text-transform:uppercase;
-                text-decoration:underline;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: underline;
             }
 
             &.disabled {
-                display:none;
+                display: none;
             }
+
             &.active {
-                display:block;
+                display: block;
             }
         }
 
         .Name {
-            color: #333740;            font-size: 24px;            font-weight:600;            line-height:1.2;            padding-bottom:5px;        }
+            color: #333740;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.2;
+            padding-bottom: 5px;
+        }
 
         .Brand, .Category, .AditionalInfo, .ReleaseDate {
-            padding-top:@space;
+            padding-top: @space;
         }
 
         .ReleaseDate, .AppeareDate b {
-            font-weight:600;
+            font-weight: 600;
         }
 
         .Progres {
@@ -1158,6 +1192,7 @@
                 display: block;
                 height: 15px;
                 border-radius: 15px;
+
                 &.I1 {
                     border-radius: 50%;
                 }
@@ -1180,7 +1215,8 @@
             line-height: 1;
             -webkit-font-smoothing: antialiased;
             display: inline-block;
-            margin-left:3px;
+            margin-left: 3px;
+
             &:before {
                 display: block;
                 font-size: 20px;
@@ -1259,111 +1295,117 @@
         }
 
         .Demand, .Competition {
-            display:inline-block;
-            margin-top:@space * 2;
-            margin-bottom:@space * 2;
+            display: inline-block;
+            margin-top: @space * 2;
+            margin-bottom: @space * 2;
         }
 
         .Demand {
-            margin-right:20px;
+            margin-right: 20px;
         }
 
         .Ratings {
             .RatingNo {
-                padding-top:@space / 2;
-                font-size:13px;
+                padding-top: @space / 2;
+                font-size: 13px;
             }
         }
 
         .Price {
-            display:inline-block;
-            margin-top:@space * 2;
-            background-color:#26a0c8;
-            border-radius:5px;
-            padding:10px 13px;
-            color:@white;
-            font-size:19px;
-            font-weight:600;
-
+            display: inline-block;
+            margin-top: @space * 2;
+            background-color: #26a0c8;
+            border-radius: 5px;
+            padding: 10px 13px;
+            color: @white;
+            font-size: 19px;
+            font-weight: 600;
         }
-
     }
 
     .Shops {
-        padding:20px 5px;
-        line-height:1.3;
-        color:@gray;
-        
+        padding: 20px 5px;
+        line-height: 1.3;
+        color: @gray;
+
         table {
-            background:#fff;
-            width:100%;
-            border:2px solid #d4dee0!important;
-            border-collapse:separate;
-            border-radius:5px;
-            overflow:hidden;
-            
+            background: #fff;
+            width: 100%;
+            border: 2px solid #d4dee0 !important;
+            border-collapse: separate;
+            border-radius: 5px;
+            overflow: hidden;
+
 
             td {
-                padding:12px;
+                padding: 12px;
             }
-            
+
             thead {
                 tr {
-                    background:#fff;
-                    
+                    background: #fff;
                 }
+
                 td {
-                    border-bottom:2px solid #ededee;
-                    font-size:11px;
-                    text-transform:uppercase;
-                    font-weight:600;
+                    border-bottom: 2px solid #ededee;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    font-weight: 600;
                 }
             }
 
             tbody {
-                tr:nth-child(odd) {background: #e8f0f2}
+                tr:nth-child(odd) {
+                    background: #e8f0f2;
+                }
+
                 td {
-                    font-size:13px;
-                    font-weight:600;
+                    font-size: 13px;
+                    font-weight: 600;
                 }
             }
-
         }
     }
 
     .ChartBox {
-        padding:20px 5px;
-        color:@gray;
-        .Head {
-            margin-bottom:20px;
-            .Title {
-                font-size:16px;
-                font-weight:600;
-            }
-            .Range {
-                color:#a6bdc3;
-                font-size:13px;
-                font-weight:600;
+        padding: 20px 5px;
+        color: @gray;
 
+        .Head {
+            margin-bottom: 20px;
+
+            .Title {
+                font-size: 16px;
+                font-weight: 600;
             }
+
+            .Range {
+                color: #a6bdc3;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
             .Legend {
-                margin:0;
-                padding:0;
-                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
                 li {
-                    display:inline-block;
-                    margin-right:20px;
+                    display: inline-block;
+                    margin-right: 20px;
+
                     &:last-child {
-                        margin-right:0px;
+                        margin-right: 0px;
                     }
+
                     i {
-                        display:inline-block;
-                        height:15px;
-                        width:15px;
-                        border-radius:2px;
-                        margin-right:10px;
-                        vertical-align:top;
-                        margin-top:-1px;
+                        display: inline-block;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 2px;
+                        margin-right: 10px;
+                        vertical-align: top;
+                        margin-top: -1px;
                     }
                 }
             }
@@ -1371,7 +1413,7 @@
     }
 
     .ChartDemandCompetition, .ChartPriceRatings {
-        height:250px;
+        height: 250px;
     }
 }
 

@@ -864,3 +864,49 @@ input[type="checkbox"]:hover:after {
   display: table-cell;
 }
 /*#endregion */
+/*#region EventBox */
+.EventBox {
+  display: block;
+  width: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 7px 0 rgba(52, 55, 65, 0.24);
+  -webkit-box-shadow: 0 0 7px 0 rgba(52, 55, 65, 0.24);
+  box-shadow: 0 0 7px 0 rgba(52, 55, 65, 0.24);
+  color: #747880;
+  font-weight: 600;
+  font-size: 13px;
+}
+.EventBox:before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-family: 'Flaticons Stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -3px;
+}
+.EventBox.success:before {
+  color: #3dc054;
+  content: "";
+}
+.EventBox.warning:before {
+  color: #e74c3c;
+  content: "";
+}
+.EventBox.error:before {
+  color: #e74c3c;
+  content: "";
+}
+.EventBox.info:before {
+  color: #26a0c8;
+  content: "";
+}
+/*#endregion */

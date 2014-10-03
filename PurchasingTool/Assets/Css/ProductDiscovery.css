@@ -14,7 +14,7 @@
   padding: 10px;
 }
 .Filters .FBox .FBoxMainTable {
-  width: 100%!important;
+  width: 100% !important;
   color: #d4dee0;
 }
 .Filters .FBox .FBoxMainTable td {
@@ -60,7 +60,7 @@
   padding: 0px;
 }
 .Filters .Category .CategoryTableWrapper {
-  width: 33%!important;
+  width: 33% !important;
 }
 .Filters .Category .CategoryTable {
   width: 100%;
@@ -1069,7 +1069,7 @@
 .ProductDetails .Shops table {
   background: #fff;
   width: 100%;
-  border: 2px solid #d4dee0!important;
+  border: 2px solid #d4dee0 !important;
   border-collapse: separate;
   border-radius: 5px;
   overflow: hidden;
