@@ -514,27 +514,6 @@
 }
 /*#endregion */
 /*#region ProductDiscovery */
-.products {
-  position: relative;
-}
-.products .MainHeader {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-.products .SelectedFilters {
-  position: fixed;
-  width: 100%;
-  top: 70px;
-  left: 0;
-  z-index: 9999;
-  background: #e8f0f2;
-}
-.products .ProductDiscovery {
-  margin-top: 147px;
-}
 .ProductDiscovery .WelcomeBox {
   display: none;
   height: 600px;
@@ -935,7 +914,7 @@
   border-radius: 5px;
   box-shadow: 0 0 0 9999px rgba(40, 46, 58, 0.6);
   margin-bottom: 60px;
-  z-index: 999;
+  z-index: 9999999999;
 }
 .ProductDetails .Header {
   background-color: #d4dee0;
