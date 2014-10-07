@@ -57,7 +57,7 @@
   color: #282b34;
 }
 .Filters .Category {
-  padding: 0px;
+  padding: 5px;
 }
 .Filters .Category .CategoryTableWrapper {
   width: 33% !important;
@@ -68,6 +68,50 @@
   color: #747880;
   border-radius: 5px;
   overflow: hidden;
+  display: block;
+  position: relative;
+  vertical-align: top;
+  padding-top: 25px;
+}
+.Filters .Category .CategoryTable thead {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.Filters .Category .CategoryTable thead th:nth-child(1) {
+  width: 100%;
+}
+.Filters .Category .CategoryTable thead th:nth-child(2),
+.Filters .Category .CategoryTable thead th:nth-child(3) {
+  min-width: 60px;
+}
+.Filters .Category .CategoryTable thead th:nth-child(4) {
+  min-width: 92px;
+  padding-right: 17px;
+}
+.Filters .Category .CategoryTable tbody {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.Filters .Category .CategoryTable tbody td:nth-child(1) {
+  width: 100%;
+}
+.Filters .Category .CategoryTable tbody td:nth-child(2),
+.Filters .Category .CategoryTable tbody td:nth-child(3) {
+  min-width: 60px;
+}
+.Filters .Category .CategoryTable tbody td:nth-child(4) {
+  min-width: 75px;
+}
+.Filters .Category .CategoryTable thead {
+  /*th:nth-child(1) {
+                    width: 100%;
+                }*/
 }
 .Filters .Category .CategoryTable thead tr {
   background: #d4dee0;
@@ -78,9 +122,6 @@
   font-weight: 600;
   white-space: nowrap;
   padding: 7px 5px;
-}
-.Filters .Category .CategoryTable thead th:nth-child(1) {
-  width: 100%;
 }
 .Filters .Category .CategoryTable thead th:nth-child(4) {
   text-align: right;
@@ -124,13 +165,13 @@
   display: none;
 }
 .Filters .Category .CategoryTable.CatL2.active {
-  display: table;
+  display: block;
 }
 .Filters .Category .CategoryTable.CatL3 {
   display: none;
 }
 .Filters .Category .CategoryTable.CatL3.active {
-  display: table;
+  display: block;
 }
 .Filters .Category .CategoryTable .Progres {
   position: relative;
