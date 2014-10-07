@@ -2,7 +2,8 @@
 
 $(document).ready(function () {
 
-    $('.dropdown-menu-form input[type="checkbox"], .dropdown-menu-form label').on('click', function (e) {
+
+    $('.dropdown-menu-form:not(a)').on('click', function (e) {
             e.stopPropagation();
     });
 
@@ -13,7 +14,7 @@ $(document).ready(function () {
         } catch (e) {
         }
     }
-    
+
 
     if ($(".TopSearch").length > 0) {
 
