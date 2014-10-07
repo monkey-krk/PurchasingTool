@@ -734,6 +734,7 @@
             overflow: hidden;
 
             &:before {
+                position: absolute;
                 display: block;
                 content: "";
                 width: 0;
@@ -745,10 +746,10 @@
 
             &:after {
                 display: block;
-                content: "New";
+                content: "new";
                 position: absolute;
-                top: 6px;
-                left: 1px;
+                top: 2px;
+                left: 0px;
                 color: @white;
                 font-size: 9px;
                 -moz-transform: rotate(-45deg);

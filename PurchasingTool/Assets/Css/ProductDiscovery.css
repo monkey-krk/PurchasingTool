@@ -573,6 +573,7 @@
   overflow: hidden;
 }
 .ProductsList tbody .NewIcontrue:before {
+  position: absolute;
   display: block;
   content: "";
   width: 0;
@@ -583,10 +584,10 @@
 }
 .ProductsList tbody .NewIcontrue:after {
   display: block;
-  content: "New";
+  content: "new";
   position: absolute;
-  top: 6px;
-  left: 1px;
+  top: 2px;
+  left: 0px;
   color: #ffffff;
   font-size: 9px;
   -moz-transform: rotate(-45deg);
