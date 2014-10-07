@@ -604,6 +604,9 @@
 .ProductsList tbody .ProductName:hover {
   color: #1f85a6;
 }
+.ProductsList tbody .ProductImage {
+  border-radius: 4px;
+}
 .ProductsList tbody .ProductDescription {
   width: 100%;
   display: block;
