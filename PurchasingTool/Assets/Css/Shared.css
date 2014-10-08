@@ -978,7 +978,7 @@ input[type="checkbox"]:hover:after {
   z-index: 999999;
 }
 .popover {
-  z-index: 1060 !important;
+  z-index: 99999 !important;
 }
 .MainHeader .navbar {
   z-index: 1040 !important;
