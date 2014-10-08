@@ -909,6 +909,9 @@
 #detail-wrapper {
   z-index: 999999999;
 }
+#detail-wrapper.active {
+  z-index: 999999999;
+}
 .ProductDetails {
   display: none;
   position: absolute;
