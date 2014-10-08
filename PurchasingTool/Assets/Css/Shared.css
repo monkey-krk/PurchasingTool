@@ -936,9 +936,9 @@ input[type="checkbox"]:hover:after {
   padding-top: 0px!important;
   border-bottom: none!important;
 }
-.SelectedFilters:before {
+.SelectedFilters .SelectedFiltersSpacer {
   display: block!important;
-  height: 83px!important;
+  height: 53px;
   content: " " !important;
 }
 .SelectedFilters .container-fluid {
@@ -949,7 +949,7 @@ input[type="checkbox"]:hover:after {
   left: 0!important;
   z-index: 999999!important;
   background: #e8f0f2!important;
-  min-height: 83px;
+  min-height: 53px;
 }
 .TopHeader {
   padding-top: 0px!important;

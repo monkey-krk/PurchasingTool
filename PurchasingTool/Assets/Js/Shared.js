@@ -4,7 +4,8 @@ $(document).ready(function () {
 
 
     $('.dropdown-menu-form:not(a)').on('click', function (e) {
-            e.stopPropagation();
+        ResizeSelectedFilters();
+        e.stopPropagation();
     });
 
 
@@ -53,6 +54,15 @@ $(document).ready(function () {
         }
 
     }
+
+    
+    function ResizeSelectedFilters() {
+        var $container_height = $(".SelectedFilters .container-fluid").height();
+        $(".SelectedFilters .SelectedFiltersSpacer").css("height", $container_height);
+
+    }
+    
+    
 
 
 });
