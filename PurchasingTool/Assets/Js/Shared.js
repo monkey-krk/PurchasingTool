@@ -4,7 +4,6 @@ $(document).ready(function () {
 
 
     $('.dropdown-menu-form:not(a)').on('click', function (e) {
-        ResizeSelectedFilters();
         e.stopPropagation();
     });
 
