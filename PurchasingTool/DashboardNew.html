@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PurchasingTool</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/Assets/External/flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/External/flaticons/stroke/stroke.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+    
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/autocomplete/jquery.autocomplete.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+
+</head>
+<body>
+
+
+    <header class="MainHeader">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="flaticon stroke basket-1 ml10 mr10"></i>
+                            Purchasing
+                            <span class="caret ml20 mr10"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Menu Item 1</a></li>
+                            <li><a href="#">Menu Item 2</a></li>
+                            <li><a href="#">Menu Item 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Menu Item 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="HeaderLink"><a href="/ProductDiscovery.html"><i class="budiconcustom-stats"></i><span>Products</span></a></li>
+                        <li class="HeaderLink"><a href="/List.html"><i class="budiconcustom-alignleft"></i><span>List</span></a></li>
+                        <li class="HeaderLink"><a href="/Assortment.html"><i class="budiconcustom-keypad"></i><span>Assortment</span></a></li>
+                        <li class="HeaderLink"><a href="/Ideas.html"><i class="budiconcustom-bulb"></i><span>Ideas</span></a></li>
+                        <li class="HeaderLink">
+                            <a class="TopSearchOpen" href="#"><i class="budiconcustom-search2"></i><span>Search</span></a>
+                            <div class="TopSearchBox">
+                                <input type="text" class="TopSearch" id="TopSearch" name="TopSearch" placeholder="">
+                                <a class="TopSearchGoBtn" href="#" title="Search"><i class="budiconcustom-search2"></i></a>
+                                <a class="TopSearchClose" href="#" title="Close"><i class="i1"></i><i class="i2"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="HeaderLink"><a href="/Help.html"><i class="budiconcustom-questioncloud"></i><span>Help</span></a></li>
+                        <li class="HeaderLink"><a href="/Settings.html"><i class="budiconcustom-settings"></i><span>Settings</span></a></li>
+                        <li class="HeaderLink">
+                            <a href="/Account.html" class="mt-5" title="Account">
+                                <div class="Image-r-40 ibm" style="background-image: url('/Assets/Img/dummy/img_200_200_2.jpg'); "></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="MainContent">
+        <div class="TopRow bb">
+            <div class="container-fluid bb">
+                <div class="row">
+                    <div class="col-sm-12 pt15 text-center">
+                        <h1>The most important top sellers in ecommerce</h1>
+                        <div class="pt30 pb40">
+                            <div class="ibm text-center">
+                                <div class="Icon Dashboard Products ibm"></div>
+                                <div class="fs18 fw600 mt20">976.625<span class="blue"> Products</span></div>
+                            </div>
+                            <div class="ibm ml50 mr50">
+                                <div class="Icon Dashboard Brands ibm"></div>
+                                <div class="fs18 fw600 mt20">38.516<span class="blue"> Brands</span></div>
+                            </div>
+                            <div class="ibm">
+                                <div class="Icon Dashboard Categories ibm"></div>
+                                <div class="fs18 fw600 mt20">17.804<span class="blue"> Categories</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="BottomRow">
+            <div class="container">
+                <div class="row pt30 pb50">
+                    <div class="col-sm-6">
+                        <div class="WhiteBox mb20 TopSellers">
+                            <div class="fs18 fw600 pb30">Top Sellers by Rating</div>
+                            <div class="row pb10">
+                                <div class="col-sm-5"><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i></div>
+                                <div class="col-sm-7 pt5"><a href="#" class="fw600">446.000</a></div>
+                            </div>
+                            <div class="row pb10">
+                                <div class="col-sm-5"><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i></div>
+                                <div class="col-sm-7 pt5"><a href="#" class="fw600">218.890</a></div>
+                            </div>
+                            <div class="row pb10">
+                                <div class="col-sm-5"><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i></div>
+                                <div class="col-sm-7 pt5"><a href="#" class="fw600">35.380</a></div>
+                            </div>
+                            <div class="row pb10">
+                                <div class="col-sm-5"><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i></div>
+                                <div class="col-sm-7 pt5"><a href="#" class="fw600">6.330</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5"><i class="flaticon solid star-2 orange fs18 mr5 ibm"></i></div>
+                                <div class="col-sm-7 pt5"><a href="#" class="fw600">4.560</a></div>
+                            </div>
+                        </div>
+                        <div class="WhiteBox mb20 TopBrands">
+                            <table class="w100p">
+                                <thead>
+                                    <tr>
+                                        <th class="fs18 fw600 pb20 vab">Top Brands</th>
+                                        <th class="fs11 pb20 vab gray text-center">DEMAND</th>
+                                        <th class="fs11 pb20 vab gray text-center">COMPE.</th>
+                                        <th class="fs11 pb20 vab gray text-right">PRODUCTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Niendo</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="80%"><div class="Down" style="width:80%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">10.370</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">2Extreme</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">1.760</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Hama</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="50%"><div class="Up" style="width:50%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">27.134</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Kerbal</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="80%"><div class="Down" style="width:80%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">10.370</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Trixie</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">1.760</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="text-right pt30 fw600 tdu"><a href="#">See All</a></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="WhiteBox mb20 TopCategories">
+                            <table class="w100p">
+                                <thead>
+                                    <tr>
+                                        <th class="fs18 fw600 pb20 vab">Top Categories</th>
+                                        <th class="fs11 pb20 vab gray text-center">DEMAND</th>
+                                        <th class="fs11 pb20 vab gray text-center">COMPE.</th>
+                                        <th class="fs11 pb20 vab gray text-right">PRODUCTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Electronics</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="80%"><div class="Down" style="width:80%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">10.370</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Kitchen & Appliances</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">1.760</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Apparel</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="50%"><div class="Up" style="width:50%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="20%"><div class="Down" style="width:20%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">27.134</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Computer & Accessories</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="60%"><div class="Up" style="width:60%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="80%"><div class="Down" style="width:80%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">10.370</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt15"><a href="#">Games</a></td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="30%"><div class="Up" style="width:30%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-center">
+                                            <div class="Progres" title="40%"><div class="Down" style="width:40%"></div></div>
+                                        </td>
+                                        <td class="pt15 text-right fs13 fw600 gray">1.760</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="text-right pt30 fw600 tdu"><a href="#">See All</a></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="WhiteBox mb20 UpAndCommers">
+                            <div class="fs18 fw600 pb30">Up and Commers</div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="WhiteBox mb20 TopProducts">
+                            <div class="fs18 fw600 pb30">Top Products</div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                            <div class="tbl mb10">
+                                <div class="cell-m">
+                                    <div class="Image-w70-h60" style="background-image: url('/Assets/Img/dummy/blank_70_60_1.jpg');"></div>
+                                </div>
+                                <div class="cell-m-100 pl20 fw600">
+                                    <a href="#">TL WR8141N WLAN Router (300 Mbit/s, 4-Ethernet bodenstaubauger / synchopower)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
