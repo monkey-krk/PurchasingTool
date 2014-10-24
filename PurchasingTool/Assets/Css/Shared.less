@@ -825,6 +825,12 @@ a[class~="purple"]:hover {
     }
 }
 
+.hb {
+    &:hover {
+        border:1px solid @gray;
+    }
+}
+
 .br50p {
     border-radius: 50%;
 }
@@ -880,6 +886,13 @@ a[class~="purple"]:hover {
 
 .Image-w70-h60 {
     width: 70px;
+    height: 60px;
+    border-radius: 4px;
+    .Image();
+}
+
+.Image-w60-h60 {
+    width: 60px;
     height: 60px;
     border-radius: 4px;
     .Image();

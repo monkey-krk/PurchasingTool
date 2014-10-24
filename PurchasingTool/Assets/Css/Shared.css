@@ -614,6 +614,9 @@ a[class~="purple"]:hover {
 .hop1:hover {
   opacity: 1;
 }
+.hb:hover {
+  border: 1px solid #747880;
+}
 .br50p {
   border-radius: 50%;
 }
@@ -683,6 +686,19 @@ a[class~="purple"]:hover {
 }
 .Image-w70-h60 {
   width: 70px;
+  height: 60px;
+  border-radius: 4px;
+  display: block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.Image-w60-h60 {
+  width: 60px;
   height: 60px;
   border-radius: 4px;
   display: block;
